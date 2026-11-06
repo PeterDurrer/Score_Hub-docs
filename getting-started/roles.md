@@ -21,6 +21,8 @@ Die tatsächlich möglichen Aktionen hängen zusätzlich von der Konfiguration d
 
 ## Wenn eine Aktion fehlt
 
+Die [Standblatt-Rollenübersicht](../competitions/data-sheet-tracking.md#rollen-und-zuständigkeiten) unterscheidet Wettkampfersteller, Wettkampfadministration und Resultaterfassung mit oder ohne Vereinseinschränkung. Versand, Rückversand und Tracking-Modus gehören zur Verwaltung; die Nummernzuordnung zum Resultat sowie Verschrieben-/Fehlend-Meldungen zur berechtigten Resultaterfassung. Beachten Sie dort auch den Hinweis zur älteren Rollenzuweisung beim Erstellen eines Wettkampfs.
+
 1. Prüfen Sie, ob Sie im richtigen Verein und Wettkampf arbeiten.
 2. Fragen Sie die Vereinsadministration, welche Vereinsrolle Ihrem Konto zugewiesen ist.
 3. Für eine Rolle innerhalb eines einzelnen Wettkampfs wenden Sie sich an dessen Administration.

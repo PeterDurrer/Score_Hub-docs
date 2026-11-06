@@ -26,6 +26,7 @@ module.exports = {
       items: [
         "competitions/create-competition",
         "competitions/competition-settings",
+        "competitions/data-sheet-tracking",
         "competitions/manage-participants",
       ],
     },
