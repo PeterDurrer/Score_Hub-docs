@@ -30,6 +30,14 @@ Nicht alle Angaben sind bei jedem Wettkampf aktiv oder erforderlich. Pflichtfeld
 
 Die Anwendung führt eine Eingabevalidierung durch. Eine erfolgreiche Speicherung sollte in der Oberfläche erkennbar sein. Verlassen Sie sich nicht auf automatische Zwischenspeicherung; speichern Sie ausdrücklich über die angebotene Aktion.
 
+## Standblatt-Nummer und Status
+
+Wenn das Tracking aktiviert ist, wählen Sie im Resultatdialog zusätzlich eine **Standblatt-Nummer**. Angeboten werden nur verfügbare, noch nicht zurückgesandte Nummern des Vereins, dem der Schütze in der Wettkampf-Schützenliste angehört. Das gilt auch für Wettkampfadministrierende und uneingeschränkte Resultaterfassende. Eingeschränkte Erfassende arbeiten nur für den eigenen Verein.
+
+Auf derselben Seite können Sie im separaten Standblatt-Statusformular Nummern oder Bereiche als **Verschrieben** oder **Fehlend** melden, ohne ein Resultat oder einen Schützen auszuwählen. Den Versand und den physischen Rückversand erfasst dagegen die Wettkampfverwaltung unter **Konfiguration → Abrechnung**.
+
+Anleitung und Rollenmatrix: [Standblatt-Tracking](../competitions/data-sheet-tracking.md).
+
 ## Fehler bei der Eingabe
 
 - **Pflichtfeld fehlt:** Ergänzen Sie das markierte Feld.

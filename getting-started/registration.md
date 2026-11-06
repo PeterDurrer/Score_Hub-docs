@@ -31,6 +31,8 @@ Wenn die Anmeldung fehlschlägt, prüfen Sie zuerst E-Mail-Adresse und Schreibwe
 
 ## Profil und Passwort
 
-Im Bereich **Profil** können Sie die dort angebotenen persönlichen Angaben prüfen und bearbeiten. Eine Funktion zum Zurücksetzen des Passworts oder zur E-Mail-Bestätigung ist in der aktuellen Anmeldeoberfläche nicht ausgewiesen. Fragen Sie bei vergessenen Zugangsdaten Ihre Administration nach dem vorgesehenen Vorgehen.
+Im Bereich **Profil** können Sie Ihre persönlichen Angaben bearbeiten und unter **Passwort ändern** ein eigenes Passwort setzen. Geben Sie dazu Ihr aktuelles Passwort (beim ersten Login das erhaltene Initialpasswort) ein und bestätigen Sie das neue Passwort durch zweimalige Eingabe. Wählen Sie **Passwort ändern** und prüfen Sie die Erfolgsmeldung.
 
-Weiter: [Dashboard](dashboard.md) · [Rollen und Berechtigungen](roles.md)
+Dieser Passwortwechsel ist kein Zurücksetzen eines vergessenen Passworts. Eine Funktion zum Zurücksetzen ohne Anmeldung oder zur E-Mail-Bestätigung ist in der aktuellen Anmeldeoberfläche nicht ausgewiesen. Fragen Sie bei vergessenen Zugangsdaten Ihre Administration nach dem vorgesehenen Vorgehen.
+
+Weiter: [Kurzstart für Resultaterfassende](result-scorer-quick-start.md) · [Dashboard](dashboard.md) · [Rollen und Berechtigungen](roles.md)

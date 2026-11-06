@@ -5,6 +5,7 @@ module.exports = {
       type: "category",
       label: "Erste Schritte",
       items: [
+        "getting-started/result-scorer-quick-start",
         "getting-started/registration",
         "getting-started/dashboard",
         "getting-started/roles",

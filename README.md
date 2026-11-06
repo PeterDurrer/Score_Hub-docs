@@ -10,6 +10,8 @@ Score_Hub unterstützt Vereine dabei, Schützen, Wettkämpfe, Resultate und Rang
 
 ## Schnell zu Ihrem Thema
 
+**Neu in der Resultaterfassung?** Der [Kurzstart für Resultaterfassende](getting-started/result-scorer-quick-start.md) führt Sie durch den ersten Login mit Passwortwechsel und Vereinsdaten sowie durch die tägliche Erfassung bis zur Rangliste.
+
 | Aufgabe | Anleitung |
 | --- | --- |
 | Anmelden und Zugang erhalten | [Konto und Anmeldung](getting-started/registration.md) |
@@ -17,6 +19,7 @@ Score_Hub unterstützt Vereine dabei, Schützen, Wettkämpfe, Resultate und Rang
 | Rollen und Berechtigungen verstehen | [Rollen](getting-started/roles.md) |
 | Vereinsdaten und Mitglieder pflegen | [Vereinsverwaltung](clubs/setup-club.md) |
 | Wettkampf einrichten | [Wettkampf erstellen](competitions/create-competition.md) |
+| Standblatt-Versand, Nummern und Rücklauf verwalten | [Standblatt-Tracking](competitions/data-sheet-tracking.md) |
 | Schützen und Gruppen verwalten | [Teilnehmer verwalten](competitions/manage-participants.md) |
 | Resultate erfassen oder korrigieren | [Resultate erfassen](results/quick-start.md) |
 | Ranglisten ansehen oder als PDF speichern | [Ranglisten](rankings/view-rankings.md) |
