@@ -22,6 +22,8 @@ Les illustrations montrent l’interface Score_Hub avec des données de démonst
 | `screenshots/fr/club-users.png` | [Gestion des utilisateurs](clubs/manage-members.md) | Utilisateurs du club et rôles |
 | `screenshots/fr/competitions.png` | [Concours](competitions/create-competition.md) | Formulaire de création avec modèle, discipline, options de copie et catégories de licence |
 | `screenshots/fr/participants.png` | [Participants](competitions/manage-participants.md) | Liste des tireurs |
+| `screenshots/fr/shooter-create-steps.png` | [Participants](competitions/manage-participants.md) | Recherche et création numérotées avec année de naissance |
+| `screenshots/fr/shooter-birth-date.png` | [Participants](competitions/manage-participants.md) | Saisie d’une date de naissance complète |
 | `screenshots/fr/results-entry.png` | [Saisie des résultats](results/quick-start.md) | Formulaire de saisie des résultats |
 | `screenshots/fr/results-overview-steps.png` | [Résultats et champs](results/entering-results.md) | Liste numérotée avec filtres et actions |
 | `screenshots/fr/results-suggestions.png` | [Résultats et champs](results/entering-results.md) | Champs proposés et indication d’une manche manquante |

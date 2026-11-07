@@ -22,6 +22,8 @@ Die Abbildungen zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `screenshots/club-users.png` | [Benutzerverwaltung](clubs/manage-members.md) | Vereinsbenutzer und Rollen |
 | `screenshots/competitions.png` | [Wettkämpfe](competitions/create-competition.md) | Erstellen-Dialog mit Vorlage, Disziplin, Kopieroptionen und Lizenzkategorien |
 | `screenshots/participants.png` | [Teilnehmer](competitions/manage-participants.md) | Schützenliste |
+| `screenshots/shooter-create-steps.png` | [Teilnehmer](competitions/manage-participants.md) | Nummerierte Suche und Neuerfassung mit Jahrgang |
+| `screenshots/shooter-birth-date.png` | [Teilnehmer](competitions/manage-participants.md) | Eingabe eines vollständigen Geburtsdatums |
 | `screenshots/results-entry.png` | [Resultaterfassung](results/quick-start.md) | Resultaterfassungsmaske |
 | `screenshots/results-overview-steps.png` | [Resultate und Eingabefelder](results/entering-results.md) | Nummerierte Übersicht mit Filtern und Aktionen |
 | `screenshots/results-suggestions.png` | [Resultate und Eingabefelder](results/entering-results.md) | Vorschlagsfelder und Hinweis auf eine Rundenlücke |

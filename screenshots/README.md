@@ -11,6 +11,8 @@ Die PNG-Dateien zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `club-users.png` | `clubs/manage-members.md` | Vereinsbenutzer und Rollen |
 | `competitions.png` | `competitions/create-competition.md` | Erstellen-Dialog mit ausgewählter Vorlage, Disziplin, Kopieroptionen, Lizenzkategorien und ergänzten allgemeinen Werten |
 | `participants.png` | `competitions/manage-participants.md` | Schützenliste |
+| `shooter-create-steps.png` | `competitions/manage-participants.md` | Nummerierte Suche und Neuerfassung mit Jahrgang |
+| `shooter-birth-date.png` | `competitions/manage-participants.md` | Eingabe eines vollständigen Geburtsdatums |
 | `results-entry.png` | `results/quick-start.md` | Resultaterfassungsmaske |
 | `results-overview-steps.png` | `results/entering-results.md` | Resultatseite mit nummerierter Vorauswahl, Filtern und Aktionen |
 | `results-suggestions.png` | `results/entering-results.md` | Automatische Vorschläge und Hinweis auf eine Rundenlücke |

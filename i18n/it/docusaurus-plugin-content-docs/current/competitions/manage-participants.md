@@ -12,10 +12,30 @@ I partecipanti a una competizione si gestiscono nella sezione **Tiratori**. I gr
 ## Aggiungere tiratori
 
 1. Apri la competizione e passa a **Tiratori**.
-2. Cerca un tiratore esistente.
-3. Seleziona la voce corretta e aggiungila alla competizione.
-4. Se la funzione è disponibile, puoi inserire un nuovo tiratore direttamente nella finestra di aggiunta. Il modulo può includere dati come nome, numero di licenza, data di nascita, società e sesso.
-5. Controlla il tiratore nell'elenco dei partecipanti.
+2. Seleziona **Aggiungi tiratore** e cerca un tiratore esistente nella finestra.
+3. Seleziona la voce corretta tra i risultati e aggiungila alla competizione. Controlla poi l'elenco dei partecipanti.
+
+### Creare un nuovo tiratore
+
+Se non trovi un tiratore adatto, puoi crearlo direttamente nella finestra quando la creazione è abilitata per la competizione. L'accesso dipende dal tuo ruolo. Le immagini mostrano dati fittizi; i contrassegni rossi sono stati aggiunti per questa guida.
+
+![Finestra con aree numerate per i dati di ricerca, la ricerca, l'anno di nascita e il sesso, quindi la creazione](../../../../../screenshots/it/shooter-create-steps.png)
+
+1. Inserisci nome e cognome e, se necessario, scegli la società. Il numero di licenza è facoltativo per i tiratori locali.
+2. Seleziona **Cerca** per verificare le voci esistenti. Se trovi una voce corretta, selezionala invece di creare un duplicato.
+3. Se nessun risultato è adatto, completa l'anno o la data di nascita e, se necessario, il sesso. La categoria d'età visualizzata viene determinata dall'anno di nascita.
+4. Seleziona **Crea nuovo tiratore**. Controlla poi la voce nell'elenco dei partecipanti.
+
+### Data o anno di nascita
+
+Il campo **Data di nascita / anno di nascita** accetta entrambi i formati:
+
+- Solo l'anno a quattro cifre, ad esempio `2004`: al salvataggio viene impostata automaticamente la data di nascita **01.01.2004**.
+- La data completa, ad esempio `14.03.2004`: questa data viene mantenuta al salvataggio. È accettato anche il formato `2004-03-14`.
+
+![Finestra con data di nascita completa evidenziata e categoria d'età visualizzata](../../../../../screenshots/it/shooter-birth-date.png)
+
+Per la categoria d'età è attualmente necessario solo l'anno di nascita. Il campo può rimanere vuoto; in tal caso non viene proposta una categoria d'età dalla data di nascita. La finestra segnala date non valide e anni al di fuori dell'intervallo tra il 1900 e l'anno corrente.
 
 L'importazione di elenchi di partecipanti da Excel o CSV non fa parte di questa procedura.
 
