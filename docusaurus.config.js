@@ -2,10 +2,10 @@
 module.exports = {
   title: "Score_Hub Benutzerhandbuch",
   tagline: "Anleitungen für Vereine und Wettkampforganisation",
-  url: "https://docs.scorehub.ch",
-  baseUrl: "/",
+  url: "https://peterdurrer.github.io",
+  baseUrl: "/Score_Hub-docs/",
   organizationName: "PeterDurrer",
-  projectName: "Score_Hub",
+  projectName: "Score_Hub-docs",
   onBrokenLinks: "throw",
   markdown: {
     hooks: {

@@ -21,6 +21,26 @@ npm run build
 
 Aus dem Repository-Stamm funktionieren die Befehle `npm run docs:build` und `npm run docs:serve`.
 
+## GitHub Pages veröffentlichen
+
+Das Repository `PeterDurrer/Score_Hub-docs` veröffentlicht die Dokumentation mit dem Workflow `.github/workflows/deploy.yml` über GitHub Actions. Ohne eigene Domain ist die Projektseite erreichbar unter:
+
+`https://peterdurrer.github.io/Score_Hub-docs/`
+
+Die Werte `url` und `baseUrl` in `docusaurus.config.js` müssen dafür auf `https://peterdurrer.github.io` und `/Score_Hub-docs/` gesetzt sein. In GitHub unter **Settings → Pages** muss als Build- und Deploymentquelle **GitHub Actions** ausgewählt sein. Ein DNS-Eintrag oder eine `CNAME`-Datei ist für die GitHub-Standardadresse nicht erforderlich. Falls dort noch eine Custom Domain eingetragen ist, diese entfernen und speichern; andernfalls kann GitHub weiterhin auf die alte Domain verweisen.
+
+Nach einem Push auf `main` den Workflow **Deploy documentation** unter **Actions** prüfen. Die URL wird im erfolgreichen Deploy-Job als `page_url` angezeigt. Änderungen am Doku-Submodul müssen zuerst dort committet und gepusht werden; anschliessend muss das Hauptrepository den aktualisierten Submodul-Verweis committen und pushen.
+
+## Später eine eigene Domain verwenden
+
+Wenn eine eigene Domain verfügbar ist, zum Beispiel `docs.example.ch`:
+
+1. In `docusaurus.config.js` `url` auf `https://docs.example.ch` und `baseUrl` auf `/` ändern.
+2. Im DNS-Verwaltungsbereich einen `CNAME`-Eintrag für `docs` auf `peterdurrer.github.io` setzen. Bei Cloudflare den Proxy zunächst deaktivieren (DNS-only), damit GitHub das Zertifikat ausstellen kann.
+3. Im Repository `PeterDurrer/Score_Hub-docs` unter **Settings → Pages → Custom domain** `docs.example.ch` eintragen und speichern. Die Veröffentlichungsquelle bleibt **GitHub Actions**; dafür ist keine `CNAME`-Datei im Quellrepository nötig.
+4. Warten, bis GitHub das DNS geprüft und das HTTPS-Zertifikat bereitgestellt hat. Danach **Enforce HTTPS** aktivieren.
+5. Die geänderte Docusaurus-Konfiguration auf `main` pushen und den Deploy-Workflow kontrollieren.
+
 ## Seitenstruktur
 
 - `README.md`: Einstieg und Inhaltsübersicht
