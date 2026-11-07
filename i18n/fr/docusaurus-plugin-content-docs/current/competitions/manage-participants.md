@@ -42,6 +42,8 @@ L’importation de listes de participants au format Excel ou CSV ne fait pas par
 
 Sélectionnez le tireur dans la liste et utilisez l’action de modification proposée. Les modifications ou la suppression peuvent être limitées si des résultats ont déjà été saisis. Modifiez soigneusement les données de base, car elles peuvent être utilisées dans les résultats et les classements.
 
+Pour un tireur créé localement, vous pouvez corriger ou supprimer le numéro de licence avec **Modifier**, même après la saisie de résultats. Enregistrez la modification et vérifiez le numéro dans la liste. Les résultats et les affectations aux groupes restent liés au tireur. Un numéro déjà attribué à un autre tireur du même concours est refusé. Les tireurs ajoutés depuis la liste centrale ne peuvent pas être modifiés ici.
+
 ## Former des groupes
 
 1. Accédez à **Groupes**.

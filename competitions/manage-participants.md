@@ -42,6 +42,8 @@ Der Import von Teilnehmerlisten aus Excel oder CSV ist kein Bestandteil dieses A
 
 Wählen Sie den Schützen in der Liste und verwenden Sie die angebotene Bearbeitungsaktion. Bei bereits erfassten Resultaten können Änderungen oder das Entfernen eingeschränkt sein. Ändern Sie Stammdaten sorgfältig, weil sie in Resultaten und Ranglisten verwendet werden können.
 
+Bei lokal erfassten Schützen können Sie die Lizenznummer über **Bearbeiten** auch nach der Resultaterfassung korrigieren oder entfernen. Speichern Sie die Änderung und prüfen Sie die Nummer in der Liste. Bereits erfasste Resultate und Gruppenzuordnungen bleiben mit dem Schützen verknüpft. Eine Nummer, die im selben Wettkampf bereits einem anderen Schützen zugeordnet ist, wird abgelehnt. Aus der zentralen Schützenliste hinzugefügte Schützen können hier nicht bearbeitet werden.
+
 ## Gruppen bilden
 
 1. Wechseln Sie zu **Gruppen**.

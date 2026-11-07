@@ -43,6 +43,8 @@ L'importazione di elenchi di partecipanti da Excel o CSV non fa parte di questa 
 
 Seleziona il tiratore nell'elenco e usa l'azione di modifica disponibile. Le modifiche o la rimozione potrebbero essere limitate se sono già stati inseriti risultati. Modifica i dati principali con attenzione, perché possono essere utilizzati nei risultati e nelle classifiche.
 
+Per un tiratore creato localmente puoi correggere o rimuovere il numero di licenza con **Modifica**, anche dopo l'inserimento dei risultati. Salva la modifica e controlla il numero nell'elenco. I risultati e le assegnazioni ai gruppi restano collegati al tiratore. Un numero già assegnato a un altro tiratore della stessa competizione viene rifiutato. I tiratori aggiunti dall'elenco centrale non possono essere modificati qui.
+
 ## Formare i gruppi
 
 1. Passa a **Gruppi**.
