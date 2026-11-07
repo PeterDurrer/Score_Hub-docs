@@ -9,7 +9,7 @@ Die PNG-Dateien zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `dashboard.png` | `getting-started/dashboard.md` | Dashboard mit Schnellaktionen und Wettkampfliste |
 | `club-profile.png` | `clubs/setup-club.md` | Vereinsstammdaten |
 | `club-users.png` | `clubs/manage-members.md` | Vereinsbenutzer und Rollen |
-| `competitions.png` | `competitions/create-competition.md` | Wettkampfliste und Erstellen-Dialog |
+| `competitions.png` | `competitions/create-competition.md` | Erstellen-Dialog mit ausgewählter Vorlage, Disziplin, Kopieroptionen, Lizenzkategorien und ergänzten allgemeinen Werten |
 | `participants.png` | `competitions/manage-participants.md` | Schützenliste |
 | `results-entry.png` | `results/quick-start.md` | Resultaterfassungsmaske |
 | `rankings.png` | `rankings/view-rankings.md` | Ranglistenansicht mit Kategorien und Filtern |

@@ -20,7 +20,7 @@ Le immagini mostrano l'interfaccia Score_Hub con dati dimostrativi sintetici. Ac
 | `screenshots/it/dashboard.png` | [Dashboard](getting-started/dashboard.md) | Dashboard con azioni rapide ed elenco delle competizioni |
 | `screenshots/it/club-profile.png` | [Dati della società](clubs/setup-club.md) | Dati principali della società |
 | `screenshots/it/club-users.png` | [Gestione degli utenti](clubs/manage-members.md) | Utenti e ruoli della società |
-| `screenshots/it/competitions.png` | [Competizioni](competitions/create-competition.md) | Elenco delle competizioni e modulo di creazione |
+| `screenshots/it/competitions.png` | [Competizioni](competitions/create-competition.md) | Modulo di creazione con modello, disciplina, opzioni di copia e categorie di licenza |
 | `screenshots/it/participants.png` | [Partecipanti](competitions/manage-participants.md) | Elenco dei tiratori |
 | `screenshots/it/results-entry.png` | [Inserimento dei risultati](results/quick-start.md) | Modulo di inserimento dei risultati |
 | `screenshots/it/rankings.png` | [Classifiche](rankings/view-rankings.md) | Vista delle classifiche con categorie e filtri |

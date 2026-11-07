@@ -6,7 +6,7 @@ title: Creare una competizione
 
 Le competizioni si gestiscono nella sezione della società. Per crearle o modificarle è necessario disporre delle autorizzazioni appropriate della società o di sistema.
 
-![Elenco delle competizioni e modulo di creazione](../../../../../screenshots/it/competitions.png)
+![Creazione di una competizione con modello selezionato, disciplina, opzioni di copia e categorie di licenza](../../../../../screenshots/it/competitions.png)
 
 
 ## Creare una nuova competizione

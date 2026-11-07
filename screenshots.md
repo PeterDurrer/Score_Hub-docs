@@ -20,7 +20,7 @@ Die Abbildungen zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `screenshots/dashboard.png` | [Dashboard](getting-started/dashboard.md) | Dashboard mit Schnellaktionen und Wettkampfliste |
 | `screenshots/club-profile.png` | [Vereinsdaten](clubs/setup-club.md) | Vereinsstammdaten |
 | `screenshots/club-users.png` | [Benutzerverwaltung](clubs/manage-members.md) | Vereinsbenutzer und Rollen |
-| `screenshots/competitions.png` | [Wettkämpfe](competitions/create-competition.md) | Wettkampfliste und Erstellen-Dialog |
+| `screenshots/competitions.png` | [Wettkämpfe](competitions/create-competition.md) | Erstellen-Dialog mit Vorlage, Disziplin, Kopieroptionen und Lizenzkategorien |
 | `screenshots/participants.png` | [Teilnehmer](competitions/manage-participants.md) | Schützenliste |
 | `screenshots/results-entry.png` | [Resultaterfassung](results/quick-start.md) | Resultaterfassungsmaske |
 | `screenshots/rankings.png` | [Ranglisten](rankings/view-rankings.md) | Ranglistenansicht mit Kategorien und Filtern |
