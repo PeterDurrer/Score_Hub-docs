@@ -27,7 +27,7 @@ Wenn Sie eine Vorlage verwendet haben, prüfen Sie zuerst die übernommenen Grun
 2. Richten Sie benötigte Kategorien und Runden ein.
 3. Prüfen Sie die Resultatfelder. Die Erfassungsmaske richtet sich nach dieser Konfiguration.
 4. Konfigurieren Sie Auszeichnungen und Ranglisten, soweit sie für den Wettkampf gebraucht werden.
-5. Weisen Sie Wettkampfbenutzer und Rollen zu.
+5. Prüfen oder ergänzen Sie Wettkampfbenutzer und Rollen. Der erstellende Benutzer ist bereits Wettkampfadmin; mit der Vorlagenoption werden nur aktive Benutzer mit ihren bisherigen Rollen übernommen.
 6. Erfassen Sie Testdaten nur in einem dafür vorgesehenen Testwettkampf.
 
 Nicht jede Registerkarte ist für jeden Wettkampftyp oder jede Rolle gleich relevant. Falls eine Einstellung fehlt oder ausgegraut ist, bitten Sie die Wettkampfadministration um Unterstützung.

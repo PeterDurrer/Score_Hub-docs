@@ -27,7 +27,7 @@ Se hai usato un modello, controlla prima i dati generali ripresi, le categorie d
 2. Configura le categorie e i turni necessari.
 3. Controlla i campi risultato. La maschera di inserimento dipende da questa configurazione.
 4. Configura i riconoscimenti e le classifiche, se necessari per la competizione.
-5. Assegna gli utenti e i ruoli della competizione.
+5. Verifica o integra gli utenti e i ruoli della competizione. Il creatore è già amministratore; l'opzione del modello riprende solo gli utenti attivi con i ruoli esistenti.
 6. Inserisci dati di prova solo in una competizione di test appositamente predisposta.
 
 Non tutte le schede sono ugualmente pertinenti per ogni tipo di competizione o ruolo. Se un'impostazione manca o è disattivata, chiedi assistenza all'amministrazione della competizione.

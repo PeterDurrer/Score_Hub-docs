@@ -31,7 +31,8 @@ Les données générales déjà définies ne sont **pas écrasées**. Le type af
 | Matrice des distinctions | Uniquement avec catégories et manches. Reprend les distinctions et seuils des catégories, manches et équipements compatibles copiés. |
 | Prix et règles de munitions | Uniquement avec catégories et manches. Reprend les prix compatibles, les règles générales et les règles de munitions pour les calibres disponibles. |
 | Classements | Reprend définitions, champs de résultat supplémentaires, tri et colonnes. Les indices des champs sont conservés. Les liens vers les manches ne sont créés que si les manches sont copiées. |
-| Catégories de licence du modèle | Seules les catégories existantes attribuées à la discipline cible sont proposées individuellement. Les catégories cochées sont **ajoutées** ; les attributions existantes restent inchangées et ne sont pas dupliquées. Sans sélection, les catégories automatiquement attribuées depuis la discipline cible sont conservées. |
+| Catégories de licence du modèle | Seules les catégories attribuées au modèle et à la discipline cible sont proposées individuellement. La cible conserve **uniquement les catégories sélectionnées compatibles du modèle** ; les attributions automatiques et non sélectionnées sont supprimées. Sans sélection, aucune catégorie de licence n'est attribuée. Sans modèle, les attributions automatiques habituelles de la discipline sont conservées. |
+| Utilisateurs actifs de la compétition | Facultatif. Copie uniquement les utilisateurs actifs au moment de la reprise avec leurs rôles et restrictions d'accès. Le créateur reste toujours administrateur de la cible, même si son rôle dans le modèle diffère. Les utilisateurs déjà attribués à la cible ne sont ni dupliqués ni remplacés. Cette option nécessite les droits de modification sur le modèle et la cible. |
 
 ## Disciplines différentes : quelles lacunes ?
 
@@ -50,7 +51,7 @@ Exemple : la catégorie **A** du modèle utilise uniquement un équipement attri
 
 Avant l'enregistrement, l'interface explique les différences de discipline et les dépendances manquantes. Après une reprise partielle, elle indique le nombre de catégories, équipements, entrées de matrice, règles de prix/munitions, liens classements-manches et catégories de licence omis, ainsi que les restrictions de participation réinitialisées.
 
-Le modèle ne copie **ni participants, ni affectations de groupes, ni résultats, ni stocks/écritures de feuilles de stand, ni utilisateurs et rôles du concours**. Configurez-les séparément. Le nom et l'identifiant du nouveau concours sont indépendants du modèle.
+Le modèle ne copie **ni participants, ni affectations de groupes, ni résultats, ni stocks/écritures de feuilles de stand**. Les utilisateurs sont copiés uniquement avec l'option correspondante ; les utilisateurs inactifs sont omis et leur nombre est signalé. Le statut est vérifié côté serveur pendant la reprise. Le nom et l'identifiant du nouveau concours sont indépendants du modèle.
 
 Une erreur de chargement bloque l'enregistrement avec ce modèle. Sélectionnez-le à nouveau ou choisissez **Ne pas utiliser de modèle**. Les données générales déjà complétées restent dans le formulaire ; vérifiez-les avant d'enregistrer.
 

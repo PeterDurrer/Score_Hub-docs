@@ -27,7 +27,7 @@ Si vous avez utilisé un modèle, vérifiez d'abord les données générales rep
 2. Configurez les catégories et les manches nécessaires.
 3. Vérifiez les champs de résultat. Le formulaire de saisie est déterminé par cette configuration.
 4. Configurez les distinctions et les classements si le concours en a besoin.
-5. Attribuez les utilisateurs et les rôles du concours.
+5. Vérifiez ou complétez les utilisateurs et rôles du concours. Le créateur est déjà administrateur ; l'option du modèle reprend uniquement les utilisateurs actifs avec leurs rôles existants.
 6. Saisissez des données de test uniquement dans un concours prévu à cet effet.
 
 Tous les onglets ne sont pas aussi pertinents pour chaque type de concours ou chaque rôle. Si un paramètre est absent ou désactivé, demandez de l’aide à l’administration du concours.

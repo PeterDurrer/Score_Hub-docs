@@ -31,7 +31,8 @@ Bereits gesetzte Grundwerte werden **nicht überschrieben**. Der anfangs angezei
 | Auszeichnungsmatrix | Nur mit Kategorien und Runden. Übernimmt Auszeichnungen und Schwellenwerte für kopierte Kategorien, Runden und kompatible Geräte. |
 | Preise und Munitionsregeln | Nur mit Kategorien und Runden. Übernimmt passende Kategorie-/Rundenpreise, allgemeine Preisregeln und Munitionsregeln für verfügbare Kaliber. |
 | Ranglisten | Übernimmt Definitionen, zusätzliche Ergebnisfelder, Sortierung und Spalten. Ergebnisfeld-Indizes bleiben erhalten. Rundenverknüpfungen entstehen nur bei mitkopierten Runden. |
-| Lizenzkategorien der Vorlage | Nur vorhandene Kategorien mit Zuordnung zur Zieldisziplin werden einzeln angeboten. Markierte Kategorien werden **zusätzlich** übernommen; bestehende Zielzuordnungen bleiben erhalten und werden nicht doppelt angelegt. Ohne Auswahl bleiben die automatisch aus der Zieldisziplin zugewiesenen Lizenzkategorien unverändert. |
+| Lizenzkategorien der Vorlage | Nur der Vorlage zugewiesene Kategorien mit Zuordnung zur Zieldisziplin werden einzeln angeboten. Im Ziel bleiben **nur die ausgewählten kompatiblen Vorlagenkategorien** zugewiesen; automatische und nicht ausgewählte Zielzuordnungen entfallen. Ohne Auswahl werden keine Lizenzkategorien zugewiesen. Ohne Vorlage bleiben die üblichen automatischen Zuordnungen aus der Disziplin bestehen. |
+| Aktive Wettkampfbenutzer | Optional. Kopiert nur bei der Übernahme aktive Benutzer mit ihren bisherigen Rollen und Zugriffsbeschränkungen. Der erstellende Benutzer ist im Ziel immer Wettkampfadmin, auch wenn er in der Vorlage eine andere Rolle hat. Bereits zugewiesene Zielbenutzer werden nicht dupliziert oder überschrieben. Für diese Option benötigen Sie Änderungsrechte an der Vorlage und am Ziel. |
 
 ## Unterschiedliche Disziplinen: Wo entstehen Lücken?
 
@@ -50,7 +51,7 @@ Beispiel: Die Vorlage enthält die Kategorie **A** mit einem nur für Gewehr 300
 
 Vor dem Speichern zeigt die UI Hinweise zu abweichenden Disziplinen und fehlenden Abhängigkeiten. Nach einer Teilübernahme meldet sie die Anzahl ausgelassener Kategorien, Gerätezuordnungen, Matrixeinträge, Preis- und Munitionsregeln, Ranglisten-Rundenverknüpfungen und Lizenzkategorien sowie zurückgesetzter Teilnahmebeschränkungen.
 
-Die Vorlage überträgt **keine Teilnehmenden, Gruppenbelegungen, Resultate, Standblattbestände/-buchungen oder Wettkampfbenutzer und Rollen**. Diese richten Sie separat ein. Name und ID des neuen Wettkampfs sind unabhängig von der Vorlage.
+Die Vorlage überträgt **keine Teilnehmenden, Gruppenbelegungen, Resultate oder Standblattbestände/-buchungen**. Wettkampfbenutzer werden nur mit der entsprechenden Option kopiert; inaktive Benutzer werden ausgelassen und ihre Anzahl gemeldet. Der Benutzerstatus wird serverseitig während der Übernahme geprüft. Name und ID des neuen Wettkampfs sind unabhängig von der Vorlage.
 
 Bei einem Ladefehler ist das Speichern mit dieser Vorlage gesperrt. Wählen Sie sie erneut oder wählen Sie **Keine Vorlage verwenden**. Bereits ergänzte Grundwerte bleiben dabei im Dialog; prüfen Sie sie vor dem Speichern.
 

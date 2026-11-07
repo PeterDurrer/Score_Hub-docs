@@ -32,7 +32,8 @@ I dati generali già impostati **non vengono sovrascritti**. Il tipo visualizzat
 | Matrice dei riconoscimenti | Solo con categorie e turni. Copia riconoscimenti e soglie per categorie, turni ed equipaggiamenti compatibili copiati. |
 | Prezzi e regole per le munizioni | Solo con categorie e turni. Copia prezzi compatibili, regole generali e regole per le munizioni dei calibri disponibili. |
 | Classifiche | Copia definizioni, campi risultato aggiuntivi, ordinamento e colonne. Gli indici dei campi restano invariati. I collegamenti ai turni vengono creati solo se vengono copiati anche i turni. |
-| Categorie di licenza del modello | Sono proposte singolarmente solo le categorie esistenti assegnate alla disciplina di destinazione. Le categorie selezionate vengono **aggiunte**; le assegnazioni esistenti restano invariate e non vengono duplicate. Senza selezione restano le categorie assegnate automaticamente dalla disciplina di destinazione. |
+| Categorie di licenza del modello | Sono proposte singolarmente solo le categorie assegnate al modello e alla disciplina di destinazione. Nella destinazione restano **solo le categorie selezionate compatibili del modello**; le assegnazioni automatiche e non selezionate vengono rimosse. Senza selezione non viene assegnata alcuna categoria di licenza. Senza modello restano le consuete assegnazioni automatiche della disciplina. |
+| Utenti attivi della competizione | Facoltativo. Copia solo gli utenti attivi al momento della copia con i loro ruoli e restrizioni di accesso. Il creatore rimane sempre amministratore della destinazione, anche se nel modello ha un ruolo diverso. Gli utenti già assegnati alla destinazione non vengono duplicati né sovrascritti. Questa opzione richiede i diritti di modifica sul modello e sulla destinazione. |
 
 ## Discipline diverse: dove si creano lacune?
 
@@ -51,7 +52,7 @@ Esempio: la categoria **A** del modello usa solo un equipaggiamento assegnato al
 
 Prima del salvataggio, l'interfaccia spiega le differenze di disciplina e le dipendenze mancanti. Dopo una copia parziale, indica il numero di categorie, assegnazioni di equipaggiamenti, voci della matrice, regole di prezzo/munizioni, collegamenti classifiche-turni e categorie di licenza omessi, nonché le restrizioni di partecipazione reimpostate.
 
-Il modello non copia **partecipanti, assegnazioni ai gruppi, risultati, scorte/registrazioni dei fogli di stand o utenti e ruoli della competizione**. Configurali separatamente. Nome e identificativo della nuova competizione sono indipendenti dal modello.
+Il modello non copia **partecipanti, assegnazioni ai gruppi, risultati o scorte/registrazioni dei fogli di stand**. Gli utenti vengono copiati solo con l'opzione corrispondente; gli utenti inattivi vengono omessi e ne viene segnalato il numero. Lo stato viene verificato sul server durante la copia. Nome e identificativo della nuova competizione sono indipendenti dal modello.
 
 Un errore di caricamento blocca il salvataggio con quel modello. Selezionalo nuovamente oppure scegli **Non utilizzare un modello**. I dati generali già completati restano nel modulo; controllali prima di salvare.
 
