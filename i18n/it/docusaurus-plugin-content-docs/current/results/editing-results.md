@@ -16,6 +16,8 @@ Modifica i risultati salvati solo se disponi delle autorizzazioni necessarie e h
 
 I campi modificabili dipendono dalle autorizzazioni e dalla configurazione della competizione. Se non è disponibile alcuna azione di modifica, contatta l'amministrazione della competizione.
 
+Puoi cambiare un turno errato nel modulo di modifica se non esiste già un risultato nel turno di destinazione per lo stesso tiratore e la stessa categoria. Il numero di foglio di stand associato rimane invariato. Prima di salvare controlla il riconoscimento ed eventuali turni mancanti.
+
 ## Controlli prima di salvare
 
 - La competizione e il tiratore sono quelli corretti?

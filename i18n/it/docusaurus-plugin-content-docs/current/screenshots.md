@@ -23,6 +23,9 @@ Le immagini mostrano l'interfaccia Score_Hub con dati dimostrativi sintetici. Ac
 | `screenshots/it/competitions.png` | [Competizioni](competitions/create-competition.md) | Modulo di creazione con modello, disciplina, opzioni di copia e categorie di licenza |
 | `screenshots/it/participants.png` | [Partecipanti](competitions/manage-participants.md) | Elenco dei tiratori |
 | `screenshots/it/results-entry.png` | [Inserimento dei risultati](results/quick-start.md) | Modulo di inserimento dei risultati |
+| `screenshots/it/results-overview-steps.png` | [Risultati e campi](results/entering-results.md) | Elenco numerato con filtri e azioni |
+| `screenshots/it/results-suggestions.png` | [Risultati e campi](results/entering-results.md) | Campi proposti e avviso di turno mancante |
+| `screenshots/it/results-entry-steps.png` | [Risultati e campi](results/entering-results.md) | Passaggi numerati nel modulo |
 | `screenshots/it/rankings.png` | [Classifiche](rankings/view-rankings.md) | Vista delle classifiche con categorie e filtri |
 | `screenshots/it/statistics.png` | [Statistiche](rankings/statistics.md) | Statistiche di una competizione |
 

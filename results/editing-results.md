@@ -16,6 +16,8 @@ Korrigieren Sie gespeicherte Resultate nur, wenn Sie dazu berechtigt sind und di
 
 Welche Felder bearbeitet werden können, hängt von Berechtigung und Wettkampfkonfiguration ab. Wenn keine Bearbeitung angeboten wird, wenden Sie sich an die Wettkampfadministration.
 
+Eine falsch erfasste Runde lässt sich im Bearbeitungsdialog ändern, sofern für denselben Schützen und dieselbe Kategorie noch kein Resultat in der Zielrunde existiert. Eine zugeordnete Standblatt-Nummer bleibt erhalten. Prüfen Sie Auszeichnung und allfällige Rundenlücken vor dem Speichern.
+
 ## Vor dem Speichern prüfen
 
 - Ist es der richtige Wettkampf und Schütze?

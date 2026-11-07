@@ -16,6 +16,8 @@ Ne corrigez des résultats enregistrés que si vous y êtes autorisé et après 
 
 Les champs modifiables dépendent de vos autorisations et de la configuration du concours. Si aucune action de modification n’est proposée, contactez l’administration du concours.
 
+Vous pouvez modifier une manche erronée dans le formulaire si aucun résultat n’existe déjà dans la manche cible pour le même tireur et la même catégorie. Le numéro de feuille de stand associé est conservé. Vérifiez la distinction et les éventuelles manches manquantes avant d’enregistrer.
+
 ## Vérifications avant l’enregistrement
 
 - S’agit-il du bon concours et du bon tireur ?

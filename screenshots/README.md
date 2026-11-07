@@ -12,6 +12,9 @@ Die PNG-Dateien zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `competitions.png` | `competitions/create-competition.md` | Erstellen-Dialog mit ausgewählter Vorlage, Disziplin, Kopieroptionen, Lizenzkategorien und ergänzten allgemeinen Werten |
 | `participants.png` | `competitions/manage-participants.md` | Schützenliste |
 | `results-entry.png` | `results/quick-start.md` | Resultaterfassungsmaske |
+| `results-overview-steps.png` | `results/entering-results.md` | Resultatseite mit nummerierter Vorauswahl, Filtern und Aktionen |
+| `results-suggestions.png` | `results/entering-results.md` | Automatische Vorschläge und Hinweis auf eine Rundenlücke |
+| `results-entry-steps.png` | `results/entering-results.md` | Nummerierte Schritte im ausgefüllten Resultatdialog |
 | `rankings.png` | `rankings/view-rankings.md` | Ranglistenansicht mit Kategorien und Filtern |
 | `statistics.png` | `rankings/statistics.md` | Statistiken eines Wettkampfs |
 

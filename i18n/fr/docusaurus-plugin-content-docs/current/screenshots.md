@@ -23,6 +23,9 @@ Les illustrations montrent l’interface Score_Hub avec des données de démonst
 | `screenshots/fr/competitions.png` | [Concours](competitions/create-competition.md) | Formulaire de création avec modèle, discipline, options de copie et catégories de licence |
 | `screenshots/fr/participants.png` | [Participants](competitions/manage-participants.md) | Liste des tireurs |
 | `screenshots/fr/results-entry.png` | [Saisie des résultats](results/quick-start.md) | Formulaire de saisie des résultats |
+| `screenshots/fr/results-overview-steps.png` | [Résultats et champs](results/entering-results.md) | Liste numérotée avec filtres et actions |
+| `screenshots/fr/results-suggestions.png` | [Résultats et champs](results/entering-results.md) | Champs proposés et indication d’une manche manquante |
+| `screenshots/fr/results-entry-steps.png` | [Résultats et champs](results/entering-results.md) | Étapes numérotées du formulaire |
 | `screenshots/fr/rankings.png` | [Classements](rankings/view-rankings.md) | Vue des classements avec catégories et filtres |
 | `screenshots/fr/statistics.png` | [Statistiques](rankings/statistics.md) | Statistiques d’un concours |
 

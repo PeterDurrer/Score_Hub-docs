@@ -23,6 +23,9 @@ Die Abbildungen zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `screenshots/competitions.png` | [Wettkämpfe](competitions/create-competition.md) | Erstellen-Dialog mit Vorlage, Disziplin, Kopieroptionen und Lizenzkategorien |
 | `screenshots/participants.png` | [Teilnehmer](competitions/manage-participants.md) | Schützenliste |
 | `screenshots/results-entry.png` | [Resultaterfassung](results/quick-start.md) | Resultaterfassungsmaske |
+| `screenshots/results-overview-steps.png` | [Resultate und Eingabefelder](results/entering-results.md) | Nummerierte Übersicht mit Filtern und Aktionen |
+| `screenshots/results-suggestions.png` | [Resultate und Eingabefelder](results/entering-results.md) | Vorschlagsfelder und Hinweis auf eine Rundenlücke |
+| `screenshots/results-entry-steps.png` | [Resultate und Eingabefelder](results/entering-results.md) | Nummerierter Ablauf im Resultatdialog |
 | `screenshots/rankings.png` | [Ranglisten](rankings/view-rankings.md) | Ranglistenansicht mit Kategorien und Filtern |
 | `screenshots/statistics.png` | [Statistiken](rankings/statistics.md) | Statistiken eines Wettkampfs |
 
