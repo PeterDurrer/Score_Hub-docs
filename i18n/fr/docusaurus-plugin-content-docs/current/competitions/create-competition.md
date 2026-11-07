@@ -6,9 +6,7 @@ title: Créer un concours
 
 Les concours sont gérés dans la section du club. Vous devez disposer de l’autorisation correspondante du club ou du système pour en créer ou en modifier un.
 
-![Image de remplacement : concours du club](../screenshots/competitions.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Liste des concours et formulaire de création](../../../../../screenshots/fr/competitions.png)
 
 ## Créer un concours
 

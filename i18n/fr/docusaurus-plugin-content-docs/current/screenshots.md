@@ -2,29 +2,28 @@
 title: Remplacer les captures d’écran
 ---
 
-# Remplacer les captures d’écran
+# Captures d’écran et mise à jour
 
-Les illustrations du guide sont actuellement des **images de remplacement**, et non de véritables captures de l’interface Score_Hub. Les fichiers sources se trouvent dans le dossier `screenshots/`.
+Les illustrations montrent l’interface Score_Hub avec des données de démonstration synthétiques. Les comptes, les noms, les clubs et les résultats sont fictifs ; aucune donnée de production n’est utilisée.
 
-## Remplacer les images de remplacement par de vraies captures
+## Mettre à jour les captures d’écran
 
 1. Ouvrez Score_Hub dans un environnement de test ou de démonstration autorisé.
 2. Utilisez des comptes, des clubs, des concours et des résultats fictifs.
 3. Réalisez la capture sans adresses e-mail privées, noms réels de tireurs, identifiants de connexion ni autres données personnelles non nécessaires.
-4. Remplacez le fichier SVG par une capture d’écran récente et mettez à jour le chemin de l’image dans la page Markdown correspondante (par exemple `.png` ou `.webp`).
-5. Actualisez le texte alternatif et supprimez la mention indiquant qu’il s’agit d’une image de remplacement.
+4. Enregistrez la capture au format PNG dans `screenshots/`, puis mettez à jour le chemin et le texte alternatif dans les versions linguistiques de la page Markdown correspondante.
 
-## Correspondance des images de remplacement
+## Correspondance des captures
 
 | Fichier | Page correspondante | Contenu |
 | --- | --- | --- |
-| `screenshots/dashboard.svg` | [Tableau de bord](getting-started/dashboard.md) | Tableau de bord avec actions rapides et liste des concours |
-| `screenshots/club-profile.svg` | [Données du club](clubs/setup-club.md) | Données de base du club |
-| `screenshots/club-users.svg` | [Gestion des utilisateurs](clubs/manage-members.md) | Utilisateurs du club et rôles |
-| `screenshots/competitions.svg` | [Concours](competitions/create-competition.md) | Liste des concours et boîte de dialogue de création |
-| `screenshots/participants.svg` | [Participants](competitions/manage-participants.md) | Liste des tireurs et groupes |
-| `screenshots/results-entry.svg` | [Saisie des résultats](results/quick-start.md) | Formulaire de saisie des résultats |
-| `screenshots/rankings.svg` | [Classements](rankings/view-rankings.md) | Classement avec sélection et filtres |
-| `screenshots/statistics.svg` | [Statistiques](rankings/statistics.md) | Statistiques d’un concours |
+| `screenshots/fr/dashboard.png` | [Tableau de bord](getting-started/dashboard.md) | Tableau de bord avec actions rapides et liste des concours |
+| `screenshots/fr/club-profile.png` | [Données du club](clubs/setup-club.md) | Données de base du club |
+| `screenshots/fr/club-users.png` | [Gestion des utilisateurs](clubs/manage-members.md) | Utilisateurs du club et rôles |
+| `screenshots/fr/competitions.png` | [Concours](competitions/create-competition.md) | Liste des concours et formulaire de création |
+| `screenshots/fr/participants.png` | [Participants](competitions/manage-participants.md) | Liste des tireurs |
+| `screenshots/fr/results-entry.png` | [Saisie des résultats](results/quick-start.md) | Formulaire de saisie des résultats |
+| `screenshots/fr/rankings.png` | [Classements](rankings/view-rankings.md) | Vue des classements avec catégories et filtres |
+| `screenshots/fr/statistics.png` | [Statistiques](rankings/statistics.md) | Statistiques d’un concours |
 
-Utilisez des images PNG ou WebP d’une résolution suffisante. Recadrez la capture sur la zone pertinente et veillez à ne masquer aucun champ ni aucune indication.
+Utilisez des images PNG d’une résolution suffisante. Recadrez la capture sur la zone pertinente et veillez à ne masquer aucun champ ni aucune indication.

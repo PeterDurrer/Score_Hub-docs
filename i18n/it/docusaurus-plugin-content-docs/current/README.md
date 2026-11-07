@@ -41,7 +41,7 @@ L'applicazione consente di scegliere tra tedesco, francese e italiano. Le pagine
 
 ## Nota sugli screenshot
 
-Le illustrazioni del manuale sono attualmente contrassegnate come **segnaposto**. Non sono schermate reali dell'applicazione. In [Sostituire gli screenshot](screenshots.md) sono disponibili indicazioni per acquisire immagini aggiornate nel rispetto della privacy.
+Le illustrazioni del manuale mostrano l'interfaccia Score_Hub con dati dimostrativi sintetici. Account, nomi, società e risultati sono fittizi; non vengono utilizzati dati di produzione. In [Sostituire gli screenshot](screenshots.md) sono disponibili indicazioni per aggiornare le immagini nel rispetto della privacy.
 
 ## Domande o problemi?
 

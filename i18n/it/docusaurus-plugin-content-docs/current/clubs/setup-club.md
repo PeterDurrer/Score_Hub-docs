@@ -6,9 +6,8 @@ title: Gestire i dati della società
 
 Nella sezione della società, gli utenti autorizzati possono modificare i dati principali della società attualmente associata al proprio account. Non tutti gli utenti possono creare una nuova società. Se la tua società non è disponibile o non è associata al tuo account, contatta l'amministrazione di sistema.
 
-![Segnaposto: dati principali della società](../screenshots/club-profile.svg)
+![Dati principali della società di esempio](../../../../../screenshots/it/club-profile.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Aprire e modificare i dati principali
 

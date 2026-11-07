@@ -8,9 +8,7 @@ Ce guide décrit la saisie d’un résultat. Vous devez avoir accès au concours
 
 Pour suivre la procédure complète — première connexion, données du club, ajout de tireurs, résultats et classement — consultez le [guide de démarrage rapide pour la saisie des résultats](../getting-started/result-scorer-quick-start.md).
 
-![Image de remplacement : saisie des résultats](../screenshots/results-entry.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Formulaire de saisie d’un résultat avec des données fictives](../../../../../screenshots/fr/results-entry.png)
 
 ## En six étapes
 

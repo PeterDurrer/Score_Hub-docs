@@ -6,9 +6,8 @@ title: Consultare le classifiche
 
 Le classifiche di una competizione si trovano nella sezione **Classifiche**. I punteggi visualizzati dipendono dalle classifiche, dalle categorie e dai risultati configurati per la competizione.
 
-![Segnaposto: classifica](../screenshots/rankings.svg)
+![Vista delle classifiche con categoria e filtri](../../../../../screenshots/it/rankings.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Selezionare e filtrare una classifica
 

@@ -6,9 +6,7 @@ title: Vereinsdaten verwalten
 
 Im Vereinsbereich bearbeiten berechtigte Benutzer die Stammdaten des aktuell zugeordneten Vereins. Einen neuen Verein kann nicht jedes Benutzerkonto selbst anlegen. Wenn Ihr Verein fehlt oder Ihnen nicht zugeordnet ist, wenden Sie sich an die Systemadministration.
 
-![Platzhalter: Vereinsstammdaten](../screenshots/club-profile.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Vereinsstammdaten des Beispielvereins](../screenshots/club-profile.png)
 
 ## Stammdaten öffnen und bearbeiten
 

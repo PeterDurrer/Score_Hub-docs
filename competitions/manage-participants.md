@@ -6,9 +6,7 @@ title: Schützen, Teilnehmer und Gruppen
 
 Die Teilnehmer eines Wettkampfs werden im Bereich **Schützen** verwaltet. Gruppen und deren Belegung werden im separaten Bereich **Gruppen** gepflegt.
 
-![Platzhalter: Teilnehmerverwaltung](../screenshots/participants.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Teilnehmerliste mit Beispieldaten](../screenshots/participants.png)
 
 ## Schützen hinzufügen
 

@@ -8,9 +8,7 @@ Diese Anleitung führt durch eine einzelne Resultaterfassung. Sie benötigen Zug
 
 Für den vollständigen kompakten Ablauf – erster Login, Vereinsdaten, Schützen hinzufügen, Resultate und Rangliste – verwenden Sie den [Kurzstart für Resultaterfassende](../getting-started/result-scorer-quick-start.md).
 
-![Platzhalter: Resultaterfassung](../screenshots/results-entry.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Formular zur Erfassung eines Resultats mit Beispieldaten](../screenshots/results-entry.png)
 
 ## In sechs Schritten
 

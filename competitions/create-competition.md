@@ -6,9 +6,7 @@ title: Wettkampf erstellen
 
 Wettkämpfe werden im Vereinsbereich verwaltet. Zum Anlegen oder Ändern benötigen Sie die entsprechende Vereins- oder Systemberechtigung.
 
-![Platzhalter: Vereinswettkämpfe](../screenshots/competitions.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Wettkampfliste mit Dialog zum Erstellen eines Wettkampfs](../screenshots/competitions.png)
 
 ## Neuen Wettkampf anlegen
 

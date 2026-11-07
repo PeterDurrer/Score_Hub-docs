@@ -6,9 +6,8 @@ title: Gestire gli utenti della società
 
 La pagina **Utenti** mostra le associazioni degli utenti alla società attualmente selezionata. È prevista per la gestione da parte degli amministratori di sistema e della società.
 
-![Segnaposto: utenti della società](../screenshots/club-users.svg)
+![Gestione degli utenti della società con account fittizi](../../../../../screenshots/it/club-users.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Associare un utente esistente
 

@@ -6,9 +6,7 @@ title: Dashboard und Navigation
 
 Das Dashboard ist die Startseite nach der Anmeldung. Es zeigt Kennzahlen, Schnellaktionen und die Wettkämpfe, die für Ihr Konto verfügbar sind.
 
-![Platzhalter: Dashboard von Score_Hub](../screenshots/dashboard.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Score_Hub-Dashboard mit Schnellaktionen und Wettkampfliste](../screenshots/dashboard.png)
 
 ## Bereiche des Dashboards
 

@@ -6,9 +6,7 @@ title: Gérer les données du club
 
 Dans la section du club, les utilisateurs autorisés peuvent modifier les données de base du club auquel ils sont actuellement rattachés. Tous les comptes ne peuvent pas créer eux-mêmes un nouveau club. Si votre club est absent ou ne vous est pas attribué, contactez l’administration système.
 
-![Image de remplacement : données de base du club](../screenshots/club-profile.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Données du club de démonstration](../../../../../screenshots/fr/club-profile.png)
 
 ## Ouvrir et modifier les données de base
 

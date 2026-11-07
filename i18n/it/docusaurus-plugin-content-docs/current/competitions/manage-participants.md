@@ -6,9 +6,8 @@ title: Tiratori, partecipanti e gruppi
 
 I partecipanti a una competizione si gestiscono nella sezione **Tiratori**. I gruppi e i relativi componenti si gestiscono separatamente nella sezione **Gruppi**.
 
-![Segnaposto: gestione dei partecipanti](../screenshots/participants.svg)
+![Elenco dei partecipanti con dati fittizi](../../../../../screenshots/it/participants.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Aggiungere tiratori
 

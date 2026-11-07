@@ -6,9 +6,7 @@ title: Tireurs, participants et groupes
 
 Les participants d’un concours sont gérés dans la section **Tireurs**. Les groupes et leur composition se gèrent séparément dans la section **Groupes**.
 
-![Image de remplacement : gestion des participants](../screenshots/participants.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Liste des participants avec des données fictives](../../../../../screenshots/fr/participants.png)
 
 ## Ajouter des tireurs
 

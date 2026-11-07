@@ -6,9 +6,7 @@ title: Wettkampfstatistiken
 
 Die Seite **Statistiken** fasst die Resultate des geöffneten Wettkampfs zusammen. Welche Auswertungen erscheinen, hängt von vorhandenen Resultaten und den verfügbaren Filtern ab.
 
-![Platzhalter: Wettkampfstatistiken](../screenshots/statistics.svg)
-
-> **Platzhalterbild:** Ersetzen Sie diese Grafik durch einen aktuellen Screenshot. Details: [Screenshots ersetzen](../screenshots.md).
+![Wettkampfstatistiken mit Kennzahlen und Filteroptionen](../screenshots/statistics.png)
 
 ## Statistiken lesen
 

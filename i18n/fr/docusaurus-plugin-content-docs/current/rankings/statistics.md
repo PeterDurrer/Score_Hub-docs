@@ -6,9 +6,7 @@ title: Statistiques du concours
 
 La page **Statistiques** récapitule les résultats du concours ouvert. Les analyses affichées dépendent des résultats disponibles et des filtres proposés.
 
-![Image de remplacement : statistiques du concours](../screenshots/statistics.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Statistiques du concours avec indicateurs et filtres](../../../../../screenshots/fr/statistics.png)
 
 ## Consulter les statistiques
 

@@ -6,9 +6,7 @@ title: Consulter les classements
 
 Les classements d’un concours se trouvent dans la section **Classements**. Les types de classement affichés dépendent des classements, des catégories et des résultats configurés pour le concours.
 
-![Image de remplacement : classement](../screenshots/rankings.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Vue des classements avec catégorie et filtres](../../../../../screenshots/fr/rankings.png)
 
 ## Sélectionner et filtrer un classement
 

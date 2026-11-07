@@ -6,9 +6,8 @@ title: Dashboard e navigazione
 
 La dashboard è la pagina iniziale dopo l'accesso. Mostra indicatori, azioni rapide e le competizioni disponibili per il tuo account.
 
-![Segnaposto: dashboard di Score_Hub](../screenshots/dashboard.svg)
+![Dashboard di Score_Hub con azioni rapide ed elenco delle competizioni](../../../../../screenshots/it/dashboard.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Sezioni della dashboard
 

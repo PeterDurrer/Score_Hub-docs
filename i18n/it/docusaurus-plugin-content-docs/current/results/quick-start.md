@@ -8,9 +8,8 @@ Questa guida illustra l'inserimento di un singolo risultato. È necessario avere
 
 Per la procedura rapida completa — primo accesso, dati della società, aggiunta di tiratori, risultati e classifica — consulta la [Guida rapida per chi inserisce i risultati](../getting-started/result-scorer-quick-start.md).
 
-![Segnaposto: inserimento dei risultati](../screenshots/results-entry.svg)
+![Modulo per l’inserimento di un risultato con dati fittizi](../../../../../screenshots/it/results-entry.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Sei passaggi
 

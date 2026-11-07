@@ -6,9 +6,7 @@ title: Gérer les utilisateurs du club
 
 La page **Utilisateurs** affiche les rattachements d’utilisateurs au club actuellement sélectionné. Elle est destinée à être modifiée par les administrateurs système et les administrateurs du club.
 
-![Image de remplacement : utilisateurs du club](../screenshots/club-users.svg)
-
-> **Image de remplacement :** remplacez cette illustration par une capture d’écran récente. Consultez [Remplacer les captures d’écran](../screenshots.md) pour plus de détails.
+![Gestion des utilisateurs du club avec des comptes fictifs](../../../../../screenshots/fr/club-users.png)
 
 ## Rattacher un utilisateur existant
 

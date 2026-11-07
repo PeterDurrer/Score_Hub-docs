@@ -6,9 +6,8 @@ title: Statistiche della competizione
 
 La pagina **Statistiche** riepiloga i risultati della competizione aperta. Le analisi visualizzate dipendono dai risultati disponibili e dai filtri utilizzabili.
 
-![Segnaposto: statistiche della competizione](../screenshots/statistics.svg)
+![Statistiche della competizione con indicatori e filtri](../../../../../screenshots/it/statistics.png)
 
-> **Immagine segnaposto:** sostituisci questa grafica con uno screenshot aggiornato. Dettagli: [Sostituire gli screenshot](../screenshots.md).
 
 ## Leggere le statistiche
 
