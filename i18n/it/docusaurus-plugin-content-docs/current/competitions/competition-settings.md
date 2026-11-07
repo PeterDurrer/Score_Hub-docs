@@ -21,6 +21,8 @@ Apri **Società → Competizioni**, quindi la configurazione della competizione 
 
 ## Ordine consigliato
 
+Se hai usato un modello, controlla prima i dati generali ripresi, le categorie di licenza e le lacune segnalate. Requisiti delle opzioni e limiti tra discipline sono descritti in [Creare una competizione](create-competition.md).
+
 1. Verifica i dati generali della competizione e il tipo.
 2. Configura le categorie e i turni necessari.
 3. Controlla i campi risultato. La maschera di inserimento dipende da questa configurazione.

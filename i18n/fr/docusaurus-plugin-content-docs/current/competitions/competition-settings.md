@@ -21,6 +21,8 @@ Ouvrez **Club → Concours**, puis la configuration du concours souhaité. La pa
 
 ## Ordre recommandé
 
+Si vous avez utilisé un modèle, vérifiez d'abord les données générales reprises, les catégories de licence et les lacunes signalées. Les conditions des options et les limites entre disciplines sont décrites dans [Créer un concours](create-competition.md).
+
 1. Vérifiez les données générales du concours et son type.
 2. Configurez les catégories et les manches nécessaires.
 3. Vérifiez les champs de résultat. Le formulaire de saisie est déterminé par cette configuration.

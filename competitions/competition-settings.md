@@ -21,6 +21,8 @@ title: Wettkampf konfigurieren
 
 ## Empfohlene Reihenfolge
 
+Wenn Sie eine Vorlage verwendet haben, prüfen Sie zuerst die übernommenen Grundwerte, Lizenzkategorien und die gemeldeten Lücken. Die Voraussetzungen jeder Kopieroption und die Einschränkungen bei unterschiedlichen Disziplinen stehen unter [Wettkampf erstellen](create-competition.md#was-kann-aus-einer-vorlage-übernommen-werden).
+
 1. Kontrollieren Sie die allgemeinen Wettkampfdaten und den Typ.
 2. Richten Sie benötigte Kategorien und Runden ein.
 3. Prüfen Sie die Resultatfelder. Die Erfassungsmaske richtet sich nach dieser Konfiguration.
