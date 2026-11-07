@@ -98,12 +98,12 @@ Dieses Formular funktioniert ohne Auswahl eines Schützen und ohne Resultaterfas
 
 | Status | Bedeutung |
 | --- | --- |
-| Verfügbar | Noch keinem Resultat zugeordnet; kann bei einer zulässigen Korrektur wieder freigegeben werden |
+| Verfügbar | Noch keinem Resultat zugeordnet; verschriebene oder fehlende Nummern können bei einer zulässigen Korrektur wieder verfügbar gesetzt werden |
 | Verbraucht | Einem gespeicherten Resultat zugeordnet; wird durch die Resultaterfassung gesetzt |
 | Verschrieben | Das Blatt wurde unbrauchbar beschrieben und darf nicht für ein neues Resultat verwendet werden |
 | Fehlend | Eine konkret vergebene Nummer wird ausdrücklich als fehlend gemeldet |
 
-Unverbrauchte, noch nicht zurückgegebene Blätter können über **Verfügbar** korrigiert werden. Bereits verbrauchte oder zurückgesandte Blätter lassen sich über dieses Formular nicht ändern. Eine falsche Resultatzuordnung korrigieren Sie am Resultat, nicht durch eine Statusmeldung. Wird die Nummer am Resultat geändert oder das Resultat gelöscht, wird die bisherige Nummer freigegeben; ein bereits erfasster Rücklauf bleibt erhalten.
+Im Korrekturmodus können nur nicht zurückgesandte Nummern mit Status **Verschrieben** oder **Fehlend** wieder auf **Verfügbar** gesetzt werden. Bereits verfügbare Nummern brauchen keine Korrektur; verbrauchte oder zurückgesandte Blätter lassen sich über dieses Formular nicht ändern. Eine falsche Resultatzuordnung korrigieren Sie am Resultat, nicht durch eine Statusmeldung. Wird die Nummer am Resultat geändert oder das Resultat gelöscht, wird die bisherige Nummer freigegeben; ein bereits erfasster Rücklauf bleibt erhalten.
 
 ## 5. Rückversand kontrollieren und erfassen
 
