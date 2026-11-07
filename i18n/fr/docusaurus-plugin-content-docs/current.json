@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.userGuide.category.Erste Schritte": {
+    "message": "Premiers pas",
+    "description": "The label for category 'Erste Schritte' in sidebar 'userGuide'"
+  },
+  "sidebar.userGuide.category.Verein": {
+    "message": "Association",
+    "description": "The label for category 'Verein' in sidebar 'userGuide'"
+  },
+  "sidebar.userGuide.category.Wettkämpfe": {
+    "message": "Compétitions",
+    "description": "The label for category 'Wettkämpfe' in sidebar 'userGuide'"
+  },
+  "sidebar.userGuide.category.Resultate": {
+    "message": "Résultats",
+    "description": "The label for category 'Resultate' in sidebar 'userGuide'"
+  },
+  "sidebar.userGuide.category.Ranglisten und Statistiken": {
+    "message": "Classements et statistiques",
+    "description": "The label for category 'Ranglisten und Statistiken' in sidebar 'userGuide'"
+  }
+}

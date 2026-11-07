@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title description">
+  <title id="title">Image de remplacement : classement</title>
+  <desc id="description">Image de remplacement. À remplacer par une capture d’un classement réalisée dans le respect de la confidentialité.</desc>
+  <rect width="960" height="540" fill="#f1f5f9"/><rect width="960" height="62" fill="#172554"/>
+  <text x="32" y="40" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Score_Hub · Classement</text>
+  <rect x="34" y="94" width="892" height="392" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="480" y="250" text-anchor="middle" fill="#b45309" font-family="Arial, sans-serif" font-size="28" font-weight="700">CAPTURE À VENIR</text>
+  <text x="480" y="292" text-anchor="middle" fill="#334155" font-family="Arial, sans-serif" font-size="19">Capturer un classement avec des tireurs fictifs</text>
+  <text x="480" y="330" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="15">Vérifier les noms et les résultats avant publication.</text>
+</svg>

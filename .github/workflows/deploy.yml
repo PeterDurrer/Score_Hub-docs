@@ -12,6 +12,7 @@ on:
       - "sidebars.js"
       - "src/**"
       - "static/**"
+      - "i18n/**"
       - "**/*.md"
       - "screenshots/**"
   workflow_dispatch:

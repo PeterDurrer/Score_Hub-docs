@@ -1,0 +1,18 @@
+{
+  "link.title.Handbuch": {
+    "message": "Guide utilisateur",
+    "description": "The title of the footer links column with title=Handbuch in the footer"
+  },
+  "link.item.label.Einstieg": {
+    "message": "Accueil",
+    "description": "The label of footer link with label=Einstieg linking to /"
+  },
+  "link.item.label.Häufige Fragen": {
+    "message": "Questions fréquentes",
+    "description": "The label of footer link with label=Häufige Fragen linking to /faq"
+  },
+  "copyright": {
+    "message": "Guide utilisateur Score_Hub",
+    "description": "The footer copyright"
+  }
+}

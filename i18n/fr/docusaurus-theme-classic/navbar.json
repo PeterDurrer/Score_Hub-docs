@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Score_Hub",
+    "description": "The title in the navbar"
+  },
+  "item.label.Handbuch": {
+    "message": "Guide utilisateur",
+    "description": "Navbar item with label Handbuch"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

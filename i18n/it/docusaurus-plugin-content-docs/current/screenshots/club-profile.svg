@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title description">
+  <title id="title">Segnaposto screenshot: dati principali della società</title>
+  <desc id="description">Grafica segnaposto. Sostituire con uno screenshot dei dati principali della società acquisito nel rispetto della privacy.</desc>
+  <rect width="960" height="540" fill="#f1f5f9"/><rect width="960" height="62" fill="#172554"/>
+  <text x="32" y="40" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Score_Hub · Dati della società</text>
+  <rect x="34" y="94" width="892" height="392" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="480" y="250" text-anchor="middle" fill="#b45309" font-family="Arial, sans-serif" font-size="28" font-weight="700">SCREENSHOT IN ARRIVO</text>
+  <text x="480" y="292" text-anchor="middle" fill="#334155" font-family="Arial, sans-serif" font-size="19">Acquisire il modulo della società con dati di prova</text>
+  <text x="480" y="330" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="15">Non mostrare dati di contatto personali.</text>
+</svg>

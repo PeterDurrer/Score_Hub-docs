@@ -14,7 +14,7 @@ module.exports = {
   },
   i18n: {
     defaultLocale: "de",
-    locales: ["de"],
+    locales: ["de", "fr", "it"],
   },
   presets: [
     [
@@ -31,6 +31,7 @@ module.exports = {
             "build/**",
             ".docusaurus/**",
             "src/**",
+            "i18n/**",
           ],
         },
         blog: false,
@@ -49,6 +50,10 @@ module.exports = {
           sidebarId: "userGuide",
           position: "left",
           label: "Handbuch",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
         },
         {
           href: "https://github.com/PeterDurrer/Score_Hub",
