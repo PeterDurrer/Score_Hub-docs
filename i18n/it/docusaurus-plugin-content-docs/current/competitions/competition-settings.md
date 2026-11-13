@@ -14,8 +14,8 @@ Apri **Società → Competizioni**, quindi la configurazione della competizione 
 | Categorie | Categorie e relative impostazioni della competizione |
 | Campi risultato | Campi necessari per inserire i risultati |
 | Riconoscimenti | Riconoscimenti e associazioni per la competizione |
-| Contabilità | Dati di contabilità e prezzi, nonché tracciamento, invio e restituzione dei fogli di stand |
-| Turni | Creazione e configurazione dei turni |
+| Contabilità | Dati di contabilità e prezzi, ambito del tracciamento, invio e restituzione dei fogli di stand |
+| Turni | Configurazione di turni, condizioni dei partecipanti e gruppi di schede di tiro |
 | Classifiche | Tipi di classifica e relativa configurazione |
 | Utenti | Utenti e ruoli per questa competizione |
 
@@ -34,7 +34,7 @@ Non tutte le schede sono ugualmente pertinenti per ogni tipo di competizione o r
 
 ## Configurare il tracciamento dei fogli di stand
 
-Nella scheda **Contabilità**, chi è autorizzato alla gestione della competizione attiva il tracciamento numerico e registra l'invio e la restituzione per le società destinatarie. Se il tracciamento è attivo, è necessario indicare numeri o intervalli specifici. Attiva questa modalità prima di inserire i risultati; risultati esistenti o registrazioni di quantità non idonee possono impedire il passaggio.
+Nella scheda **Contabilità**, chi è autorizzato alla gestione della competizione sceglie l'ambito del tracciamento numerico e registra l'invio e la restituzione per le società destinatarie. Se il tracciamento è attivo, è necessario indicare numeri o intervalli specifici. Per l'ambito **Per gruppo di turni**, assegna lo stesso gruppo di schede di tiro ai turni interessati nella scheda **Turni**. Scegli la modalità prima di inserire i risultati; risultati esistenti o registrazioni di quantità non idonee possono impedire il passaggio.
 
 Le procedure complete, i ruoli e le regole di tutela sono descritti in [Tracciamento dei fogli di stand](data-sheet-tracking.md). La limitazione di chi inserisce i risultati alla propria società viene impostata per ogni persona nella scheda **Utenti**.
 

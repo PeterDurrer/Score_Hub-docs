@@ -6,6 +6,19 @@ title: Standblatt-Tracking
 
 Mit aktiviertem Tracking wird jedes physische Standblatt über seine Nummer vom Versand an einen Verein bis zur Resultaterfassung und Rückgabe verfolgt. Der Verbrauch und der tatsächliche Rücklauf sind zwei getrennte Angaben: Ein erfasstes Resultat bestätigt noch keine Rückgabe des Papiers.
 
+## Standblattumfang und Rundengruppen
+
+Im Register **Abrechnung** legt die Einstellung **Standblatttracking** fest, ob und über welche Runden eine Standblattnummer geführt wird:
+
+| Einstellung | Verhalten |
+| --- | --- |
+| Ausgeschaltet | Es wird keine Standblattnummer pro Resultat geführt; die bisherige Mengenerfassung bleibt verfügbar. |
+| Pro Runde | Eine Nummer wird je Schütze und Kategorie für jede Runde separat erfasst. |
+| Pro Wettkampf | Dieselbe Nummer gilt je Schütze und Kategorie über alle Runden des Wettkampfs. |
+| Pro Rundengruppe | Dieselbe Nummer gilt je Schütze und Kategorie über die Runden derselben Standblattgruppe. |
+
+Für **Pro Rundengruppe** tragen Sie in der Wettkampfkonfiguration unter **Runden** bei allen zusammengehörenden Runden denselben Namen im Feld **Standblattgruppe** ein. Runden ohne Gruppennamen bleiben eigenständig. Wenn der Umfang mehrere Runden verbindet (**Pro Wettkampf** oder **Pro Rundengruppe**), erfassen Sie je Schütze und Kategorie zuerst das Resultat der ersten Runde; die Nummer wird für die weiteren Runden übernommen. Eine ausführliche Anleitung zu Versand, Resultaterfassung und Rücklauf folgt weiter unten.
+
 ## Wo wird was erfasst?
 
 | Aufgabe | Ort in der Anwendung | Zuständig |
@@ -45,11 +58,11 @@ Auch Administrierende und uneingeschränkte Erfassende dürfen beim Resultat **n
 
 1. Öffnen Sie die Wettkampfkonfiguration unter **Verein → Wettkämpfe**.
 2. Wählen Sie **Abrechnung** und den Bereich Standblatt-Verwaltung.
-3. Aktivieren Sie den Schalter für das Nummerntracking.
+3. Wählen Sie bei **Standblatttracking** einen Umfang ausser **Ausgeschaltet**.
 4. Kontrollieren Sie die Bestätigung, bevor Sie Buchungen erfassen.
 5. Weisen Sie unter **Benutzer** die benötigten Wettkampfrollen und gegebenenfalls die Einschränkung auf den eigenen Verein zu.
 
-**Ergebnis:** Versand und Rückversand benötigen konkrete Nummern; die Resultaterfassung erhält ein Pflichtfeld für die Standblatt-Nummer. Der Schalter speichert den Tracking-Modus unabhängig von den übrigen Abrechnungseinstellungen.
+**Ergebnis:** Versand und Rückversand benötigen konkrete Nummern; die Resultaterfassung verlangt eine Standblattnummer gemäss dem gewählten Umfang. Bei zusammengefassten Runden wird die Nummer in den weiteren Runden übernommen.
 
 Bei vorhandenen Buchungen prüft die Anwendung Nummern, Mengen und Überschneidungen. Buchungen ohne gültige Nummern, manuell gebuchter Verbrauch oder bereits vorhandene Resultate können die Aktivierung verhindern. Bestehende Resultate werden nicht automatisch mit erfundenen Nummern ergänzt; wenden Sie sich für eine Übernahme an die Administration.
 

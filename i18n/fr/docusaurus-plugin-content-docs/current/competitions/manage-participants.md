@@ -14,6 +14,17 @@ Les participants d’un concours sont gérés dans la section **Tireurs**. Les g
 2. Choisissez **Ajouter un tireur** et recherchez un tireur existant dans la boîte de dialogue.
 3. Sélectionnez l’entrée appropriée dans les résultats et ajoutez-la au concours. Vérifiez ensuite la liste des participants.
 
+### Importer des tireurs globaux
+
+L’action **Importer les tireurs globaux** permet aux utilisateurs autorisés d’ajouter en une fois des tireurs de la liste centrale au concours ouvert. Cette fonction est utile lorsque les types de licence sont déjà autorisés pour le concours.
+
+1. Ouvrez **Importer les tireurs globaux**.
+2. Si nécessaire, sélectionnez les types de licence à importer et actualisez l’aperçu.
+3. Vérifiez le nombre de tireurs autorisés, déjà présents et restant à importer.
+4. Lancez l’importation. La progression, puis le nombre d’entrées ajoutées, ignorées ou en erreur, s’affichent.
+
+Les tireurs déjà inscrits au concours sont ignorés. L’importation ajoute les tireurs de la liste centrale à ce concours uniquement ; elle ne permet pas d’importer des fichiers Excel ou CSV.
+
 ### Créer un nouveau tireur
 
 Si aucun tireur ne convient, vous pouvez le créer directement dans la boîte de dialogue lorsque la création est autorisée pour le concours. L’accès dépend de votre rôle. Les illustrations présentent des données fictives ; les repères rouges ont été ajoutés pour ce guide.
@@ -36,7 +47,7 @@ Le champ **Date de naissance / année de naissance** accepte les deux formats :
 
 Seule l’année de naissance est actuellement nécessaire pour la catégorie d’âge. Le champ peut rester vide ; dans ce cas, aucune catégorie d’âge n’est proposée à partir de la date de naissance. La boîte de dialogue signale les dates non valides et les années hors de l’intervalle entre 1900 et l’année actuelle.
 
-L’importation de listes de participants au format Excel ou CSV ne fait pas partie de cette procédure.
+Les listes de participants Excel ou CSV ne peuvent pas être importées.
 
 ## Modifier ou supprimer les données d’un tireur
 

@@ -29,3 +29,5 @@ Die [Standblatt-Rollenübersicht](../competitions/data-sheet-tracking.md#rollen-
 4. Systemweite Rollen können nur durch eine Systemadministration verwaltet werden.
 
 Die Rollenbezeichnungen können in der übersetzten Oberfläche abweichend angezeigt werden; die Kennungen in der Tabelle entsprechen den internen Rollen.
+
+Für automatische Benachrichtigungen, Empfängerregeln und Admin-Mails siehe [Benachrichtigungen und Admin-Mails](../notifications.md).

@@ -14,8 +14,8 @@ title: Wettkampf konfigurieren
 | Kategorien | Kategorien und zugehörige Wettkampf-Einstellungen |
 | Resultatfelder | Felder, die bei der Resultaterfassung benötigt werden |
 | Auszeichnungen | Auszeichnungen und Zuordnungen für den Wettkampf |
-| Abrechnung | Abrechnungs- und Preisangaben sowie Standblatt-Tracking, Versand und Rückversand |
-| Runden | Runden anlegen und konfigurieren |
+| Abrechnung | Abrechnungs- und Preisangaben sowie Standblatt-Umfang, Versand und Rückversand |
+| Runden | Runden, Teilnehmerbedingungen und Standblattgruppen konfigurieren |
 | Ranglisten | Ranglistenarten und deren Konfiguration |
 | Benutzer | Benutzer und Rollen für diesen Wettkampf |
 
@@ -34,7 +34,7 @@ Nicht jede Registerkarte ist für jeden Wettkampftyp oder jede Rolle gleich rele
 
 ## Standblatt-Tracking einrichten
 
-Im Register **Abrechnung** schaltet die berechtigte Wettkampfverwaltung das Nummerntracking ein und erfasst Versand und Rückversand für die empfangenden Vereine. Bei aktivem Tracking sind konkrete Nummern oder Nummernbereiche erforderlich. Aktivieren Sie den Modus vor der Resultaterfassung; bestehende Resultate oder ungeeignete Mengenbuchungen können den Wechsel verhindern.
+Im Register **Abrechnung** wählt die berechtigte Wettkampfverwaltung den Standblattumfang und erfasst Versand und Rückversand für die empfangenden Vereine. Bei aktivem Tracking sind konkrete Nummern oder Nummernbereiche erforderlich. Für den Umfang **Pro Rundengruppe** werden die zusammengehörenden Runden im Register **Runden** mit derselben Standblattgruppe markiert. Wählen Sie den Modus vor der Resultaterfassung; bestehende Resultate oder ungeeignete Mengenbuchungen können den Wechsel verhindern.
 
 Die vollständigen Abläufe, Rollen und Schutzregeln stehen unter [Standblatt-Tracking](data-sheet-tracking.md). Die Einschränkung von Resultaterfassenden auf den eigenen Verein wird pro Person im Register **Benutzer** festgelegt.
 

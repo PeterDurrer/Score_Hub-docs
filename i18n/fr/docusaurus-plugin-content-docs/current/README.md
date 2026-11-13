@@ -17,6 +17,7 @@ Score_Hub aide les clubs à gérer les tireurs, les concours, les résultats et 
 | Se connecter et obtenir un accès | [Compte et connexion](getting-started/registration.md) |
 | Comprendre le tableau de bord et la navigation | [Tableau de bord](getting-started/dashboard.md) |
 | Comprendre les rôles et les autorisations | [Rôles](getting-started/roles.md) |
+| Configurer les notifications automatiques et les e-mails administrateur | [Notifications et e-mails administrateur](notifications.md) |
 | Gérer les données du club et ses membres | [Gestion du club](clubs/setup-club.md) |
 | Configurer un concours | [Créer un concours](competitions/create-competition.md) |
 | Gérer l’envoi, les numéros et le retour des feuilles de stand | [Suivi des feuilles de stand](competitions/data-sheet-tracking.md) |
@@ -41,7 +42,7 @@ L’application permet de choisir entre l’allemand, le français et l’italie
 
 ## À propos des captures d’écran
 
-Les illustrations du guide sont actuellement identifiées comme des **images de remplacement**. Il ne s’agit pas de véritables captures de l’application. Consultez [Remplacer les captures d’écran](screenshots.md) pour savoir comment réaliser des captures à jour dans le respect de la confidentialité.
+Les illustrations du guide montrent l’interface Score_Hub avec des données de démonstration synthétiques. Les noms, comptes, clubs et résultats sont fictifs ; aucune donnée de production n’est utilisée. Consultez [Mettre à jour les captures d’écran](screenshots.md) pour des conseils sur les captures respectueuses de la confidentialité.
 
 ## Questions ou problèmes ?
 

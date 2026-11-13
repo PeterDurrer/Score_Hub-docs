@@ -6,7 +6,7 @@ title: Wettkampf erstellen
 
 Wettkämpfe werden im Vereinsbereich verwaltet. Zum Anlegen oder Ändern benötigen Sie die entsprechende Vereins- oder Systemberechtigung.
 
-![Wettkampf erstellen mit ausgewählter Vorlage, Disziplin, Kopieroptionen und Lizenzkategorien](../screenshots/competitions.png)
+![Wettkampf erstellen mit ausgewählter Vorlage, Disziplin, Kopieroptionen und Lizenzkategorien](../../../../../screenshots/competitions.png)
 
 ## Neuen Wettkampf anlegen
 

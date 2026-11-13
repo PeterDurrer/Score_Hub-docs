@@ -19,6 +19,9 @@ Die PNG-Dateien zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten
 | `results-entry-steps.png` | `results/entering-results.md` | Nummerierte Schritte im ausgefüllten Resultatdialog |
 | `rankings.png` | `rankings/view-rankings.md` | Ranglistenansicht mit Kategorien und Filtern |
 | `statistics.png` | `rankings/statistics.md` | Statistiken eines Wettkampfs |
+| `notifications-settings.png` | `notifications.md` | Ereignisaktivierung, Empfängerrollen, Betreff und HTML-Vorlage |
+| `notifications-schedule.png` | `notifications.md` | Globale Versandpause, tägliche Versandzeit und Zeitzone |
+| `admin-mail.png` | `notifications.md` | Zielgruppenfilter, Einzelbenutzer, Sprachvorlagen und Versandprüfung |
 
 Die französischen und italienischen Ausgaben liegen jeweils in `fr/` und `it/` und werden von den lokalisierten Dokumentationsseiten verwendet.
 

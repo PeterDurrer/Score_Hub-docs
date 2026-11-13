@@ -21,7 +21,7 @@ module.exports = {
       "classic",
       {
         docs: {
-          path: ".",
+          path: "i18n/de/docusaurus-plugin-content-docs/current",
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           exclude: [
@@ -31,7 +31,6 @@ module.exports = {
             "build/**",
             ".docusaurus/**",
             "src/**",
-            "i18n/**",
           ],
         },
         blog: false,

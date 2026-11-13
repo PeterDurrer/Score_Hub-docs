@@ -17,6 +17,7 @@ Score_Hub unterstützt Vereine dabei, Schützen, Wettkämpfe, Resultate und Rang
 | Anmelden und Zugang erhalten | [Konto und Anmeldung](getting-started/registration.md) |
 | Dashboard und Navigation verstehen | [Dashboard](getting-started/dashboard.md) |
 | Rollen und Berechtigungen verstehen | [Rollen](getting-started/roles.md) |
+| Automatische Benachrichtigungen und Admin-Mails verwalten | [Benachrichtigungen und Admin-Mails](notifications.md) |
 | Vereinsdaten und Mitglieder pflegen | [Vereinsverwaltung](clubs/setup-club.md) |
 | Wettkampf einrichten | [Wettkampf erstellen](competitions/create-competition.md) |
 | Standblatt-Versand, Nummern und Rücklauf verwalten | [Standblatt-Tracking](competitions/data-sheet-tracking.md) |
@@ -41,7 +42,7 @@ Die Anwendung bietet eine Sprachumschaltung für Deutsch, Französisch und Itali
 
 ## Screenshot-Hinweis
 
-Die Abbildungen im Handbuch sind derzeit als **Platzhalter** gekennzeichnet. Sie sind keine echten Anwendungsaufnahmen. Unter [Screenshots ersetzen](screenshots.md) finden Sie Hinweise für aktuelle, datenschutzgerechte Aufnahmen.
+Die Abbildungen im Handbuch zeigen die Score_Hub-Oberfläche mit synthetischen Beispieldaten. Namen, Konten, Vereine und Resultate sind frei erfunden; es werden keine Produktionsdaten verwendet. Unter [Screenshots aktualisieren](screenshots.md) finden Sie Hinweise für datenschutzgerechte Aufnahmen.
 
 ## Fragen oder Probleme?
 

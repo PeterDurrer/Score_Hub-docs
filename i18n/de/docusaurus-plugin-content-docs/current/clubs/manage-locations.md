@@ -4,7 +4,12 @@ title: Vereinsstandorte verwalten
 
 # Vereinsstandorte verwalten
 
-Im Bereich **Standorte** können berechtigte Benutzer Standorte des aktuellen Vereins ansehen und – abhängig von ihrer Berechtigung – anlegen oder bearbeiten. Welche Felder verfügbar sind, zeigt das Formular der Anwendung.
+Es gibt zwei getrennte Standortansichten:
+
+- Im Vereinsbereich unter **Standorte** sehen berechtigte Benutzer die Standorte des aktuell ausgewählten Vereins. Vereinsadministratoren können diese Standorte anlegen und bearbeiten.
+- Systemadministratoren verwenden die systemweite **Standortverwaltung**. Sie können Standorte aller Vereine durchsuchen und bearbeiten sowie beim Anlegen den zugehörigen Verein auswählen.
+
+Ein Standort bleibt seinem Verein zugeordnet; beim Bearbeiten kann der Verein nicht gewechselt werden. Welche Felder verfügbar sind, zeigt das jeweilige Formular der Anwendung.
 
 ## Standort anlegen oder bearbeiten
 

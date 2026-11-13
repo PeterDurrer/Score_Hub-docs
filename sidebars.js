@@ -11,6 +11,7 @@ module.exports = {
         "getting-started/roles",
       ],
     },
+    "notifications",
     {
       type: "category",
       label: "Verein",

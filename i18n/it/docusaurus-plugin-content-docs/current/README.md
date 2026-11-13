@@ -17,6 +17,7 @@ Score_Hub aiuta le società a gestire tiratori, competizioni, risultati e classi
 | Accedere e ottenere le credenziali | [Account e accesso](getting-started/registration.md) |
 | Capire la dashboard e la navigazione | [Dashboard](getting-started/dashboard.md) |
 | Capire ruoli e autorizzazioni | [Ruoli](getting-started/roles.md) |
+| Configurare notifiche automatiche ed e-mail amministrative | [Notifiche ed e-mail amministratore](notifications.md) |
 | Gestire i dati della società e i membri | [Gestione della società](clubs/setup-club.md) |
 | Configurare una competizione | [Creare una competizione](competitions/create-competition.md) |
 | Gestire l'invio, la numerazione e la restituzione dei fogli di stand | [Tracciamento dei fogli di stand](competitions/data-sheet-tracking.md) |

@@ -29,3 +29,5 @@ La [panoramica dei ruoli per il tracciamento dei fogli di stand](../competitions
 4. Solo l'amministrazione di sistema può gestire i ruoli di sistema.
 
 Le denominazioni dei ruoli possono apparire diverse nell'interfaccia tradotta; i codici nella tabella corrispondono ai ruoli interni.
+
+Per configurare le notifiche automatiche, i destinatari e le e-mail amministrative, consulta [Notifiche ed e-mail amministratore](../notifications.md).

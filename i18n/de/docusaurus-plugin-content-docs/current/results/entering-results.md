@@ -26,7 +26,7 @@ Nicht alle Angaben sind bei jedem Wettkampf aktiv oder erforderlich. Pflichtfeld
 
 ### Schützenübersicht und Vorbereitung
 
-![Resultatseite mit markierter Vorauswahl, Filtern, Kategorieanzahl und Erfassungsaktion](../screenshots/results-overview-steps.png)
+![Resultatseite mit markierter Vorauswahl, Filtern, Kategorieanzahl und Erfassungsaktion](../../../../../screenshots/results-overview-steps.png)
 
 1. Wählen Sie bei Bedarf Schiessanlage und Schiessdatum als Vorauswahl für weitere Eingaben.
 2. Suchen oder filtern Sie die Schützen nach Verein, Kategorie, Runde und Resultatstatus.
@@ -35,7 +35,7 @@ Nicht alle Angaben sind bei jedem Wettkampf aktiv oder erforderlich. Pflichtfeld
 
 ### Rundenvorschlag und Lücken
 
-![Erfassungsdialog mit markiertem Lückenhinweis und den vorgeschlagenen Feldern Runde, Sportgerät und Kategorie](../screenshots/results-suggestions.png)
+![Erfassungsdialog mit markiertem Lückenhinweis und den vorgeschlagenen Feldern Runde, Sportgerät und Kategorie](../../../../../screenshots/results-suggestions.png)
 
 Im Beispiel sind Vorrunde und Nachdoppel 2 bereits erfasst, Nachdoppel 1 aber noch nicht.
 
@@ -46,7 +46,7 @@ Im Beispiel sind Vorrunde und Nachdoppel 2 bereits erfasst, Nachdoppel 1 aber no
 
 ### Felder ausfüllen und speichern
 
-![Ausgefüllter Resultatdialog mit nummerierten Bereichen für Standblatt, Vorschlag, Ort und Datum, Resultat sowie Speichern](../screenshots/results-entry-steps.png)
+![Ausgefüllter Resultatdialog mit nummerierten Bereichen für Standblatt, Vorschlag, Ort und Datum, Resultat sowie Speichern](../../../../../screenshots/results-entry-steps.png)
 
 1. Wählen Sie bei aktiviertem Standblatt-Tracking eine gültige **Standblattnummer**.
 2. Prüfen Sie Runde, Sportgerät und Kategorie und passen Sie sie bei Bedarf an.

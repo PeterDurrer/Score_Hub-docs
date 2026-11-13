@@ -4,7 +4,12 @@ title: Gérer les sites du club
 
 # Gérer les sites du club
 
-Dans la section **Sites**, les utilisateurs autorisés peuvent consulter les sites du club actuellement sélectionné et, selon leurs droits, en créer ou en modifier. Le formulaire de l’application indique les champs disponibles.
+Il existe deux vues distinctes pour les sites :
+
+- Dans la section du club, **Sites** affiche les sites du club actuellement sélectionné. Les administrateurs du club peuvent créer et modifier ces sites.
+- Les administrateurs système disposent d’une vue d’administration globale pour rechercher et modifier les sites de tous les clubs, et choisir le club auquel rattacher un nouveau site.
+
+Un site reste rattaché à son club ; le club ne peut pas être modifié lors de l’édition. Le formulaire de chaque vue indique les champs disponibles.
 
 ## Créer ou modifier un site
 

@@ -6,7 +6,7 @@ title: Ranglisten ansehen
 
 Die Ranglisten eines Wettkampfs finden Sie im Bereich **Ranglisten**. Die angezeigten Wertungen richten sich nach den Ranglisten, Kategorien und Resultaten, die für diesen Wettkampf konfiguriert wurden.
 
-![Ranglistenansicht mit Kategorie und Filtern](../screenshots/rankings.png)
+![Ranglistenansicht mit Kategorie und Filtern](../../../../../screenshots/rankings.png)
 
 ## Rangliste auswählen und filtern
 

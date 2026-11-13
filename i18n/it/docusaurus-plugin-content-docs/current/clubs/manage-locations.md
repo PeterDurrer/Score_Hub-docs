@@ -4,7 +4,12 @@ title: Gestire i poligoni della società
 
 # Gestire i poligoni della società
 
-Nella sezione **Poligoni**, gli utenti autorizzati possono consultare i poligoni della società attualmente selezionata e, in base alle proprie autorizzazioni, crearli o modificarli. I campi disponibili sono quelli mostrati nel modulo dell'applicazione.
+Sono disponibili due viste separate per i poligoni:
+
+- Nella sezione della società, **Poligoni** mostra quelli della società attualmente selezionata. Gli amministratori della società possono crearli e modificarli.
+- Gli amministratori di sistema dispongono di una vista amministrativa globale per cercare e modificare i poligoni di tutte le società e scegliere la società a cui associare un nuovo poligono.
+
+Un poligono resta associato alla propria società; durante la modifica non è possibile cambiare società. I campi disponibili sono quelli mostrati nel modulo di ciascuna vista.
 
 ## Creare o modificare un poligono
 

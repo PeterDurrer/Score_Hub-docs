@@ -6,7 +6,7 @@ title: Vereinsbenutzer verwalten
 
 Die Seite **Benutzer** zeigt die Benutzerzuordnungen des aktuellen Vereins. Sie ist für Systemadministratoren und Vereinsadministratoren zur Bearbeitung vorgesehen.
 
-![Benutzerverwaltung eines Vereins mit Beispielkonten](../screenshots/club-users.png)
+![Benutzerverwaltung eines Vereins mit Beispielkonten](../../../../../screenshots/club-users.png)
 
 ## Einen vorhandenen Benutzer zuordnen
 

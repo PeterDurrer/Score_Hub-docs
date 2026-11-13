@@ -6,6 +6,19 @@ title: Suivi des feuilles de stand
 
 Lorsque le suivi est activé, chaque feuille de stand papier est suivie à l’aide de son numéro, depuis son envoi à un club jusqu’à la saisie du résultat et à son retour. La consommation et le retour effectif sont deux informations distinctes : la saisie d’un résultat ne confirme pas le retour du document papier.
 
+## Portée du suivi et groupes de manches
+
+Dans l’onglet **Décompte**, le réglage **Suivi des feuilles de tir** détermine si un numéro est suivi et sur quelles manches :
+
+| Réglage | Fonctionnement |
+| --- | --- |
+| Désactivé | Aucun numéro n’est suivi par résultat ; la saisie habituelle des quantités reste disponible. |
+| Par manche | Un numéro est saisi séparément pour chaque manche, tireur et catégorie. |
+| Par concours | Le même numéro est utilisé pour toutes les manches du concours, pour un même tireur et une même catégorie. |
+| Par groupe de manches | Le même numéro est utilisé pour les manches rattachées au même groupe de feuilles de stand, pour un même tireur et une même catégorie. |
+
+Pour choisir **Par groupe de manches**, ouvrez **Manches** dans la configuration du concours et saisissez le même nom dans le champ **Groupe de cartes de tir** pour chaque manche à réunir. Une manche sans nom de groupe reste indépendante. Lorsque la portée regroupe plusieurs manches (**Par concours** ou **Par groupe de manches**), saisissez d’abord, pour chaque tireur et catégorie, le résultat de la première manche ; son numéro sera repris pour les suivantes. Les étapes détaillées d’envoi, de saisie des résultats et de retour sont présentées ci-dessous.
+
 ## Où effectuer chaque opération ?
 
 | Tâche | Emplacement dans l’application | Responsable |
@@ -45,11 +58,11 @@ Même les administrateurs et les personnes sans restriction de saisie ne peuvent
 
 1. Ouvrez la configuration du concours sous **Club → Concours**.
 2. Sélectionnez **Décompte**, puis la section de gestion des feuilles de stand.
-3. Activez le commutateur de suivi des numéros.
+3. Dans **Suivi des feuilles de tir**, choisissez une portée autre que **Désactivé**.
 4. Vérifiez le message de confirmation avant de saisir des écritures.
 5. Dans **Utilisateurs**, attribuez les rôles nécessaires pour le concours et, le cas échéant, la restriction au club de l’utilisateur.
 
-**Résultat :** les envois et les retours nécessitent des numéros précis ; un champ obligatoire pour le numéro de feuille de stand est ajouté à la saisie des résultats. Le commutateur enregistre le mode de suivi indépendamment des autres paramètres de décompte.
+**Résultat :** les envois et les retours nécessitent des numéros précis ; la saisie des résultats demande un numéro selon la portée choisie. Pour les manches regroupées, le numéro est repris dans les manches suivantes.
 
 En présence d’écritures existantes, l’application vérifie les numéros, les quantités et les chevauchements. Des écritures sans numéros valides, une consommation enregistrée manuellement ou des résultats déjà existants peuvent empêcher l’activation. Les résultats existants ne sont pas automatiquement complétés avec des numéros inventés ; contactez l’administration pour organiser une reprise.
 

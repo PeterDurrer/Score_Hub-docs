@@ -6,6 +6,19 @@ title: Tracciamento dei fogli di stand
 
 Quando il tracciamento è attivo, ogni foglio di stand cartaceo viene seguito tramite il proprio numero dall'invio a una società fino all'inserimento dei risultati e alla restituzione. Il consumo e l'effettiva restituzione sono due informazioni distinte: la registrazione di un risultato non conferma che il foglio cartaceo sia stato restituito.
 
+## Ambito del tracciamento e gruppi di turni
+
+Nella scheda **Contabilità**, l'impostazione **Tracciamento delle schede di tiro** determina se il numero viene tracciato e per quali turni:
+
+| Impostazione | Funzionamento |
+| --- | --- |
+| Disattivato | Non viene registrato un numero per ogni risultato; resta disponibile la precedente registrazione per quantità. |
+| Per turno | Si registra un numero separato per ogni turno, tiratore e categoria. |
+| Per competizione | Lo stesso numero viene usato in tutti i turni della competizione per lo stesso tiratore e la stessa categoria. |
+| Per gruppo di turni | Lo stesso numero viene usato nei turni associati allo stesso gruppo di schede di tiro per lo stesso tiratore e la stessa categoria. |
+
+Per scegliere **Per gruppo di turni**, apri **Turni** nella configurazione della competizione e inserisci lo stesso nome nel campo **Gruppo di schede di tiro** per ciascun turno da riunire. Un turno senza nome di gruppo resta indipendente. Quando l'ambito comprende più turni (**Per competizione** o **Per gruppo di turni**), inserisci prima il risultato del primo turno per ogni tiratore e categoria; il relativo numero verrà ripreso nei turni successivi. Le istruzioni dettagliate per invio, inserimento dei risultati e restituzione seguono qui sotto.
+
 ## Dove si registra ciascuna operazione?
 
 | Attività | Sezione dell'applicazione | Responsabile |
@@ -45,11 +58,11 @@ Anche gli amministratori e chi inserisce risultati senza limitazioni possono sel
 
 1. Apri la configurazione della competizione da **Società → Competizioni**.
 2. Seleziona **Contabilità** e la sezione Gestione dei fogli di stand.
-3. Attiva l'interruttore per il tracciamento dei numeri.
+3. In **Tracciamento delle schede di tiro**, scegli un ambito diverso da **Disattivato**.
 4. Controlla la conferma prima di registrare le operazioni.
 5. In **Utenti**, assegna i ruoli della competizione necessari e, se serve, imposta la limitazione alla propria società.
 
-**Risultato:** per l'invio e la restituzione è necessario specificare i numeri; la maschera di inserimento dei risultati include un campo obbligatorio per il numero del foglio di stand. L'interruttore salva la modalità di tracciamento indipendentemente dalle altre impostazioni di contabilità.
+**Risultato:** per l'invio e la restituzione è necessario specificare i numeri; l'inserimento dei risultati richiede un numero secondo l'ambito scelto. Nei turni raggruppati il numero viene ripreso nei turni successivi.
 
 Se sono già presenti registrazioni, l'applicazione controlla numeri, quantità e sovrapposizioni. Le registrazioni senza numeri validi, il consumo registrato manualmente o i risultati già esistenti possono impedire l'attivazione. I risultati esistenti non vengono completati automaticamente con numeri inventati; per la migrazione, contatta l'amministrazione.
 

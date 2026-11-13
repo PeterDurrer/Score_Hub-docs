@@ -29,3 +29,5 @@ Le [récapitulatif des rôles pour les feuilles de stand](../competitions/data-s
 4. Seule l’administration système peut gérer les rôles à l’échelle du système.
 
 Les noms des rôles peuvent différer dans l’interface traduite ; les identifiants du tableau correspondent aux rôles internes.
+
+Pour configurer les notifications automatiques, leurs destinataires et les e-mails administrateur, consultez [Notifications et e-mails administrateur](../notifications.md).

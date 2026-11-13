@@ -15,6 +15,17 @@ I partecipanti a una competizione si gestiscono nella sezione **Tiratori**. I gr
 2. Seleziona **Aggiungi tiratore** e cerca un tiratore esistente nella finestra.
 3. Seleziona la voce corretta tra i risultati e aggiungila alla competizione. Controlla poi l'elenco dei partecipanti.
 
+### Importare tiratori globali
+
+L'azione **Importa tiratori globali** consente agli utenti autorizzati di aggiungere in blocco alla competizione aperta i tiratori dell'elenco centrale. È utile quando i tipi di licenza sono già autorizzati per la competizione.
+
+1. Apri **Importa tiratori globali**.
+2. Se necessario, seleziona i tipi di licenza da importare e aggiorna l'anteprima.
+3. Controlla quanti tiratori sono autorizzati, già presenti e ancora da importare.
+4. Avvia l'importazione. Vengono mostrati l'avanzamento e, al termine, il numero di voci aggiunte, ignorate o con errori.
+
+I tiratori già iscritti alla competizione vengono ignorati. L'importazione aggiunge i tiratori dell'elenco centrale solo a questa competizione; non consente di importare file Excel o CSV.
+
 ### Creare un nuovo tiratore
 
 Se non trovi un tiratore adatto, puoi crearlo direttamente nella finestra quando la creazione è abilitata per la competizione. L'accesso dipende dal tuo ruolo. Le immagini mostrano dati fittizi; i contrassegni rossi sono stati aggiunti per questa guida.
@@ -37,7 +48,7 @@ Il campo **Data di nascita / anno di nascita** accetta entrambi i formati:
 
 Per la categoria d'età è attualmente necessario solo l'anno di nascita. Il campo può rimanere vuoto; in tal caso non viene proposta una categoria d'età dalla data di nascita. La finestra segnala date non valide e anni al di fuori dell'intervallo tra il 1900 e l'anno corrente.
 
-L'importazione di elenchi di partecipanti da Excel o CSV non fa parte di questa procedura.
+Non è possibile importare elenchi di partecipanti da file Excel o CSV.
 
 ## Modificare o rimuovere i dati di un tiratore
 
