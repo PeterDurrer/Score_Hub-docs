@@ -51,21 +51,37 @@ Gli avvisi di benvenuto e assegnazione e le e-mail amministrative manuali non di
 
 **Prerequisito operativo:** il Timer deve essere eseguito in una Azure Function App separata. L'API gestita di Azure Static Web Apps non supporta i timer. L'impostazione dell'orario non configura il worker.
 
+### Stato di sincronizzazione dopo le modifiche
+
+Dopo il salvataggio, questa sezione mostra lo stato della sincronizzazione con il worker delle notifiche. **Sincronizzato** significa che la revisione salvata è stata applicata. Se lo stato è **In attesa** o **Errore**, la modifica è salvata ma non è ancora effettiva.
+
+**Aggiorna stato sincronizzazione** ricarica manualmente lo stato senza sostituire i campi non salvati; non è previsto un aggiornamento automatico. Se la sincronizzazione è in attesa o non è riuscita, **Ripara sincronizzazione** pubblica di nuovo la configurazione salvata e poi ricarica lo stato. Questa azione non salva i campi non salvati. Una pubblicazione riuscita non conferma né l'effettiva applicazione delle impostazioni né la consegna di un'e-mail.
+
+Il nuovo orario di invio si applica solo dopo una sincronizzazione riuscita. I messaggi già accodati non vengono creati di nuovo. L'orario indica l'inizio previsto dell'elaborazione, non un minuto di consegna garantito. Le e-mail amministrative manuali e i messaggi personali di benvenuto o assegnazione non dipendono da questo orario giornaliero.
+
 ### Sospendere globalmente l'invio delle e-mail
 
-La casella **Attiva l'invio di e-mail**, nelle impostazioni dell'orario, consente all'amministrazione di sistema di attivare o disattivare tutti gli invii e-mail. Quando l'invio è disattivato non vengono accodate nuove notifiche e i messaggi in attesa non vengono consegnati. La coda viene conservata; dopo la riattivazione, i messaggi in attesa possono essere elaborati. L'anteprima e il controllo dei destinatari delle e-mail amministrative restano disponibili, ma l'invio è bloccato.
+La casella **Attiva l'invio di e-mail**, nelle impostazioni dell'orario, attiva o disattiva globalmente le e-mail. Quando l'invio è disattivato non vengono accodate nuove e-mail e quelle in attesa non vengono elaborate. Le e-mail già accodate vengono conservate e possono essere elaborate dopo la riattivazione. L'anteprima e il controllo dei destinatari delle e-mail amministrative restano disponibili.
+
+### Notifiche dashboard, conservazione e modalità e-mail
+
+**Attiva notifiche dashboard** abilita la casella della dashboard come canale aggiuntivo. In questo modo le comunicazioni amministrative possono essere disponibili nella dashboard anche se l'invio e-mail è disattivato. Se sono disattivate sia le e-mail sia le notifiche dashboard, l'invio è bloccato.
+
+**Conserva notifiche lette (giorni)** imposta una durata da **1 a 365 giorni**; il valore predefinito è 30 giorni. Le notifiche lette della dashboard vengono eliminate al termine del periodo, mentre quelle non lette vengono conservate. Riducendo il periodo, notifiche già lette potrebbero essere eliminate definitivamente durante la pulizia successiva.
+
+La **Modalità e-mail** determina come viene contrassegnato il contenuto: **DEV** e **TEST** aggiungono un'indicazione all'oggetto e al contenuto; **PROD** invia il modello senza modifiche. Verifica la modalità prima di attivare l'invio in produzione.
 
 ## Segnaposto nei modelli
 
-Ogni evento mette a disposizione segnaposto appropriati; l'elenco sopra il contenuto mostra i valori disponibili. Per esempio, possono includere il nome e i collegamenti della competizione, il nome dell'utente o i collegamenti all'applicazione e alla documentazione. Fai clic su un segnaposto per inserirlo nel contenuto HTML.
+Ogni evento mette a disposizione segnaposto appropriati. L'elenco comune contiene i campi dell'evento, i segnaposto generali e le definizioni personalizzate. **Cerca segnaposto** filtra l'elenco; **Inserisci** aggiunge il token all'ultimo campo oggetto o contenuto usato per la lingua selezionata (sostituendo il testo selezionato), mentre **Copia** lo salva negli appunti. Le definizioni personalizzate possono essere eliminate dall'elenco. Possono includere, ad esempio, il nome e i collegamenti della competizione, il nome dell'utente o i collegamenti all'applicazione e alla documentazione.
 
-La sezione **Segnaposto SQL e URL dinamici** consente di definire valori aggiuntivi:
+La sezione **Segnaposto SQL e URL dinamici** consente di definire fino a 50 valori aggiuntivi per modello. Il nome viene generato automaticamente dalla definizione:
 
 - **Campo:** legge un singolo campo da una tabella disponibile.
 - **Numero (COUNT):** conta i record corrispondenti; se non ci sono record restituisce `0`.
 - **URL dinamico:** crea un collegamento con base applicazione o documentazione, percorso relativo ed eventuale ancora.
 
-Ogni query SQL richiede almeno un filtro di contesto, ad esempio `createdBy = ID destinatario` o `competitionID = ID competizione`. Un singolo campo deve identificare esattamente un record. I campi sensibili non vengono proposti. Prima di salvare il modello, verifica oggetto e contenuto usando i valori effettivi dell'evento.
+Ogni query SQL richiede almeno un filtro di contesto. Il contesto può essere l'ID utente del destinatario, l'ID di una società o l'ID di una competizione; fino a tre filtri vengono applicati insieme. Un campo deve identificare esattamente un record. I campi sensibili non vengono proposti. Un URL dinamico usa una base dell'applicazione o della documentazione e un percorso relativo, con eventuale ancora. Prima di salvare il modello, verifica oggetto e contenuto usando i valori effettivi dell'evento.
 
 ## Inviare un'e-mail amministrativa
 

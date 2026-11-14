@@ -16,6 +16,14 @@ Le tableau de bord est la page d’accueil après la connexion. Il affiche des i
 
 Pour un concours, utilisez les actions proposées afin d’ouvrir la section des résultats ou le classement. Pour configurer un concours, accédez à la section du club et ouvrez **Concours**.
 
+## Notifications
+
+La boîte de réception des notifications se trouve sous la liste des concours. Elle affiche les messages les plus récents, avec leur objet, leur contenu, leur date, leur état de lecture et le nombre de messages non lus.
+
+**Afficher uniquement les messages non lus** filtre la liste. Utilisez **Précédent** et **Suivant** pour parcourir les pages ; **Actualiser** recharge la liste. **Ouvrir** mène à la section liée dans Score_Hub, si un lien est disponible. **Marquer comme lu** met à jour l’état de lecture. Les messages lus sont supprimés après le délai défini par l’administration système ; les messages non lus sont conservés.
+
+L’administration système configure la boîte de réception et l’envoi des notifications. Pour en savoir plus : [Notifications et e-mails administrateur](../notifications.md).
+
 ## Navigation
 
 La barre latérale regroupe les sections disponibles. Selon vos autorisations, vous pouvez notamment voir :

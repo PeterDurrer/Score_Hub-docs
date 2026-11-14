@@ -51,21 +51,37 @@ Willkommens- und Zuweisungsmeldungen sowie manuelle Admin-Mails warten nicht auf
 
 **Betriebsvoraussetzung:** Der Timer muss in einer separaten Azure Function App betrieben werden. Die verwaltete API einer Azure Static Web App unterstützt keine Timer. Die Einstellung der Versandzeit richtet den Worker nicht selbst ein.
 
+### Synchronisationsstatus nach Änderungen
+
+Nach dem Speichern zeigt der Bereich den Status der Synchronisierung mit dem Benachrichtigungs-Worker. **Synchronisiert** bedeutet, dass die gespeicherte Revision übernommen wurde. Bei **Ausstehend** oder **Fehler** ist die Änderung zwar gespeichert, aber noch nicht wirksam.
+
+Mit **Synchronisierungsstatus aktualisieren** können Sie den Status manuell neu laden. Dabei werden keine ungespeicherten Eingaben überschrieben; eine automatische Statusabfrage gibt es nicht. Wenn die Synchronisierung aussteht oder fehlgeschlagen ist, können Sie mit **Synchronisierung reparieren** die gespeicherte Konfiguration erneut veröffentlichen und anschliessend den Status prüfen. Ungespeicherte Eingaben werden dabei nicht gespeichert. Eine erfolgreiche Veröffentlichung bestätigt weder, dass die Einstellungen bereits wirksam sind, noch dass eine E-Mail zugestellt wurde.
+
+Eine geänderte Versandzeit gilt erst nach erfolgreicher Synchronisierung. Bereits eingereihte Nachrichten werden dadurch nicht erneut erstellt. Die Uhrzeit bezeichnet den geplanten Verarbeitungsbeginn, nicht eine garantierte Zustellminute. Manuelle Admin-Mails und persönliche Willkommens- oder Zuweisungsmeldungen warten nicht auf diese tägliche Versandzeit.
+
 ### E-Mail-Versand global pausieren
 
-Mit **E-Mail-Versand aktivieren** im Versandzeit-Bereich kann die Systemadministration alle E-Mail-Ausgänge global ein- oder ausschalten. Bei ausgeschaltetem Versand werden keine neuen Benachrichtigungen eingereiht und wartende Mails nicht zugestellt. Die Warteschlange bleibt erhalten; nach dem erneuten Aktivieren können wartende Mails weiterverarbeitet werden. Die Vorschau und Empfängerprüfung von Admin-Mails bleiben möglich, der Versand ist gesperrt.
+Mit **E-Mail-Versand aktivieren** im Versandzeit-Bereich schaltet die Systemadministration den E-Mail-Ausgang global ein oder aus. Bei ausgeschaltetem Versand werden keine neuen E-Mails eingereiht und wartende E-Mails nicht verarbeitet. Bereits eingereihte E-Mails bleiben erhalten und können nach dem erneuten Aktivieren weiterverarbeitet werden. Vorschau und Empfängerprüfung von Admin-Mails bleiben möglich.
+
+### Dashboard-Benachrichtigungen, Aufbewahrung und E-Mail-Modus
+
+Mit **Dashboard-Benachrichtigungen aktivieren** wird der Dashboard-Eingang als zusätzlicher Zustellkanal eingeschaltet. Admin-Mitteilungen können damit auch dann im Dashboard bereitgestellt werden, wenn der E-Mail-Versand ausgeschaltet ist. Sind sowohl E-Mail als auch Dashboard-Benachrichtigungen ausgeschaltet, ist der Versand gesperrt.
+
+Unter **Gelesene Benachrichtigungen aufbewahren (Tage)** legen Sie eine Frist von **1 bis 365 Tagen** fest; standardmässig sind es 30 Tage. Gelesene Dashboard-Mitteilungen werden nach Ablauf der Frist gelöscht, ungelesene bleiben erhalten. Eine verkürzte Frist kann bei der nächsten Bereinigung bereits vorhandene gelesene Mitteilungen unwiderruflich löschen.
+
+Der **E-Mail-Modus** steuert die Kennzeichnung des E-Mail-Inhalts: **DEV** und **TEST** fügen einen Hinweis zu Betreff und Inhalt hinzu; **PROD** versendet die Vorlage unverändert. Prüfen Sie den Modus vor dem Aktivieren des produktiven Versands.
 
 ## Platzhalter in Vorlagen
 
-Jedes Ereignis stellt passende Standardplatzhalter bereit; die Liste über den Inhalt zeigt die verfügbaren Werte. Dazu gehören beispielsweise Name und Links zum Wettkampf, Benutzername sowie Anmelde- und Dokumentationslinks. Klicken Sie einen Platzhalter an, um ihn in den HTML-Inhalt einzufügen.
+Jedes Ereignis stellt passende Standardplatzhalter bereit. Die gemeinsame Liste zeigt Ereignisfelder, allgemeine Platzhalter und eigene Definitionen. Mit **Platzhalter suchen** filtern Sie die Liste; **Einfügen** setzt den Token in das zuletzt verwendete Betreff- oder Inhaltsfeld der aktuellen Sprache ein (bei einer Auswahl wird diese ersetzt), **Kopieren** legt ihn in die Zwischenablage. Eigene Definitionen können Sie aus der Liste löschen. Dazu gehören beispielsweise Name und Links zum Wettkampf, Benutzername sowie Anmelde- und Dokumentationslinks.
 
-Unter **SQL-basierte Platzhalter und dynamische URLs** können zusätzliche Werte definiert werden:
+Unter **SQL-basierte Platzhalter und dynamische URLs** können bis zu 50 zusätzliche Werte pro Vorlage definiert werden. Der Name wird automatisch aus der Definition gebildet:
 
 - **Feld:** Liest ein einzelnes Feld aus einer angebotenen Tabelle.
 - **Anzahl (COUNT):** Zählt passende Datensätze; eine leere Ergebnismenge ergibt `0`.
 - **Dynamische URL:** Erstellt einen Link mit Anwendungs- oder Dokumentationsbasis, relativem Pfad und optionalem Anker.
 
-Jede SQL-Abfrage benötigt mindestens einen Kontextfilter, etwa `createdBy = Empfänger-ID` oder `competitionID = Wettkampf-ID`. Ein einzelnes Feld muss genau einen Datensatz ergeben. Sensible Felder werden nicht angeboten. Testen Sie Betreff und Inhalt mit den tatsächlichen Ereigniswerten, bevor Sie die Vorlage speichern.
+Jede SQL-Abfrage benötigt mindestens einen Kontextfilter. Als Kontext dienen die Benutzer-ID des Empfängers, eine Vereins-ID oder eine Wettkampf-ID; bis zu drei Filter werden gemeinsam angewendet. Ein einzelnes Feld muss genau einen Datensatz ergeben. Sensible Felder werden nicht angeboten. Dynamische URLs verwenden eine Anwendungs- oder Dokumentationsbasis sowie einen relativen Pfad, optional mit Anker. Testen Sie Betreff und Inhalt mit den tatsächlichen Ereigniswerten, bevor Sie die Vorlage speichern.
 
 ## Admin-Mail manuell versenden
 

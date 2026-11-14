@@ -16,6 +16,14 @@ Das Dashboard ist die Startseite nach der Anmeldung. Es zeigt Kennzahlen, Schnel
 
 Öffnen Sie bei einem Wettkampf über die angebotenen Aktionen den Resultatbereich oder die Rangliste. Für die Konfiguration eines Wettkampfs wechseln Sie zum Vereinsbereich und öffnen **Wettkämpfe**.
 
+## Benachrichtigungen
+
+Im Dashboard finden Sie unterhalb der Wettkampfliste Ihren Benachrichtigungseingang. Er zeigt die neuesten Mitteilungen mit Betreff, Inhalt, Zeit und Lesestatus sowie die Anzahl ungelesener Mitteilungen.
+
+Mit **Nur ungelesene anzeigen** filtern Sie die Liste. Über **Vorherige** und **Nächste** blättern Sie durch die Seiten; **Aktualisieren** lädt die Liste erneut. **Öffnen** führt – sofern vorhanden – zum verknüpften Bereich in Score_Hub. Mit **Als gelesen markieren** ändern Sie den Lesestatus. Gelesene Mitteilungen werden nach der vom Systemadministrator festgelegten Frist gelöscht; ungelesene bleiben erhalten.
+
+Der Eingang und der Versand von Mitteilungen werden von der Systemadministration eingerichtet. Weitere Informationen: [Benachrichtigungen und Admin-Mails](../notifications.md).
+
 ## Navigation
 
 Die Seitenleiste gruppiert die verfügbaren Bereiche. Je nach Berechtigung sehen Sie unter anderem:

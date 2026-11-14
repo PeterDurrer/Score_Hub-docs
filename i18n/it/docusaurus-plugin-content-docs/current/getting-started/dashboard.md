@@ -17,6 +17,14 @@ La dashboard è la pagina iniziale dopo l'accesso. Mostra indicatori, azioni rap
 
 Per una competizione, usa le azioni disponibili per aprire la sezione dei risultati o la classifica. Per configurare una competizione, passa alla sezione della società e apri **Competizioni**.
 
+## Notifiche
+
+La casella delle notifiche si trova sotto l'elenco delle competizioni. Mostra i messaggi più recenti con oggetto, contenuto, data, stato di lettura e numero di messaggi non letti.
+
+**Mostra solo non lette** filtra l'elenco. Usa **Precedente** e **Successivo** per passare da una pagina all'altra; **Aggiorna** ricarica l'elenco. **Apri** porta alla sezione collegata in Score_Hub, se è disponibile un link. **Segna come letta** aggiorna lo stato di lettura. I messaggi letti vengono eliminati dopo il periodo impostato dall'amministrazione di sistema; quelli non letti vengono conservati.
+
+L'amministrazione di sistema configura la casella e l'invio delle notifiche. Per saperne di più: [Notifiche ed e-mail amministrative](../notifications.md).
+
 ## Navigazione
 
 La barra laterale raggruppa le sezioni disponibili. In base alle autorizzazioni, potresti vedere:

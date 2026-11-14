@@ -51,21 +51,37 @@ Les messages de bienvenue et d’attribution ainsi que les e-mails administrateu
 
 **Condition d’exploitation :** le Timer doit fonctionner dans une Azure Function App séparée. L’API gérée d’Azure Static Web Apps ne prend pas en charge les timers. Le réglage de l’heure ne déploie pas le worker.
 
+### État de synchronisation après une modification
+
+Après l’enregistrement, cette section affiche l’état de synchronisation avec le worker de notifications. **Synchronisé** signifie que la révision enregistrée a été appliquée. Si l’état est **En attente** ou **Erreur**, la modification est enregistrée, mais pas encore effective.
+
+**Actualiser l’état de synchronisation** recharge manuellement cet état sans remplacer les champs non enregistrés ; aucune actualisation automatique n’est effectuée. Si la synchronisation est en attente ou a échoué, **Réparer la synchronisation** republie la configuration enregistrée, puis recharge l’état. Les champs non enregistrés ne sont pas sauvegardés par cette action. Une publication réussie ne confirme ni l’application effective des réglages ni la livraison d’un e-mail.
+
+Une nouvelle heure d’envoi ne s’applique qu’après une synchronisation réussie. Les messages déjà mis en file ne sont pas créés à nouveau. L’heure correspond au début prévu du traitement, et non à une minute de livraison garantie. Les e-mails administrateur manuels et les messages personnels de bienvenue ou d’attribution ne dépendent pas de cette heure quotidienne.
+
 ### Mettre globalement l’envoi en pause
 
-La case **Activer l’envoi d’e-mails**, dans le réglage de l’heure d’envoi, permet à l’administration système d’activer ou de désactiver toutes les sorties d’e-mail. Lorsque l’envoi est désactivé, aucune nouvelle notification n’est mise en file et les messages en attente ne sont pas distribués. La file est conservée ; après réactivation, les messages en attente peuvent être traités. L’aperçu et la vérification des destinataires restent disponibles pour les e-mails administrateur, mais leur envoi est bloqué.
+La case **Activer l’envoi d’e-mails**, dans le réglage de l’heure d’envoi, active ou désactive globalement les e-mails. Lorsque l’envoi est désactivé, aucun nouvel e-mail n’est mis en file et les e-mails en attente ne sont pas traités. Les e-mails déjà mis en file sont conservés et peuvent être traités après réactivation. L’aperçu et la vérification des destinataires des e-mails administrateur restent disponibles.
+
+### Notifications du tableau de bord, conservation et mode e-mail
+
+**Activer les notifications du tableau de bord** active la boîte de réception du tableau de bord comme canal supplémentaire. Les communications administrateur peuvent ainsi être disponibles dans le tableau de bord même lorsque l’envoi d’e-mails est désactivé. Si les e-mails et les notifications du tableau de bord sont tous deux désactivés, l’envoi est bloqué.
+
+**Conserver les notifications lues (jours)** définit une durée de **1 à 365 jours** ; la valeur par défaut est de 30 jours. Les notifications lues du tableau de bord sont supprimées après cette durée ; les notifications non lues sont conservées. Une réduction de la durée peut supprimer définitivement des notifications déjà lues lors du prochain nettoyage.
+
+Le **Mode e-mail** détermine comment le contenu est marqué : **DEV** et **TEST** ajoutent une indication à l’objet et au contenu ; **PROD** envoie le modèle sans modification. Vérifiez le mode avant d’activer l’envoi en production.
 
 ## Variables des modèles
 
-Chaque événement propose des variables adaptées ; la liste affichée au-dessus du contenu indique les valeurs disponibles. Il peut s’agir, par exemple, du nom et des liens du concours, du prénom de l’utilisateur ou de liens vers l’application et la documentation. Cliquez sur une variable pour l’insérer dans le contenu HTML.
+Chaque événement propose des variables adaptées. La liste commune contient les champs de l’événement, les variables générales et les définitions personnalisées. **Rechercher des variables** filtre la liste ; **Insérer** place la variable dans le dernier champ d’objet ou de contenu utilisé pour la langue sélectionnée (en remplaçant le texte sélectionné), et **Copier** la place dans le presse-papiers. Les définitions personnalisées peuvent être supprimées de la liste. Il peut s’agir, par exemple, du nom et des liens du concours, du prénom de l’utilisateur ou de liens vers l’application et la documentation.
 
-La section **Variables SQL et URL dynamiques** permet de définir des valeurs supplémentaires :
+La section **Variables SQL et URL dynamiques** permet de définir jusqu’à 50 valeurs supplémentaires par modèle. Leur nom est généré automatiquement à partir de la définition :
 
 - **Champ :** lit un champ d’une table proposée.
 - **Nombre (COUNT) :** compte les enregistrements correspondants ; une sélection vide retourne `0`.
 - **URL dynamique :** crée un lien à partir de la base de l’application ou de la documentation, d’un chemin relatif et éventuellement d’une ancre.
 
-Chaque requête SQL nécessite au moins un filtre de contexte, par exemple `createdBy = ID du destinataire` ou `competitionID = ID du concours`. Un champ unique doit correspondre à un seul enregistrement. Les champs sensibles ne sont pas proposés. Vérifiez l’objet et le contenu avec les valeurs réelles de l’événement avant d’enregistrer le modèle.
+Chaque requête SQL nécessite au moins un filtre de contexte. Le contexte peut être l’ID utilisateur du destinataire, un ID de club ou un ID de concours ; jusqu’à trois filtres sont appliqués ensemble. Un champ doit correspondre à un seul enregistrement. Les champs sensibles ne sont pas proposés. Une URL dynamique utilise une base d’application ou de documentation et un chemin relatif, avec éventuellement une ancre. Vérifiez l’objet et le contenu avec les valeurs réelles de l’événement avant d’enregistrer le modèle.
 
 ## Envoyer un e-mail administrateur
 
