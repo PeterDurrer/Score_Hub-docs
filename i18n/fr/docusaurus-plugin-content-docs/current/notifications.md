@@ -31,7 +31,7 @@ Les notifications d’attribution de compte ou de rôle sont adressées au compt
 ## Configurer les événements automatiques
 
 1. Connectez-vous en tant qu’administrateur système et ouvrez **Administration → Textes des e-mails**.
-2. Recherchez l’événement. **Événement activé** active ou désactive cet événement pour tout le système.
+2. Dépliez l’événement en cliquant sur son titre. **Événement activé** active ou désactive cet événement pour tout le système.
 3. Sous **Destinataires**, sélectionnez les rôles auxquels envoyer le message.
 4. Choisissez **de**, **fr** et **it**, puis renseignez l’objet et le contenu HTML pour chaque langue. Le modèle utilisé dépend de la langue préférée du destinataire.
 5. Utilisez les boutons de variables pour insérer des valeurs telles que `{{User.FirstName}}` ou `{{Competition.Name}}` à la position du curseur.
@@ -51,6 +51,12 @@ Les messages de bienvenue et d’attribution ainsi que les e-mails administrateu
 
 **Condition d’exploitation :** le Timer doit fonctionner dans une Azure Function App séparée. L’API gérée d’Azure Static Web Apps ne prend pas en charge les timers. Le réglage de l’heure ne déploie pas le worker.
 
+### Vue des envois et vérification du worker
+
+La **Vue d’ensemble des envois** indique les envois acceptés, en attente, en traitement, en nouvelle tentative, en échec et suspendus pour vérification. Cliquez sur un compteur pour afficher les 100 derniers envois correspondants. **Envoyé** signifie accepté par le fournisseur, pas reçu dans la boîte mail.
+
+La vue vérifie chaque minute le signal de vie du worker. Un signal expiré, une exécution échouée ou une mauvaise configuration détectée apparaît comme erreur. Si le signal ou les droits de lecture manquent, elle indique explicitement que le worker ne peut pas être vérifié. **Synchronisé** ne prouve pas que le worker fonctionne actuellement.
+
 ### État de synchronisation après une modification
 
 Après l’enregistrement, cette section affiche l’état de synchronisation avec le worker de notifications. **Synchronisé** signifie que la révision enregistrée a été appliquée. Si l’état est **En attente** ou **Erreur**, la modification est enregistrée, mais pas encore effective.
@@ -67,15 +73,17 @@ La case **Activer l’envoi d’e-mails**, dans le réglage de l’heure d’env
 
 **Activer les notifications du tableau de bord** active la boîte de réception du tableau de bord comme canal supplémentaire. Les communications administrateur peuvent ainsi être disponibles dans le tableau de bord même lorsque l’envoi d’e-mails est désactivé. Si les e-mails et les notifications du tableau de bord sont tous deux désactivés, l’envoi est bloqué.
 
+Le tableau de bord affiche chaque message sous forme d’une ligne d’objet compacte. **Ouvrir** ou un double-clic affiche le contenu HTML dans une boîte de dialogue et marque le message comme lu. Une erreur est signalée sans modifier prématurément l’état de lecture.
+
 **Conserver les notifications lues (jours)** définit une durée de **1 à 365 jours** ; la valeur par défaut est de 30 jours. Les notifications lues du tableau de bord sont supprimées après cette durée ; les notifications non lues sont conservées. Une réduction de la durée peut supprimer définitivement des notifications déjà lues lors du prochain nettoyage.
 
 Le **Mode e-mail** détermine comment le contenu est marqué : **DEV** et **TEST** ajoutent une indication à l’objet et au contenu ; **PROD** envoie le modèle sans modification. Vérifiez le mode avant d’activer l’envoi en production.
 
 ## Variables des modèles
 
-Chaque événement propose des variables adaptées. La liste commune contient les champs de l’événement, les variables générales et les définitions personnalisées. **Rechercher des variables** filtre la liste ; **Insérer** place la variable dans le dernier champ d’objet ou de contenu utilisé pour la langue sélectionnée (en remplaçant le texte sélectionné), et **Copier** la place dans le presse-papiers. Les définitions personnalisées peuvent être supprimées de la liste. Il peut s’agir, par exemple, du nom et des liens du concours, du prénom de l’utilisateur ou de liens vers l’application et la documentation.
+La liste compacte **Variables utilisées** affiche une ligne par variable des modèles linguistiques ou définition personnalisée créée explicitement. **Ajouter une variable** ouvre une boîte de dialogue pour rechercher les variables disponibles et les sélectionner avec **Insérer**. La variable est insérée à la position du curseur du dernier champ d’objet ou de contenu utilisé. **Copier** la place dans le presse-papiers. **Modifier** ouvre les détails d’une définition personnalisée sans changer son nom.
 
-La section **Variables SQL et URL dynamiques** permet de définir jusqu’à 50 valeurs supplémentaires par modèle. Leur nom est généré automatiquement à partir de la définition :
+Dans cette même boîte de dialogue, **Configurer une variable personnalisée** permet de créer jusqu’à 50 valeurs supplémentaires par modèle. Aucune définition personnalisée n’est créée à l’avance. Le nom est généré automatiquement lors de la création :
 
 - **Champ :** lit un champ d’une table proposée.
 - **Nombre (COUNT) :** compte les enregistrements correspondants ; une sélection vide retourne `0`.

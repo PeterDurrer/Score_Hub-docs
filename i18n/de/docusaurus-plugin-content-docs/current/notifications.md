@@ -31,7 +31,7 @@ Benutzer- und Rollenzuweisungsereignisse gehen an das betroffene Konto. Die Empf
 ## Automatische Ereignisse konfigurieren
 
 1. Öffnen Sie als Systemadministrator **Administration → E-Mail-Texte**.
-2. Suchen Sie das gewünschte Ereignis. Mit **Ereignis aktiv** schalten Sie dieses Ereignis systemweit ein oder aus.
+2. Klappen Sie das gewünschte Ereignis durch Klicken auf seine Überschrift auf. Mit **Ereignis aktiv** schalten Sie dieses Ereignis systemweit ein oder aus.
 3. Wählen Sie unter **Empfänger** die Rollen aus, die die Meldung erhalten sollen.
 4. Wählen Sie **de**, **fr** und **it** und pflegen Sie für jede Sprache Betreff und HTML-Inhalt. Die Sprache des Empfängers bestimmt, welche Vorlage verwendet wird.
 5. Verwenden Sie die angebotenen Platzhalter-Schaltflächen, um Werte wie `{{User.FirstName}}` oder `{{Competition.Name}}` an der Cursorposition einzufügen.
@@ -51,6 +51,12 @@ Willkommens- und Zuweisungsmeldungen sowie manuelle Admin-Mails warten nicht auf
 
 **Betriebsvoraussetzung:** Der Timer muss in einer separaten Azure Function App betrieben werden. Die verwaltete API einer Azure Static Web App unterstützt keine Timer. Die Einstellung der Versandzeit richtet den Worker nicht selbst ein.
 
+### Versandübersicht und Workerprüfung
+
+Die **Versandübersicht** zeigt versendete, wartende, in Verarbeitung befindliche, erneut versuchte, fehlgeschlagene und zur Prüfung angehaltene Mailzustellungen. Klicken Sie auf einen Statuszähler, um die letzten 100 passenden Zustellungen anzuzeigen. **Versendet** bedeutet vom Mailprovider angenommen, nicht bestätigter Eingang im Postfach.
+
+Die Übersicht prüft jede Minute den aktuellen Worker-Lebensnachweis. Ein abgelaufener Nachweis, ein fehlgeschlagener Lauf oder eine erkannte Fehlkonfiguration wird als Fehler angezeigt. Fehlt der Nachweis oder die Leseberechtigung, wird ausdrücklich **Worker kann nicht geprüft werden** gemeldet. **Synchronisiert** allein beweist nicht, dass der Worker aktuell läuft.
+
 ### Synchronisationsstatus nach Änderungen
 
 Nach dem Speichern zeigt der Bereich den Status der Synchronisierung mit dem Benachrichtigungs-Worker. **Synchronisiert** bedeutet, dass die gespeicherte Revision übernommen wurde. Bei **Ausstehend** oder **Fehler** ist die Änderung zwar gespeichert, aber noch nicht wirksam.
@@ -67,15 +73,17 @@ Mit **E-Mail-Versand aktivieren** im Versandzeit-Bereich schaltet die Systemadmi
 
 Mit **Dashboard-Benachrichtigungen aktivieren** wird der Dashboard-Eingang als zusätzlicher Zustellkanal eingeschaltet. Admin-Mitteilungen können damit auch dann im Dashboard bereitgestellt werden, wenn der E-Mail-Versand ausgeschaltet ist. Sind sowohl E-Mail als auch Dashboard-Benachrichtigungen ausgeschaltet, ist der Versand gesperrt.
 
+Im Dashboard steht jede Nachricht als kompakte Betreffzeile in einer Liste. **Öffnen** oder ein Doppelklick öffnet den HTML-Inhalt im Dialog und markiert die Nachricht als gelesen. Bei einem Fehler erscheint eine Meldung; der Lesestatus wird nicht vorzeitig geändert.
+
 Unter **Gelesene Benachrichtigungen aufbewahren (Tage)** legen Sie eine Frist von **1 bis 365 Tagen** fest; standardmässig sind es 30 Tage. Gelesene Dashboard-Mitteilungen werden nach Ablauf der Frist gelöscht, ungelesene bleiben erhalten. Eine verkürzte Frist kann bei der nächsten Bereinigung bereits vorhandene gelesene Mitteilungen unwiderruflich löschen.
 
 Der **E-Mail-Modus** steuert die Kennzeichnung des E-Mail-Inhalts: **DEV** und **TEST** fügen einen Hinweis zu Betreff und Inhalt hinzu; **PROD** versendet die Vorlage unverändert. Prüfen Sie den Modus vor dem Aktivieren des produktiven Versands.
 
 ## Platzhalter in Vorlagen
 
-Jedes Ereignis stellt passende Standardplatzhalter bereit. Die gemeinsame Liste zeigt Ereignisfelder, allgemeine Platzhalter und eigene Definitionen. Mit **Platzhalter suchen** filtern Sie die Liste; **Einfügen** setzt den Token in das zuletzt verwendete Betreff- oder Inhaltsfeld der aktuellen Sprache ein (bei einer Auswahl wird diese ersetzt), **Kopieren** legt ihn in die Zwischenablage. Eigene Definitionen können Sie aus der Liste löschen. Dazu gehören beispielsweise Name und Links zum Wettkampf, Benutzername sowie Anmelde- und Dokumentationslinks.
+Die kompakte Liste **Verwendete Platzhalter** zeigt pro Token eine Zeile: Platzhalter aus den Sprachvorlagen und ausdrücklich angelegte eigene Definitionen. **Platzhalter hinzufügen** öffnet einen Dialog, in dem Sie verfügbare Ereignis-, Benutzer- und Linkplatzhalter suchen und per **Einfügen** auswählen können. Der Token wird an der Cursorposition im zuletzt verwendeten Betreff- oder Inhaltsfeld eingefügt. **Kopieren** legt ihn in die Zwischenablage. Eigene Definitionen bearbeiten Sie im Dialog über **Bearbeiten**; ihr Tokenname bleibt erhalten.
 
-Unter **SQL-basierte Platzhalter und dynamische URLs** können bis zu 50 zusätzliche Werte pro Vorlage definiert werden. Der Name wird automatisch aus der Definition gebildet:
+Im selben Dialog können Sie unter **Eigenen Platzhalter konfigurieren** bis zu 50 zusätzliche Werte pro Vorlage erstellen. Es werden keine eigenen Definitionen vorab angelegt. Der Name wird beim Erstellen automatisch aus der Definition gebildet:
 
 - **Feld:** Liest ein einzelnes Feld aus einer angebotenen Tabelle.
 - **Anzahl (COUNT):** Zählt passende Datensätze; eine leere Ergebnismenge ergibt `0`.

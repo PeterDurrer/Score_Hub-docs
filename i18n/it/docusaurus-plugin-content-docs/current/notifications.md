@@ -31,7 +31,7 @@ Le notifiche relative all'assegnazione di account o ruoli vengono inviate all'ac
 ## Configurare gli eventi automatici
 
 1. Accedi come amministratore di sistema e apri **Amministrazione → Testi e-mail**.
-2. Individua l'evento. **Evento attivo** abilita o disabilita l'evento a livello di sistema.
+2. Espandi l'evento facendo clic sul titolo. **Evento attivo** abilita o disabilita l'evento a livello di sistema.
 3. In **Destinatari**, seleziona i ruoli a cui inviare il messaggio.
 4. Seleziona **de**, **fr** e **it** e inserisci oggetto e contenuto HTML per ogni lingua. Per ogni destinatario viene usato il modello della lingua preferita.
 5. Usa i pulsanti dei segnaposto per inserire valori come `{{User.FirstName}}` o `{{Competition.Name}}` nella posizione del cursore.
@@ -51,6 +51,12 @@ Gli avvisi di benvenuto e assegnazione e le e-mail amministrative manuali non di
 
 **Prerequisito operativo:** il Timer deve essere eseguito in una Azure Function App separata. L'API gestita di Azure Static Web Apps non supporta i timer. L'impostazione dell'orario non configura il worker.
 
+### Panoramica degli invii e verifica del worker
+
+La **Panoramica degli invii** mostra invii accettati, in coda, in elaborazione, in nuovo tentativo, non riusciti e sospesi per verifica. Fai clic su un contatore per visualizzare gli ultimi 100 invii corrispondenti. **Inviato** significa accettato dal provider, non ricevuto nella casella.
+
+La panoramica verifica ogni minuto il segnale di attività del worker. Un segnale scaduto, un'esecuzione non riuscita o una configurazione errata rilevata viene mostrato come errore. Se mancano il segnale o i permessi di lettura, viene indicato esplicitamente che il worker non può essere verificato. **Sincronizzato** non dimostra che il worker sia attualmente attivo.
+
 ### Stato di sincronizzazione dopo le modifiche
 
 Dopo il salvataggio, questa sezione mostra lo stato della sincronizzazione con il worker delle notifiche. **Sincronizzato** significa che la revisione salvata è stata applicata. Se lo stato è **In attesa** o **Errore**, la modifica è salvata ma non è ancora effettiva.
@@ -67,15 +73,17 @@ La casella **Attiva l'invio di e-mail**, nelle impostazioni dell'orario, attiva 
 
 **Attiva notifiche dashboard** abilita la casella della dashboard come canale aggiuntivo. In questo modo le comunicazioni amministrative possono essere disponibili nella dashboard anche se l'invio e-mail è disattivato. Se sono disattivate sia le e-mail sia le notifiche dashboard, l'invio è bloccato.
 
+La dashboard mostra ogni messaggio come una riga compatta con l'oggetto. **Apri** o un doppio clic apre il contenuto HTML in una finestra e segna il messaggio come letto. In caso di errore viene mostrato un avviso senza cambiare prematuramente lo stato di lettura.
+
 **Conserva notifiche lette (giorni)** imposta una durata da **1 a 365 giorni**; il valore predefinito è 30 giorni. Le notifiche lette della dashboard vengono eliminate al termine del periodo, mentre quelle non lette vengono conservate. Riducendo il periodo, notifiche già lette potrebbero essere eliminate definitivamente durante la pulizia successiva.
 
 La **Modalità e-mail** determina come viene contrassegnato il contenuto: **DEV** e **TEST** aggiungono un'indicazione all'oggetto e al contenuto; **PROD** invia il modello senza modifiche. Verifica la modalità prima di attivare l'invio in produzione.
 
 ## Segnaposto nei modelli
 
-Ogni evento mette a disposizione segnaposto appropriati. L'elenco comune contiene i campi dell'evento, i segnaposto generali e le definizioni personalizzate. **Cerca segnaposto** filtra l'elenco; **Inserisci** aggiunge il token all'ultimo campo oggetto o contenuto usato per la lingua selezionata (sostituendo il testo selezionato), mentre **Copia** lo salva negli appunti. Le definizioni personalizzate possono essere eliminate dall'elenco. Possono includere, ad esempio, il nome e i collegamenti della competizione, il nome dell'utente o i collegamenti all'applicazione e alla documentazione.
+L'elenco compatto **Segnaposto utilizzati** mostra una riga per ogni token dei modelli linguistici o definizione personalizzata creata esplicitamente. **Aggiungi segnaposto** apre una finestra per cercare i segnaposto disponibili e selezionarli con **Inserisci**. Il token viene inserito nella posizione del cursore dell'ultimo campo oggetto o contenuto utilizzato. **Copia** lo salva negli appunti. **Modifica** apre i dettagli di una definizione personalizzata mantenendone il nome.
 
-La sezione **Segnaposto SQL e URL dinamici** consente di definire fino a 50 valori aggiuntivi per modello. Il nome viene generato automaticamente dalla definizione:
+Nella stessa finestra, **Configura un segnaposto personalizzato** consente di creare fino a 50 valori aggiuntivi per modello. Nessuna definizione personalizzata viene creata in anticipo. Il nome viene generato automaticamente alla creazione:
 
 - **Campo:** legge un singolo campo da una tabella disponibile.
 - **Numero (COUNT):** conta i record corrispondenti; se non ci sono record restituisce `0`.
