@@ -81,7 +81,7 @@ Der **E-Mail-Modus** steuert die Kennzeichnung des E-Mail-Inhalts: **DEV** und *
 
 ## Platzhalter in Vorlagen
 
-Die kompakte Liste **Verwendete Platzhalter** zeigt pro Token eine Zeile: Platzhalter aus den Sprachvorlagen und ausdrücklich angelegte eigene Definitionen. **Platzhalter hinzufügen** öffnet einen Dialog, in dem Sie verfügbare Ereignis-, Benutzer- und Linkplatzhalter suchen und per **Einfügen** auswählen können. Der Token wird an der Cursorposition im zuletzt verwendeten Betreff- oder Inhaltsfeld eingefügt. **Kopieren** legt ihn in die Zwischenablage. Eigene Definitionen bearbeiten Sie im Dialog über **Bearbeiten**; ihr Tokenname bleibt erhalten.
+Die kompakte Liste **Verwendete Platzhalter** zeigt nur die in den Sprachvorlagen tatsächlich verwendeten Tokens, jeweils in einer Zeile. **Platzhalter hinzufügen** öffnet einen Dialog, in dem Sie verfügbare Ereignis-, Benutzer- und Linkplatzhalter suchen und per **Einfügen** auswählen können. Der Token wird an der Cursorposition im zuletzt verwendeten Betreff- oder Inhaltsfeld eingefügt. Neue eigene Platzhalter werden beim Erstellen direkt eingefügt. **Kopieren** legt einen Token in die Zwischenablage. Eigene Definitionen bearbeiten Sie im Dialog über **Bearbeiten**; ihr Tokenname bleibt erhalten. Nicht verwendete eigene Definitionen sind weiterhin im Auswahldialog verfügbar.
 
 Im selben Dialog können Sie unter **Eigenen Platzhalter konfigurieren** bis zu 50 zusätzliche Werte pro Vorlage erstellen. Es werden keine eigenen Definitionen vorab angelegt. Der Name wird beim Erstellen automatisch aus der Definition gebildet:
 

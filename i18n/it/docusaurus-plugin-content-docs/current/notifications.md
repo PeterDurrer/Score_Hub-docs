@@ -81,7 +81,7 @@ La **Modalità e-mail** determina come viene contrassegnato il contenuto: **DEV*
 
 ## Segnaposto nei modelli
 
-L'elenco compatto **Segnaposto utilizzati** mostra una riga per ogni token dei modelli linguistici o definizione personalizzata creata esplicitamente. **Aggiungi segnaposto** apre una finestra per cercare i segnaposto disponibili e selezionarli con **Inserisci**. Il token viene inserito nella posizione del cursore dell'ultimo campo oggetto o contenuto utilizzato. **Copia** lo salva negli appunti. **Modifica** apre i dettagli di una definizione personalizzata mantenendone il nome.
+L'elenco compatto **Segnaposto utilizzati** mostra solo i token effettivamente usati nei modelli linguistici, una riga per token. **Aggiungi segnaposto** apre una finestra per cercare i segnaposto disponibili e selezionarli con **Inserisci**. Il token viene inserito nella posizione del cursore dell'ultimo campo oggetto o contenuto utilizzato. Un nuovo segnaposto personalizzato viene inserito alla creazione. **Copia** lo salva negli appunti. **Modifica** apre i dettagli mantenendone il nome. Le definizioni personalizzate non utilizzate restano disponibili nella finestra di selezione.
 
 Nella stessa finestra, **Configura un segnaposto personalizzato** consente di creare fino a 50 valori aggiuntivi per modello. Nessuna definizione personalizzata viene creata in anticipo. Il nome viene generato automaticamente alla creazione:
 

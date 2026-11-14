@@ -81,7 +81,7 @@ Le **Mode e-mail** détermine comment le contenu est marqué : **DEV** et **TEST
 
 ## Variables des modèles
 
-La liste compacte **Variables utilisées** affiche une ligne par variable des modèles linguistiques ou définition personnalisée créée explicitement. **Ajouter une variable** ouvre une boîte de dialogue pour rechercher les variables disponibles et les sélectionner avec **Insérer**. La variable est insérée à la position du curseur du dernier champ d’objet ou de contenu utilisé. **Copier** la place dans le presse-papiers. **Modifier** ouvre les détails d’une définition personnalisée sans changer son nom.
+La liste compacte **Variables utilisées** affiche uniquement les variables réellement utilisées dans les modèles linguistiques, une ligne par variable. **Ajouter une variable** ouvre une boîte de dialogue pour rechercher les variables disponibles et les sélectionner avec **Insérer**. La variable est insérée à la position du curseur du dernier champ d’objet ou de contenu utilisé. Une nouvelle variable personnalisée est insérée dès sa création. **Copier** la place dans le presse-papiers. **Modifier** ouvre ses détails sans changer son nom. Les définitions personnalisées non utilisées restent disponibles dans la boîte de sélection.
 
 Dans cette même boîte de dialogue, **Configurer une variable personnalisée** permet de créer jusqu’à 50 valeurs supplémentaires par modèle. Aucune définition personnalisée n’est créée à l’avance. Le nom est généré automatiquement lors de la création :
 
