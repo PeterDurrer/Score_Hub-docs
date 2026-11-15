@@ -28,4 +28,17 @@ Wenn **Abrechnung als PDF** freigeschaltet ist, übernimmt der Ausdruck die vere
 
 Falls die Seite eine PDF-Aktion anbietet, kontrollieren Sie die Auswahl und Filter vor dem Erstellen der Datei. Für weitere Auswertungen verwenden Sie die zugrunde liegenden Resultate oder wenden Sie sich an die Wettkampfadministration.
 
+## PDF-Batch als ZIP
+
+Wenn **Abrechnung als PDF** freigeschaltet ist, erscheint daneben **PDF-Batch (ZIP)**. Standardmässig erstellt der Dialog ein Abrechnungs-PDF pro Verein, mit allen ausgewählten Kategorien gemeinsam. Vereine mit Standblattdaten erhalten auch ohne passende Resultate ein eigenes Blatt zur Abrechnungskontrolle.
+
+1. Setzen Sie zuerst die gewünschten Filter auf der Statistikseite.
+2. Öffnen Sie **PDF-Batch (ZIP)** und wählen Sie die Gruppierung: Verein, Kategorie, Runde, Schiessstand oder Schiessdatum. Mehrere ausgewählte Merkmale werden kombiniert.
+3. Aktivieren Sie bei Bedarf die **Gesamt-PDF**-Option. Sie erstellt ein zusätzliches Abrechnungs-PDF ohne diese Gruppierungen, aber mit den aktuellen Filtern.
+4. Laden Sie das ZIP mit den einzelnen PDFs herunter.
+
+Reine Vereins- und Gesamtblätter enthalten die zugehörigen Standblattmengen und Kosten. Sobald Kategorie, Runde, Schiessstand oder Datum als Gruppierung gewählt ist, entstehen **statistische Auswertungen, keine Abrechnungen**: Geldbeträge fehlen, nicht zuordenbare Standblattmengen stehen auf **0**. Aus Resultaten ableitbarer Verbrauch und Munitionsmengen bleiben sichtbar. Vereine ohne passende Resultate erhalten zusätzlich ein reines Vereinsblatt, statt einer erfundenen Unterteilung.
+
+Nur Merkmale mit mindestens zwei sichtbaren Werten sind auswählbar. Eingeschränkte Resultaterfassende exportieren ausschliesslich ihren eigenen Verein; **Verein** bleibt für sie ausgegraut. Die Einschränkung gilt auch für Standblattdaten und das Gesamt-PDF.
+
 Weiter: [Ranglisten ansehen](view-rankings.md)

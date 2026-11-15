@@ -28,4 +28,17 @@ Si l’option **Décompte au format PDF** est activée, le document reprend les 
 
 Si la page propose une action PDF, vérifiez la sélection et les filtres avant de créer le fichier. Pour d’autres analyses, utilisez les résultats sous-jacents ou contactez l’administration du concours.
 
+## Lot de PDF dans un ZIP
+
+Lorsque la sortie de décompte PDF est activée, **Lot PDF (ZIP)** apparaît à côté. Par défaut, le dialogue crée un décompte par club, réunissant toutes les catégories sélectionnées. Les clubs disposant de feuilles de stand reçoivent aussi un document sans résultats correspondants.
+
+1. Définissez les filtres sur la page des statistiques.
+2. Ouvrez **Lot PDF (ZIP)** et choisissez club, catégorie, tour, stand ou date de tir. Plusieurs critères sélectionnés sont combinés.
+3. Activez si nécessaire le **PDF global** : il ajoute un décompte sans ces regroupements, en conservant les filtres actuels.
+4. Téléchargez le ZIP contenant les PDF individuels.
+
+Les documents uniquement par club et le document global incluent les quantités et coûts de feuilles de stand correspondants. Un regroupement par catégorie, tour, stand ou date produit une **analyse statistique, pas un décompte** : aucun montant n’est imprimé et les quantités de feuilles non attribuables sont indiquées à **0**. La consommation et les quantités de munitions déduites des résultats restent visibles. Les clubs sans résultats correspondants reçoivent un document supplémentaire par club plutôt qu’une subdivision inventée.
+
+Seuls les critères comportant au moins deux valeurs visibles sont sélectionnables. Les personnes limitées à leur propre club n’exportent que celui-ci ; **Club** reste grisé. Cette restriction s’applique aussi aux feuilles de stand et au PDF global.
+
 Suite : [Consulter les classements](view-rankings.md)

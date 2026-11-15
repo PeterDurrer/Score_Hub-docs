@@ -29,4 +29,17 @@ Se è disponibile **Contabilità in PDF**, la stampa include i conteggi dei fogl
 
 Se la pagina offre un'azione per generare un PDF, controlla la selezione e i filtri prima di creare il file. Per ulteriori analisi, usa i risultati sottostanti o rivolgiti all'amministrazione della competizione.
 
+## Lotto di PDF in uno ZIP
+
+Quando l’output contabile PDF è attivo, accanto compare **Lotto PDF (ZIP)**. Per impostazione predefinita, il dialogo crea un documento contabile per società con tutte le categorie selezionate insieme. Anche le società con fogli di stand ma senza risultati corrispondenti ricevono un documento.
+
+1. Imposta i filtri nella pagina delle statistiche.
+2. Apri **Lotto PDF (ZIP)** e scegli società, categoria, turno, poligono o data di tiro. I criteri selezionati vengono combinati.
+3. Se necessario, attiva il **PDF complessivo**: aggiunge un documento contabile senza questi raggruppamenti, mantenendo i filtri attuali.
+4. Scarica lo ZIP con i singoli PDF.
+
+I documenti solo per società e quello complessivo includono le quantità e i costi pertinenti dei fogli di stand. Un raggruppamento per categoria, turno, poligono o data produce un’**analisi statistica, non contabilità**: non vengono stampati importi e le quantità di fogli non attribuibili sono indicate con **0**. Il consumo e le quantità di munizioni ricavabili dai risultati restano visibili. Le società senza risultati corrispondenti ricevono un documento aggiuntivo per società, anziché una suddivisione inventata.
+
+Sono selezionabili solo criteri con almeno due valori visibili. Chi è limitato alla propria società esporta soltanto quella; **Società** rimane disattivata. La restrizione vale anche per i fogli di stand e il PDF complessivo.
+
 Continua: [Consultare le classifiche](view-rankings.md)
