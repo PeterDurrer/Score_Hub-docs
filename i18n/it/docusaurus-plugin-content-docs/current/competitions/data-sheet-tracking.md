@@ -132,6 +132,8 @@ In modalità di correzione, è possibile riportare allo stato **Disponibile** so
 
 I fogli utilizzati o compilati male non risultano restituiti automaticamente. Se sono stati effettivamente ricevuti, registra anche i relativi numeri. È preferibile registrare la restituzione dei fogli utilizzati dopo aver inserito i risultati, perché i numeri già restituiti non possono essere selezionati per un nuovo risultato.
 
+Un foglio restituito, inutilizzato e senza risultato associato può essere assegnato nuovamente alla stessa società o a un'altra società con una nuova registrazione **Invio**. Le precedenti registrazioni di invio e restituzione vengono conservate e protette. Il numero appartiene poi alla nuova società destinataria; solo questo nuovo invio lo rende nuovamente disponibile per inserire un risultato. I fogli utilizzati, compilati male o mancanti non possono essere inviati nuovamente.
+
 Le registrazioni di invio con numeri utilizzati, compilati male, mancanti o già restituiti e le registrazioni di restituzione salvate non possono essere modificate o eliminate successivamente. In caso di registrazione protetta errata, contatta l'amministrazione; non creare una registrazione compensativa con numeri di un'altra società.
 
 ## 6. Statistiche e controllo finale
@@ -147,11 +149,11 @@ Le registrazioni di invio con numeri utilizzati, compilati male, mancanti o già
 | Ricevuti | Tutti i numeri assegnati alle società selezionate |
 | Utilizzati | Numeri associati a un risultato salvato |
 | Compilati male | Numeri registrati come compilati male |
-| Vuoti / inutilizzati | Numeri disponibili, compresi i fogli restituiti già vuoti |
+| Vuoti / inutilizzati | Numeri disponibili ancora presso la società e non restituiti |
 | Mancanti | Numeri segnalati esplicitamente come mancanti |
 | Non ancora restituiti | Tutti i numeri senza una restituzione registrata, indipendentemente dallo stato di utilizzo |
 
-L'elenco delle restituzioni in sospeso **non è una categoria di utilizzo aggiuntiva**. Un numero utilizzato può anche non essere ancora stato restituito. Un numero disponibile già restituito continua a essere conteggiato come inutilizzato, ma non come restituzione in sospeso. Non sommare quindi il conteggio delle restituzioni in sospeso ai conteggi degli stati.
+L'elenco delle restituzioni in sospeso **non è una categoria di utilizzo aggiuntiva**. Un numero utilizzato può anche non essere ancora stato restituito. Un numero inutilizzato già restituito non viene conteggiato né come scorta vuota presso la società né come restituzione in sospeso. Non sommare quindi il conteggio delle restituzioni in sospeso ai conteggi degli stati.
 
 Le statistiche numeriche vengono visualizzate anche quando non sono ancora presenti risultati. Il filtro per società include anche le società che hanno ricevuto fogli ma non hanno ancora registrato risultati. Altri filtri dei risultati, come turno o giornata di tiro, non associano retroattivamente i fogli inutilizzati a un turno o a una data.
 

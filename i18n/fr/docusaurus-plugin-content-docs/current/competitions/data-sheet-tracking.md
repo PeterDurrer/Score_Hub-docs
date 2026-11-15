@@ -132,6 +132,8 @@ En mode de correction, seuls les numéros non retournés portant le statut **Mal
 
 Les feuilles consommées ou mal remplies ne sont pas automatiquement considérées comme retournées. Enregistrez également leurs numéros si elles ont été reçues physiquement. Il est préférable d’enregistrer le retour des feuilles utilisées après la saisie du résultat, car les numéros déjà retournés ne peuvent pas être sélectionnés pour un nouveau résultat.
 
+Une feuille retournée, inutilisée et sans résultat associé peut être attribuée à nouveau au même club ou à un autre club avec une nouvelle écriture **Envoi**. Les écritures d’envoi et de retour précédentes sont conservées et protégées. Le numéro appartient ensuite au nouveau club destinataire ; seul ce nouvel envoi le rend à nouveau disponible pour saisir un résultat. Les feuilles consommées, mal remplies ou manquantes ne peuvent pas être envoyées à nouveau.
+
 Les écritures d’envoi contenant des numéros consommés, mal remplis, manquants ou retournés, ainsi que les écritures de retour enregistrées, ne peuvent plus être modifiées ni supprimées. En cas d’erreur dans une écriture protégée, contactez l’administration ; ne créez pas de contre-écriture avec des numéros appartenant à un autre club.
 
 ## 6. Statistiques et vérification finale
@@ -147,11 +149,11 @@ Les écritures d’envoi contenant des numéros consommés, mal remplis, manquan
 | Reçues | Tous les numéros attribués aux clubs sélectionnés |
 | Consommées | Numéros associés à un résultat enregistré |
 | Mal remplies | Numéros signalés comme mal remplis |
-| Vides / inutilisées | Numéros disponibles, y compris les feuilles retournées vierges |
+| Vides / inutilisées | Numéros disponibles encore au club, sans retour enregistré |
 | Manquantes | Numéros explicitement signalés comme manquants |
 | Pas encore retournées | Tous les numéros sans retour enregistré, quel que soit leur statut de consommation |
 
-La liste des retours en attente **ne constitue pas une catégorie de consommation supplémentaire**. Un numéro consommé peut ne pas avoir encore été retourné. Un numéro disponible déjà retourné reste compté comme vide, mais n’est plus compté comme un retour en attente. N’ajoutez donc pas le nombre de retours en attente aux nombres par statut.
+La liste des retours en attente **ne constitue pas une catégorie de consommation supplémentaire**. Un numéro consommé peut ne pas avoir encore été retourné. Un numéro inutilisé déjà retourné ne compte ni dans le stock vierge du club ni dans les retours en attente. N’ajoutez donc pas le nombre de retours en attente aux nombres par statut.
 
 Les statistiques des numéros s’affichent même si aucun résultat n’a encore été saisi. Le filtre du club propose également les clubs qui ont reçu des feuilles sans avoir saisi de résultats. Les autres filtres de résultats, tels que la manche ou le jour de tir, n’associent pas rétroactivement les feuilles inutilisées à une manche ou à une date.
 

@@ -132,6 +132,8 @@ Im Korrekturmodus können nur nicht zurückgesandte Nummern mit Status **Verschr
 
 Verbrauchte und verschriebene Blätter sind damit nicht automatisch zurückgegeben. Buchen Sie deren Nummern ebenfalls, wenn sie physisch eingegangen sind. Erfassen Sie den Rücklauf verwendeter Blätter vorzugsweise nach der Resultaterfassung, da bereits zurückgesandte Nummern nicht für ein neues Resultat gewählt werden können.
 
+Ein zurückgegebenes, unbenutztes Blatt ohne Resultatzuordnung kann mit einer neuen **Versand**-Buchung erneut an denselben oder einen anderen Verein vergeben werden. Die bisherigen Versand- und Rückversandbuchungen bleiben erhalten und geschützt. Die Nummer gehört danach dem neuen empfangenden Verein; erst dieser neue Versand macht sie wieder für die Resultaterfassung verfügbar. Verbrauchte, verschriebene oder fehlende Blätter können nicht erneut versandt werden.
+
 Versandbuchungen mit verbrauchten, verschriebenen, fehlenden oder zurückgesandten Nummern sowie erfasste Rückversandbuchungen sind gegen nachträgliches Ändern und Löschen geschützt. Bei einer falschen geschützten Buchung wenden Sie sich an die Administration; legen Sie keine Gegenbuchung mit fremden Nummern an.
 
 ## 6. Statistik und Abschlusskontrolle
@@ -147,11 +149,11 @@ Versandbuchungen mit verbrauchten, verschriebenen, fehlenden oder zurückgesandt
 | Erhalten | Alle an die ausgewählten Vereine vergebenen Nummern |
 | Verbraucht | Nummern mit gespeichertem Resultat |
 | Verschrieben | Als verschrieben erfasste Nummern |
-| Leer / unbenutzt | Verfügbare Nummern, auch bereits leer zurückgesandte Blätter |
+| Leer / unbenutzt | Verfügbare, noch nicht zurückgesandte Nummern beim Verein |
 | Fehlend | Ausdrücklich als fehlend erfasste Nummern |
 | Noch nicht zurückgesandt | Alle Nummern ohne Rücklauf, unabhängig von ihrem Verbrauchsstatus |
 
-Die offene Rücklaufliste ist **keine zusätzliche Verbrauchskategorie**. Eine verbrauchte Nummer kann gleichzeitig noch nicht zurückgesandt sein. Eine verfügbare, bereits zurückgegebene Nummer zählt weiterhin als leer, aber nicht mehr als offene Rückgabe. Addieren Sie die offene Rücklaufzahl deshalb nicht zu den Statuszahlen.
+Die offene Rücklaufliste ist **keine zusätzliche Verbrauchskategorie**. Eine verbrauchte Nummer kann gleichzeitig noch nicht zurückgesandt sein. Eine unbenutzte, bereits zurückgegebene Nummer zählt weder als leerer Vereinsbestand noch als offene Rückgabe. Addieren Sie die offene Rücklaufzahl deshalb nicht zu den Statuszahlen.
 
 Die Nummernstatistik erscheint auch dann, wenn noch keine Resultate vorhanden sind. Der Vereinsfilter bietet auch Vereine an, die Blätter erhalten, aber noch keine Resultate erfasst haben. Andere Resultatfilter wie Runde oder Schiesstag ordnen unbenutzte Blätter nicht nachträglich einer Runde oder einem Datum zu.
 
