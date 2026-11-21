@@ -6,7 +6,7 @@ title: Häufige Fragen
 
 ## Ich kann mich nicht anmelden. Was soll ich prüfen?
 
-Prüfen Sie E-Mail-Adresse und Passwort. Wenn die Oberfläche einen Fehler zur Datenbankverbindung zeigt, melden Sie dies der Administration. Ein Passwort-Reset ist in der aktuellen Oberfläche nicht ausgewiesen; fragen Sie nach dem administrativen Vorgehen.
+Prüfen Sie E-Mail-Adresse und Passwort. Wenn die Oberfläche einen Fehler zur Datenbankverbindung zeigt, melden Sie dies der Administration. Haben Sie Ihr Passwort vergessen, wählen Sie auf der Anmeldeseite **Passwort vergessen?** und folgen Sie der Anleitung unter [Passwort vergessen](getting-started/registration.md#passwort-vergessen).
 
 ## Wie erhalte ich ein Konto?
 

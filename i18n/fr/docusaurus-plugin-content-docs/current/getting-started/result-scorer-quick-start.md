@@ -17,11 +17,11 @@ Ce guide rassemble les trois guides **Connexion à Score Hub**, **Données du cl
 1. Ouvrez Score_Hub et sélectionnez **Se connecter**.
 2. Attendez l’établissement de la connexion à la base de données. Si l’opération prend anormalement longtemps, rechargez la page. Si la connexion reste interrompue, contactez l’administration.
 3. Connectez-vous avec votre adresse e-mail et le **mot de passe initial** reçu.
-4. Ouvrez votre **Profil** en haut à droite et accédez à la section **Changer le mot de passe**.
-5. Saisissez votre mot de passe actuel (le mot de passe initial la première fois), puis saisissez deux fois le nouveau mot de passe.
-6. Sélectionnez **Changer le mot de passe** et vérifiez le message de confirmation. Utilisez le nouveau mot de passe lors de votre prochaine connexion.
+4. Si la page **Changement de mot de passe requis** s'affiche, saisissez le mot de passe initial reçu comme mot de passe actuel et passez à l'étape 5. Sinon, vous accédez directement au tableau de bord.
+5. Sur cette page, saisissez deux fois un nouveau mot de passe d'au moins huit caractères et sélectionnez **Changer le mot de passe**.
+6. Après la redirection, reconnectez-vous avec le nouveau mot de passe. Pour en savoir plus : [Compte et connexion](registration.md#erster-passwortwechsel).
 
-> **Mot de passe oublié ?** Le changement de mot de passe dans le profil nécessite une session ouverte et le mot de passe actuel. Il ne permet pas de réinitialiser un mot de passe oublié. Pour cela, contactez l’administration.
+> **Mot de passe oublié ?** Le changement de mot de passe dans le profil nécessite une session ouverte et le mot de passe actuel. Si vous avez oublié votre mot de passe, utilisez **Mot de passe oublié ?** sur la page de connexion – voir [Mot de passe oublié](registration.md#mot-de-passe-oublie).
 
 ### 2. Sélectionner le bon club
 

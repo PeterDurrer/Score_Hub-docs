@@ -6,7 +6,7 @@ title: Domande frequenti
 
 ## Non riesco ad accedere. Cosa devo controllare?
 
-Controlla l'indirizzo e-mail e la password. Se l'interfaccia segnala un errore di connessione al database, informa l'amministrazione. Nell'interfaccia attuale non è indicata una procedura di reimpostazione della password; chiedi all'amministrazione come procedere.
+Controlla l'indirizzo e-mail e la password. Se l'interfaccia segnala un errore di connessione al database, informa l'amministrazione. Se hai dimenticato la password, seleziona **Password dimenticata?** nella pagina di accesso e segui le istruzioni in [Password dimenticata](getting-started/registration.md#password-dimenticata).
 
 ## Come posso ottenere un account?
 

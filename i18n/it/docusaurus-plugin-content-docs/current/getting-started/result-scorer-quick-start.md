@@ -17,11 +17,11 @@ Questa guida riunisce le tre guide **Accesso a Score_Hub**, **Dati della societ�
 1. Apri Score_Hub e seleziona **Accedi**.
 2. Attendi che venga stabilita la connessione al database. Se l'attesa è insolitamente lunga, ricarica la pagina. Se il problema di connessione persiste, contatta l'amministrazione.
 3. Accedi con il tuo indirizzo e-mail e la **password iniziale** ricevuta.
-4. Apri il tuo **Profilo** in alto a destra e vai alla sezione **Modifica password**.
-5. Inserisci la password attuale (la password iniziale al primo accesso) e la nuova password due volte.
-6. Seleziona **Modifica password** e verifica il messaggio di conferma. Al prossimo accesso usa la nuova password.
+4. Se viene visualizzata la pagina **È necessario cambiare la password**, inserisci la password iniziale ricevuta come password attuale e prosegui al passaggio 5. Altrimenti accedi direttamente alla dashboard.
+5. In questa pagina inserisci due volte una nuova password di almeno otto caratteri e seleziona **Cambia password**.
+6. Dopo il reindirizzamento, accedi nuovamente con la nuova password. Per ulteriori informazioni: [Account e accesso](registration.md#erster-passwortwechsel).
 
-> **Hai dimenticato la password?** La modifica della password dal profilo richiede che tu abbia effettuato l'accesso e conosca la password attuale. Non consente di reimpostare una password dimenticata. Per assistenza, contatta l'amministrazione.
+> **Hai dimenticato la password?** La modifica della password dal profilo richiede che tu abbia effettuato l'accesso e conosca la password attuale. Se hai dimenticato la password, usa **Password dimenticata?** nella pagina di accesso – vedi [Password dimenticata](registration.md#password-dimenticata).
 
 ### 2. Selezionare la società corretta
 

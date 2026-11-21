@@ -17,11 +17,11 @@ Diese Kurzanleitung bündelt die drei Anleitungen **Login Score Hub**, **Vereins
 1. Öffnen Sie Score_Hub und wählen Sie **Anmelden**.
 2. Warten Sie, bis die Datenbankverbindung hergestellt ist. Wenn dies ungewöhnlich lange dauert, laden Sie die Seite erneut. Bleibt die Verbindung gestört, kontaktieren Sie die Administration.
 3. Melden Sie sich mit Ihrer E-Mail-Adresse und dem erhaltenen **Initialpasswort** an.
-4. Öffnen Sie oben rechts Ihr **Profil** und gehen Sie zum Abschnitt **Passwort ändern**.
-5. Geben Sie das aktuelle Passwort (beim ersten Mal das Initialpasswort) sowie Ihr neues Passwort zweimal ein.
-6. Wählen Sie **Passwort ändern** und prüfen Sie die Erfolgsmeldung. Verwenden Sie bei der nächsten Anmeldung Ihr neues Passwort.
+4. Wenn **Passwortänderung erforderlich** angezeigt wird, geben Sie das erhaltene Initialpasswort als aktuelles Passwort ein und fahren Sie mit Schritt 5 fort. Andernfalls gelangen Sie direkt zum Dashboard.
+5. Geben Sie auf dieser Seite ein neues Passwort mit mindestens acht Zeichen zweimal ein und wählen Sie **Passwort ändern**.
+6. Melden Sie sich nach der Weiterleitung mit Ihrem neuen Passwort erneut an. Weitere Informationen: [Konto und Anmeldung](registration.md#erster-passwortwechsel).
 
-> **Passwort vergessen?** Der Passwortwechsel im Profil setzt eine Anmeldung und das aktuelle Passwort voraus. Er ist kein Zurücksetzen eines vergessenen Passworts. Wenden Sie sich dafür an die Administration.
+> **Passwort vergessen?** Der Passwortwechsel im Profil setzt eine Anmeldung und das aktuelle Passwort voraus. Haben Sie Ihr Passwort vergessen, nutzen Sie **Passwort vergessen?** auf der Anmeldeseite – siehe [Passwort vergessen](registration.md#passwort-vergessen).
 
 ### 2. Den richtigen Verein auswählen
 

@@ -29,4 +29,6 @@ L’interface propose des rôles du club tels que l’administration du club, la
 
 Vérifiez l’orthographe du terme recherché. Le rattachement exige qu’un compte utilisateur Score_Hub existe déjà. Pour créer un compte ou si aucune action de modification n’est visible, contactez l’administration système ou celle du club.
 
+Seuls les administrateurs système peuvent réinitialiser les mots de passe dans la gestion des utilisateurs du système. Voir [Réinitialisation par l'administration système](../getting-started/registration.md#admin-passwort-reset).
+
 Suite : [Rôles et autorisations](../getting-started/roles.md) · [Données du club](setup-club.md)

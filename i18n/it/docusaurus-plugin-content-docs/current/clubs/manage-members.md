@@ -30,4 +30,6 @@ L'interfaccia supporta ruoli quali amministrazione della società, gestione dell
 
 Verifica l'ortografia del termine cercato. Per associare un utente è necessario che esista già un account Score_Hub. Per creare un nuovo account o se non è disponibile l'azione di modifica, contatta l'amministrazione di sistema o della società.
 
+Solo gli amministratori di sistema possono reimpostare le password nella gestione degli utenti del sistema. Vedi [Reimpostazione da parte dell'amministrazione di sistema](../getting-started/registration.md#admin-passwort-reset).
+
 Continua: [Ruoli e autorizzazioni](../getting-started/roles.md) · [Dati della società](setup-club.md)

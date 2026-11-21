@@ -29,4 +29,6 @@ Die Oberfläche unterstützt Vereinsrollen wie Vereinsadministration, Wettkampfv
 
 Prüfen Sie die Schreibweise des Suchbegriffs. Die Zuordnung setzt voraus, dass bereits ein Score_Hub-Benutzerkonto existiert. Für neue Konten oder wenn Sie keine Bearbeitungsaktion sehen, kontaktieren Sie Ihre System- beziehungsweise Vereinsadministration.
 
+Passwörter können nur in der systemweiten Benutzerverwaltung durch Systemadministratoren neu gesetzt werden. Details: [Passwort durch die Systemadministration zurücksetzen](../getting-started/registration.md#admin-passwort-reset).
+
 Weiter: [Rollen und Berechtigungen](../getting-started/roles.md) · [Vereinsdaten](setup-club.md)

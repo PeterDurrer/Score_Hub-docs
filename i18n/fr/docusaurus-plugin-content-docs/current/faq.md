@@ -6,7 +6,7 @@ title: Foire aux questions
 
 ## Je n’arrive pas à me connecter. Que dois-je vérifier ?
 
-Vérifiez votre adresse e-mail et votre mot de passe. Si l’interface affiche une erreur de connexion à la base de données, signalez-la à l’administration. L’interface actuelle ne propose pas de réinitialisation du mot de passe ; renseignez-vous auprès de l’administration sur la procédure à suivre.
+Vérifiez votre adresse e-mail et votre mot de passe. Si l’interface affiche une erreur de connexion à la base de données, signalez-la à l’administration. Si vous avez oublié votre mot de passe, sélectionnez **Mot de passe oublié ?** sur la page de connexion et suivez les instructions sous [Mot de passe oublié](getting-started/registration.md#mot-de-passe-oublie).
 
 ## Comment obtenir un compte ?
 
