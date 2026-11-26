@@ -18,11 +18,13 @@ Des sections vides ne signifient pas nécessairement que le concours ne comporte
 
 ## Inventaire des feuilles de stand et retours
 
-Lorsque le [suivi des feuilles de stand](../competitions/data-sheet-tracking.md) est activé, les statistiques affichent le nombre de feuilles reçues, consommées, mal remplies, vierges et explicitement manquantes. Des listes déroulantes indiquent les numéros inutilisés, mal remplis, manquants et pas encore retournés. Le filtre du club s’applique également à ces quantités et listes ; les personnes dont la saisie est limitée ne voient que leur club.
+Lorsque le [suivi des feuilles de stand](../competitions/data-sheet-tracking.md) est activé, les statistiques affichent le nombre de feuilles reçues, consommées, mal remplies, retournées vierges et explicitement manquantes. Le filtre du club s’applique à ces quantités ; les personnes dont la saisie est limitée ne voient que leur club. Les numéros individuels figurent sur la page **Cartes de tir** du concours.
 
-La consommation et le retour sont indépendants : une feuille associée à un résultat peut ne pas avoir encore été retournée. Une feuille vierge retournée reste comptée comme vierge, mais n’est plus considérée comme un retour en attente. L’administration du concours enregistre le retour effectif dans **Configuration → Décompte** en indiquant les numéros concernés.
+**Vierges / retournées** compte uniquement les feuilles retournées sans avoir été utilisées. Les feuilles retournées consommées ou mal remplies ne sont pas incluses. L’administration du concours ou du système enregistre le retour sur la page **Cartes de tir**.
 
-Si l’option **Décompte au format PDF** est activée, le document reprend les quantités de feuilles de stand filtrées par club, y compris les feuilles mal remplies, vierges et les retours en attente. Les listes de numéros ne sont pas imprimées.
+Si l’option **Décompte au format PDF** est activée, le document reprend les quantités filtrées par club, y compris les cartes retournées vierges. Les listes de numéros ne sont pas imprimées.
+
+Sans suivi des numéros, les écritures de quantités n’indiquent pas le statut des feuilles. Le PDF affiche donc la quantité retournée sous **Cartes retournées (sans statut)**.
 
 ## Sortie PDF
 

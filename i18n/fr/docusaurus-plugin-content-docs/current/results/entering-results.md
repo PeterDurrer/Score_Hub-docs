@@ -64,7 +64,7 @@ La liste des tireurs affiche le nombre de résultats saisis par catégorie. Filt
 
 Si le suivi est activé, sélectionnez également un **Numéro de feuille de stand** dans la boîte de dialogue du résultat. Seuls les numéros disponibles et non encore retournés du club auquel le tireur est rattaché dans la liste des tireurs du concours sont proposés. Cela s’applique également à l’administration du concours et aux personnes chargées de saisir les résultats sans restriction. Les personnes dont la saisie est limitée ne travaillent que pour leur propre club.
 
-Sur la même page, le formulaire distinct de statut des feuilles de stand permet de signaler des numéros ou des plages comme **Mal remplie** ou **Manquante**, sans sélectionner de résultat ni de tireur. En revanche, l’administration du concours enregistre l’envoi et le retour physique sous **Configuration → Décompte**.
+Sur la page distincte **Cartes de tir** du concours, signalez un numéro comme **Abîmée** ou **Manquante**, sans sélectionner de résultat ni de tireur. L’administration du concours y enregistre également l’envoi et le retour physique.
 
 Instructions et tableau des rôles : [Suivi des feuilles de stand](../competitions/data-sheet-tracking.md).
 

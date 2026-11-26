@@ -24,11 +24,11 @@ Per scegliere **Per gruppo di turni**, apri **Turni** nella configurazione della
 | Attività | Sezione dell'applicazione | Responsabile |
 | --- | --- | --- |
 | Attivare o disattivare il tracciamento | **Società → Competizioni → Configurazione → Contabilità**, sezione Gestione dei fogli di stand | Amministrazione della competizione o amministrazione autorizzata della società organizzatrice |
-| Assegnare numeri a una società | Stessa sezione, nuova registrazione **Invio** | Amministrazione della competizione |
+| Assegnare numeri a una società | **Competizioni → competizione desiderata → Schede di tiro → Spedire le schede di tiro** | Amministrazione della competizione o di sistema |
 | Associare un foglio di stand a un risultato | **Competizioni → competizione desiderata → Risultati**, finestra di inserimento o modifica | Persone autorizzate all'inserimento dei risultati o amministrazione della competizione |
-| Segnalare un foglio compilato male o mancante | Nella pagina **Risultati**, modulo separato per la gestione dello stato dei fogli di stand | Persone autorizzate all'inserimento dei risultati o amministrazione della competizione |
-| Registrare una restituzione | **Società → Competizioni → Configurazione → Contabilità**, registrazione **Restituzione** | Amministrazione della competizione, dopo aver controllato i fogli ricevuti |
-| Controllare i numeri ancora da restituire | **Competizioni → competizione desiderata → Statistiche**, statistiche dei fogli di stand | Amministrazione della competizione o persone autorizzate all'inserimento dei risultati, in base ai rispettivi accessi |
+| Segnalare un foglio compilato male o mancante | **Competizioni → competizione desiderata → Schede di tiro** | Persone autorizzate all'inserimento dei risultati o amministrazione della competizione |
+| Registrare una restituzione | **Competizioni → competizione desiderata → Schede di tiro → Restituire le schede di tiro** | Amministrazione della competizione o di sistema, dopo aver controllato i fogli ricevuti |
+| Controllare numeri e restituzioni | **Competizioni → competizione desiderata → Schede di tiro** | Amministrazione della competizione o persone autorizzate all'inserimento dei risultati, in base ai rispettivi accessi |
 
 Le etichette dei campi possono variare a seconda della lingua dell'interfaccia. I fogli di stand sono i fogli di carta numerati: non sono l'elenco dei tiratori né la classifica.
 
@@ -41,12 +41,12 @@ La panoramica seguente descrive i ruoli indicati senza autorizzazioni aggiuntive
 | Amministrazione di sistema (`admin`) | Sì | Sì, per tutte le società | Sì | Tutte le società |
 | Creatore della competizione a cui è ancora assegnata l'amministrazione della competizione | Sì | Sì, per tutte le società | Sì | Tutte le società |
 | Amministrazione della competizione (`competitionAdmin`) | Sì | Sì, per tutte le società | Sì | Tutte le società |
-| Amministrazione della società o gestione delle competizioni della società organizzatrice (`clubAdmin`, `clubCompetitionAdmin`) | Sì | Nell'ambito delle autorizzazioni per i risultati | Nell'ambito delle autorizzazioni per i risultati | Accesso di gestione; un ruolo aggiuntivo limitato per l'inserimento può restringere l'accesso ai numeri |
+| Amministrazione della società o gestione delle competizioni della società organizzatrice (`clubAdmin`, `clubCompetitionAdmin`) | Tracciamento: sì; invio/restituzione: solo con il ruolo aggiuntivo di amministrazione della competizione | Nell'ambito delle autorizzazioni per i risultati | Nell'ambito delle autorizzazioni per i risultati | Accesso di gestione; un ruolo aggiuntivo limitato per l'inserimento può restringere l'accesso ai numeri |
 | Inserimento risultati della competizione senza limitazione alla società (`competitionResultScorer`) | No | Sì, per tiratori di società diverse | Sì, per società diverse | Tutte le società |
 | Inserimento risultati della competizione limitato alla società (`competitionResultScorer`) | No | Solo per tiratori della propria società attualmente selezionata | Solo numeri di questa società | Solo questa società |
 | Solo consultazione della competizione (`competitionViewer`) | No | No | No | Il solo ruolo di consultazione non dà accesso autonomo all'inventario dei fogli |
 
-**Il ruolo di creatore della competizione non è un ruolo speciale aggiuntivo e permanente.** Le azioni successive dipendono dalle autorizzazioni attualmente assegnate. Se il ruolo cambia, si applica la nuova autorizzazione. Dopo la creazione, controlla l'assegnazione nella scheda **Utenti**: il flusso di creazione attuale salva ancora il valore del ruolo precedente `admin`, mentre l'interfaccia dei fogli di stand e il controllo dei ruoli della competizione usano `competitionAdmin`. Non fare quindi affidamento solo sulla creazione della competizione; se mancano le azioni di gestione, fai assegnare o correggere il ruolo valido di amministrazione della competizione.
+**Il ruolo di creatore della competizione non è un ruolo speciale aggiuntivo e permanente.** Alla creazione viene assegnato il ruolo di amministrazione della competizione. Le azioni successive dipendono dalle autorizzazioni attuali. Se mancano azioni di gestione, controlla l'assegnazione nella scheda **Utenti**.
 
 Il solo ruolo della società per l'inserimento dei risultati non equivale alla gestione della competizione. Per collaborare a una competizione di un'altra società, chiedi che ti venga assegnato il ruolo appropriato per la competizione. La limitazione alla propria società si imposta per ogni utente della competizione nella scheda **Utenti**, non come impostazione globale per tutte le persone che inseriscono risultati.
 
@@ -66,21 +66,21 @@ Anche gli amministratori e chi inserisce risultati senza limitazioni possono sel
 
 Se sono già presenti registrazioni, l'applicazione controlla numeri, quantità e sovrapposizioni. Le registrazioni senza numeri validi, il consumo registrato manualmente o i risultati già esistenti possono impedire l'attivazione. I risultati esistenti non vengono completati automaticamente con numeri inventati; per la migrazione, contatta l'amministrazione.
 
-Non è possibile disattivare il tracciamento finché esistono numeri a inventario o risultati associati a numeri. Senza tracciamento, resta disponibile la precedente registrazione per quantità, senza l'obbligo di indicare il numero nel risultato.
+Non è possibile disattivare il tracciamento finché esistono numeri a inventario o risultati associati a numeri. Senza tracciamento, l'amministrazione della competizione o di sistema gestisce le registrazioni per quantità, incluso il consumo manuale, nella pagina **Schede di tiro**; non è obbligatorio indicare il numero nel risultato.
 
 ## 2. Registrare l'invio e gli intervalli numerici
 
 **Responsabile:** amministrazione della competizione, non chi si occupa soltanto dell'inserimento dei risultati.
 
-1. Nella scheda **Contabilità**, crea una nuova registrazione di fogli di stand.
-2. Seleziona il tipo di registrazione **Invio** e la società destinataria.
+1. Nella competizione apri **Schede di tiro** e scegli **Spedire le schede di tiro**.
+2. Seleziona la società destinataria.
 3. Inserisci numeri singoli, intervalli o una combinazione, ad esempio `1001-1050, 1060`.
 4. Controlla la quantità calcolata automaticamente: l'esempio comprende **51 fogli di stand**.
 5. Inserisci la data e, se necessario, una nota, quindi salva.
 
 **Risultato:** nell'ambito della competizione, ogni numero indicato appartiene a una sola società destinataria. I numeri duplicati, gli intervalli sovrapposti e i numeri già assegnati vengono rifiutati.
 
-Gli intervalli includono entrambi gli estremi. `1001-1003` indica `1001, 1002, 1003`. Usa numeri interi positivi e intervalli in ordine crescente. Ogni immissione può contenere al massimo 10.000 numeri e 100 caratteri. Se necessario, suddividi gli elenchi numerici lunghi e discontinui in più registrazioni.
+Gli intervalli includono entrambi gli estremi. `1001-1003` indica `1001, 1002, 1003`. Usa numeri interi positivi e intervalli in ordine crescente. Ogni registrazione può contenere al massimo 10.000 numeri.
 
 Quando il tracciamento è attivo, non è possibile registrare manualmente il consumo: questo viene determinato dal risultato salvato.
 
@@ -104,10 +104,10 @@ Se non appare alcun numero, verifica che l'invio sia stato registrato per la soc
 
 Questo modulo funziona senza selezionare un tiratore e senza inserire un risultato.
 
-1. Apri la pagina **Risultati** e la gestione dello stato dei fogli di stand.
+1. Nella competizione apri la pagina **Schede di tiro**.
 2. Seleziona la società. Chi ha accesso limitato può selezionare solo la propria società.
-3. Inserisci i numeri interessati o gli intervalli.
-4. Seleziona **Compilato male** o **Mancante** e salva lo stato.
+3. Scegli **Registrare una scheda danneggiata** o **Registrare una scheda persa**.
+4. Seleziona un numero nella finestra e salva lo stato.
 
 | Stato | Significato |
 | --- | --- |
@@ -122,13 +122,12 @@ In modalità di correzione, è possibile riportare allo stato **Disponibile** so
 
 **Responsabile:** amministrazione della competizione, dopo aver ricevuto e controllato i fogli cartacei. Chi inserisce i risultati segnala i fogli compilati male o mancanti, ma non registra la restituzione.
 
-1. Apri **Società → Competizioni → Configurazione → Contabilità**.
-2. Crea una registrazione dei fogli di stand con tipo **Restituzione**.
-3. Seleziona la società da cui sono stati restituiti i fogli.
-4. Inserisci i numeri o gli intervalli effettivamente ricevuti.
-5. Controlla la quantità calcolata automaticamente, la data e la nota, quindi salva.
+1. Nella competizione apri la pagina **Schede di tiro**.
+2. Seleziona la società da cui sono stati restituiti i fogli.
+3. Scegli **Restituire le schede di tiro**.
+4. Seleziona i numeri effettivamente ricevuti, singolarmente o tutti insieme, e salva.
 
-**Risultato:** la restituzione viene registrata per quei numeri specifici. È possibile restituire anche fogli già utilizzati o compilati male. La doppia registrazione della restituzione o la restituzione di un numero assegnato a un'altra società viene rifiutata.
+**Risultato:** la restituzione dei numeri selezionati viene registrata in un'unica operazione. Si possono restituire fogli disponibili, utilizzati o compilati male, ma non quelli persi. Ogni registrazione può contenere al massimo 10.000 numeri. La doppia registrazione della restituzione o la restituzione di un numero assegnato a un'altra società viene rifiutata.
 
 I fogli utilizzati o compilati male non risultano restituiti automaticamente. Se sono stati effettivamente ricevuti, registra anche i relativi numeri. È preferibile registrare la restituzione dei fogli utilizzati dopo aver inserito i risultati, perché i numeri già restituiti non possono essere selezionati per un nuovo risultato.
 
@@ -139,25 +138,24 @@ Le registrazioni di invio con numeri utilizzati, compilati male, mancanti o già
 ## 6. Statistiche e controllo finale
 
 1. Apri **Statistiche** nella competizione.
-2. Controlla i conteggi dei fogli di stand ed espandi gli elenchi dei numeri.
-3. Se necessario, seleziona il **filtro per società**. Limita anche gli elenchi dei numeri e i conteggi dei fogli di stand.
-4. Verifica in particolare i **Numeri mancanti** e i **Numeri non ancora restituiti**.
-5. Confronta i numeri ancora in sospeso con l'inventario cartaceo e fai verificare le restituzioni in sospeso.
+2. Controlla i conteggi dei fogli di stand.
+3. Se necessario, seleziona il **filtro per società** per limitare i conteggi.
+4. Verifica in particolare le quantità **Mancanti** e **Vuote / restituite**.
+5. Controlla i singoli numeri nella pagina **Schede di tiro** e fai verificare le restituzioni in sospeso.
 
 | Statistica | Cosa viene conteggiato o elencato |
 | --- | --- |
 | Ricevuti | Tutti i numeri assegnati alle società selezionate |
 | Utilizzati | Numeri associati a un risultato salvato |
 | Compilati male | Numeri registrati come compilati male |
-| Vuoti / inutilizzati | Numeri disponibili ancora presso la società e non restituiti |
+| Vuote / restituite | Numeri restituiti con stato disponibile (non utilizzati) |
 | Mancanti | Numeri segnalati esplicitamente come mancanti |
-| Non ancora restituiti | Tutti i numeri senza una restituzione registrata, indipendentemente dallo stato di utilizzo |
 
-L'elenco delle restituzioni in sospeso **non è una categoria di utilizzo aggiuntiva**. Un numero utilizzato può anche non essere ancora stato restituito. Un numero inutilizzato già restituito non viene conteggiato né come scorta vuota presso la società né come restituzione in sospeso. Non sommare quindi il conteggio delle restituzioni in sospeso ai conteggi degli stati.
+Anche i fogli utilizzati o compilati male possono essere restituiti, ma non vengono conteggiati in **Vuote / restituite**.
 
 Le statistiche numeriche vengono visualizzate anche quando non sono ancora presenti risultati. Il filtro per società include anche le società che hanno ricevuto fogli ma non hanno ancora registrato risultati. Altri filtri dei risultati, come turno o giornata di tiro, non associano retroattivamente i fogli inutilizzati a un turno o a una data.
 
-Se per la competizione è disponibile **Contabilità in PDF**, la stampa include le quantità dei fogli di stand dell'inventario filtrato per società. Riporta **solo i conteggi, non gli elenchi dei numeri**. Gli elenchi per il controllo successivo restano consultabili nell'applicazione. L'azione PDF va abilitata separatamente nella configurazione **Contabilità**.
+Se per la competizione è disponibile **Contabilità in PDF**, la stampa include le quantità dei fogli di stand dell'inventario filtrato per società. Riporta **solo i conteggi, non gli elenchi dei numeri**. Consulta i numeri nella pagina **Schede di tiro**. L'azione PDF va abilitata separatamente nella configurazione **Contabilità**.
 
 ## Domande frequenti
 

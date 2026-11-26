@@ -64,7 +64,7 @@ L’elenco dei tiratori mostra il numero di risultati registrati per categoria. 
 
 Se il tracciamento è attivo, nel modulo del risultato seleziona anche un **numero di foglio di stand**. Sono disponibili solo i numeri non ancora utilizzati e non restituiti della società a cui appartiene il tiratore nell'elenco dei tiratori della competizione. Questo vale anche per gli amministratori della competizione e per chi inserisce risultati senza limitazioni. Chi ha accesso limitato inserisce i risultati solo per la propria società.
 
-Nella stessa pagina, un modulo separato per lo stato dei fogli di stand consente di segnalare numeri o intervalli come **Compilato male** o **Mancante**, senza selezionare un risultato o un tiratore. L'amministrazione della competizione registra invece l'invio e la restituzione fisica in **Configurazione → Contabilità**.
+Nella pagina separata **Schede di tiro** della competizione puoi segnalare un numero come **Danneggiata** o **Mancante**, senza selezionare un risultato o un tiratore. L'amministrazione della competizione registra nella stessa pagina anche l'invio e la restituzione fisica.
 
 Guida e matrice dei ruoli: [Tracciamento dei fogli di stand](../competitions/data-sheet-tracking.md).
 

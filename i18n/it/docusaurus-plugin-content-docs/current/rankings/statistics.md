@@ -19,11 +19,13 @@ Le sezioni vuote non significano necessariamente che la competizione non conteng
 
 ## Disponibilità e restituzione dei fogli di stand
 
-Se il [tracciamento dei fogli di stand](../competitions/data-sheet-tracking.md) è attivo, le statistiche mostrano i fogli ricevuti, utilizzati, compilati male, inutilizzati e dichiarati esplicitamente mancanti. Gli elenchi espandibili riportano i numeri non utilizzati, quelli compilati male o mancanti e quelli non ancora restituiti. Anche il filtro per società limita questi conteggi e questi elenchi; chi inserisce i risultati con accesso limitato vede solo la propria società.
+Se il [tracciamento dei fogli di stand](../competitions/data-sheet-tracking.md) è attivo, le statistiche mostrano il numero di fogli ricevuti, utilizzati, compilati male, restituiti vuoti e dichiarati esplicitamente mancanti. Il filtro per società limita questi conteggi; chi inserisce i risultati con accesso limitato vede solo la propria società. I singoli numeri sono disponibili nella pagina **Schede di tiro** della competizione.
 
-Il consumo e la restituzione sono distinti: un foglio con un risultato registrato potrebbe non essere ancora stato restituito. Un foglio restituito senza essere stato utilizzato continua a essere conteggiato come inutilizzato, ma non risulta più tra le restituzioni in sospeso. L'effettiva restituzione viene registrata dall'amministrazione della competizione in **Configurazione → Contabilità**, indicando i numeri esatti.
+**Vuote / restituite** conta solo i fogli restituiti senza essere stati utilizzati. Sono esclusi i fogli restituiti già utilizzati o compilati male. L'amministrazione della competizione o di sistema registra la restituzione nella pagina **Schede di tiro**.
 
-Se è disponibile **Contabilità in PDF**, la stampa include i conteggi dei fogli di stand filtrati per società, compresi quelli compilati male, inutilizzati e ancora da restituire. Gli elenchi dei numeri non vengono stampati.
+Se è disponibile **Contabilità in PDF**, la stampa include i conteggi filtrati per società, comprese le schede restituite vuote. Gli elenchi dei numeri non vengono stampati.
+
+Senza tracciamento dei numeri, le registrazioni per quantità non indicano lo stato dei fogli. Il PDF riporta quindi la quantità restituita come **Schede restituite (senza stato)**.
 
 ## Esportazione in PDF
 

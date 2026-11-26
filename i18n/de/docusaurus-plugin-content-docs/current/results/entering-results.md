@@ -64,7 +64,7 @@ Die Schützenübersicht zeigt die Anzahl erfasster Resultate je Kategorie. Filte
 
 Wenn das Tracking aktiviert ist, wählen Sie im Resultatdialog zusätzlich eine **Standblatt-Nummer**. Angeboten werden nur verfügbare, noch nicht zurückgesandte Nummern des Vereins, dem der Schütze in der Wettkampf-Schützenliste angehört. Das gilt auch für Wettkampfadministrierende und uneingeschränkte Resultaterfassende. Eingeschränkte Erfassende arbeiten nur für den eigenen Verein.
 
-Auf derselben Seite können Sie im separaten Standblatt-Statusformular Nummern oder Bereiche als **Verschrieben** oder **Fehlend** melden, ohne ein Resultat oder einen Schützen auszuwählen. Den Versand und den physischen Rückversand erfasst dagegen die Wettkampfverwaltung unter **Konfiguration → Abrechnung**.
+Auf der separaten Wettkampfseite **Standblätter** melden Sie einzelne Nummern als **Verschrieben** oder **Fehlend**, ohne ein Resultat oder einen Schützen auszuwählen. Dort erfasst die Wettkampfadministration auch den Versand und den physischen Rückversand.
 
 Anleitung und Rollenmatrix: [Standblatt-Tracking](../competitions/data-sheet-tracking.md).
 

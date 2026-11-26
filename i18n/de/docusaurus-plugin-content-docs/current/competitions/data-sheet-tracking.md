@@ -24,11 +24,11 @@ Für **Pro Rundengruppe** tragen Sie in der Wettkampfkonfiguration unter **Runde
 | Aufgabe | Ort in der Anwendung | Zuständig |
 | --- | --- | --- |
 | Tracking ein- oder ausschalten | **Verein → Wettkämpfe → Konfiguration → Abrechnung**, Bereich Standblatt-Verwaltung | Wettkampfadministration bzw. berechtigte Verwaltung des organisierenden Vereins |
-| Nummern an einen Verein vergeben | Gleicher Bereich, neue Buchung **Versand** | Wettkampfverwaltung |
+| Nummern an einen Verein vergeben | **Wettkämpfe → gewünschter Wettkampf → Standblätter → Standblätter versenden** | Wettkampf- oder Systemadministration |
 | Standblatt einem Resultat zuordnen | **Wettkämpfe → gewünschter Wettkampf → Resultate**, Erfassungs- oder Bearbeitungsdialog | Berechtigte Resultaterfassende oder Wettkampfadministration |
-| Verschrieben oder fehlend melden | Auf der Seite **Resultate**, separates Formular zur Standblatt-Statusverwaltung | Berechtigte Resultaterfassende oder Wettkampfadministration |
-| Rücklauf buchen | **Verein → Wettkämpfe → Konfiguration → Abrechnung**, Buchung **Rückversand** | Wettkampfverwaltung nach Kontrolle der eingegangenen Blätter |
-| Offene Nummern kontrollieren | **Wettkämpfe → gewünschter Wettkampf → Statistiken**, Standblatt-Statistik | Berechtigte Wettkampfverwaltung bzw. Resultaterfassende, entsprechend ihrem Zugriff |
+| Verschrieben oder fehlend melden | **Wettkämpfe → gewünschter Wettkampf → Standblätter** | Berechtigte Resultaterfassende oder Wettkampfadministration |
+| Rücklauf buchen | **Wettkämpfe → gewünschter Wettkampf → Standblätter → Standblätter zurücksenden** | Wettkampf- oder Systemadministration nach Kontrolle der eingegangenen Blätter |
+| Nummern und Rücklauf kontrollieren | **Wettkämpfe → gewünschter Wettkampf → Standblätter** | Berechtigte Wettkampfverwaltung bzw. Resultaterfassende, entsprechend ihrem Zugriff |
 
 Die Beschriftung der Felder kann je nach Oberflächensprache abweichen. Standblätter sind die nummerierten Papierblätter, nicht die Schützenliste und nicht die Rangliste.
 
@@ -41,12 +41,12 @@ Die folgende Übersicht beschreibt die genannten Rollen ohne zusätzliche Berech
 | Systemadministration (`admin`) | Ja | Ja, vereinsübergreifend | Ja | Alle Vereine |
 | Wettkampfersteller mit weiterhin zugewiesener Wettkampfadministration | Ja | Ja, vereinsübergreifend | Ja | Alle Vereine |
 | Wettkampfadministration (`competitionAdmin`) | Ja | Ja, vereinsübergreifend | Ja | Alle Vereine |
-| Vereinsadministration oder Wettkampfverwaltung des organisierenden Vereins (`clubAdmin`, `clubCompetitionAdmin`) | Ja | Im Rahmen der Resultatberechtigung | Im Rahmen der Resultatberechtigung | Verwaltungszugriff; eine zusätzlich eingeschränkte Erfasserrolle kann den Nummernzugriff begrenzen |
+| Vereinsadministration oder Wettkampfverwaltung des organisierenden Vereins (`clubAdmin`, `clubCompetitionAdmin`) | Tracking: ja; Versand/Rückversand: nur mit zusätzlicher Wettkampfadministrationsrolle | Im Rahmen der Resultatberechtigung | Im Rahmen der Resultatberechtigung | Verwaltungszugriff; eine zusätzlich eingeschränkte Erfasserrolle kann den Nummernzugriff begrenzen |
 | Wettkampf-Resultaterfassung ohne Vereinseinschränkung (`competitionResultScorer`) | Nein | Ja, für Schützen verschiedener Vereine | Ja, für verschiedene Vereine | Alle Vereine |
 | Wettkampf-Resultaterfassung mit Vereinseinschränkung (`competitionResultScorer`) | Nein | Nur für Schützen des eigenen, aktuell ausgewählten Vereins | Nur Nummern dieses Vereins | Nur dieser Verein |
 | Nur lesender Wettkampfzugang (`competitionViewer`) | Nein | Nein | Nein | Kein eigener Zugriff auf das Tracking-Inventar allein durch die Leserrolle |
 
-**Wettkampfersteller ist keine zusätzliche, dauerhafte Sonderrolle.** Für spätere Aktionen zählen die aktuell vorhandenen Rechte. Wird die Rolle geändert, gilt die neue Berechtigung. Prüfen Sie nach dem Erstellen die Zuweisung im Register **Benutzer**: Der aktuelle Erstellungspfad hinterlegt noch den älteren Rollenwert `admin`, während die Standblatt-Oberfläche und die Wettkampfrollenprüfung `competitionAdmin` verwenden. Verlassen Sie sich deshalb nicht allein auf die Erstellung des Wettkampfs; lassen Sie die gültige Wettkampfadministrationsrolle zuweisen bzw. korrigieren, wenn Verwaltungsaktionen fehlen.
+**Wettkampfersteller ist keine zusätzliche, dauerhafte Sonderrolle.** Beim Erstellen wird die Wettkampfadministrationsrolle zugewiesen. Für spätere Aktionen zählen die aktuell vorhandenen Rechte. Prüfen Sie bei fehlenden Verwaltungsaktionen die Zuweisung im Register **Benutzer**.
 
 Eine Vereinsrolle zur Resultaterfassung allein ist nicht mit der Wettkampfverwaltung gleichzusetzen. Lassen Sie für die Mitarbeit an einem fremden Wettkampf die passende Wettkampfrolle zuweisen. Die Einschränkung auf den eigenen Verein wird im Register **Benutzer** für die jeweilige Wettkampfperson festgelegt, nicht als globale Einstellung für alle Erfassenden.
 
@@ -66,21 +66,21 @@ Auch Administrierende und uneingeschränkte Erfassende dürfen beim Resultat **n
 
 Bei vorhandenen Buchungen prüft die Anwendung Nummern, Mengen und Überschneidungen. Buchungen ohne gültige Nummern, manuell gebuchter Verbrauch oder bereits vorhandene Resultate können die Aktivierung verhindern. Bestehende Resultate werden nicht automatisch mit erfundenen Nummern ergänzt; wenden Sie sich für eine Übernahme an die Administration.
 
-Das Ausschalten ist gesperrt, solange Nummernbestand oder nummerierte Resultate vorhanden sind. Ohne Tracking bleibt die bisherige Mengenerfassung ohne verpflichtende Resultatnummer bestehen.
+Das Ausschalten ist gesperrt, solange Nummernbestand oder nummerierte Resultate vorhanden sind. Ohne Tracking verwaltet die Wettkampf- oder Systemadministration die bisherigen Mengenbuchungen einschliesslich manuellen Verbrauchs auf der Seite **Standblätter**; eine Resultatnummer ist nicht verpflichtend.
 
 ## 2. Versand und Nummernbereiche erfassen
 
 **Zuständig:** Wettkampfverwaltung, nicht die reine Resultaterfassung.
 
-1. Öffnen Sie im Register **Abrechnung** eine neue Standblatt-Buchung.
-2. Wählen Sie die Buchungsart **Versand** und den empfangenden Verein.
+1. Öffnen Sie im Wettkampf die Seite **Standblätter** und wählen Sie **Standblätter versenden**.
+2. Wählen Sie den empfangenden Verein.
 3. Geben Sie einzelne Nummern, Bereiche oder eine Kombination ein, beispielsweise `1001-1050, 1060`.
 4. Prüfen Sie die automatisch ermittelte Menge: Dieses Beispiel umfasst **51 Standblätter**.
 5. Erfassen Sie Datum und bei Bedarf eine Notiz und speichern Sie.
 
 **Ergebnis:** Jede angegebene Nummer gehört innerhalb dieses Wettkampfs genau einem empfangenden Verein. Doppelte Nummern, überlappende Bereiche sowie bereits vergebene Nummern werden abgelehnt.
 
-Bereiche sind einschliesslich beider Grenzen. `1001-1003` bedeutet `1001, 1002, 1003`. Verwenden Sie positive ganze Zahlen und aufsteigende Bereiche. Pro Eingabe sind höchstens 10.000 Nummern und 100 Zeichen zulässig. Teilen Sie umfangreiche, stark unterbrochene Nummernlisten bei Bedarf auf mehrere Buchungen auf.
+Bereiche sind einschliesslich beider Grenzen. `1001-1003` bedeutet `1001, 1002, 1003`. Verwenden Sie positive ganze Zahlen und aufsteigende Bereiche. Pro Buchung sind höchstens 10.000 Nummern zulässig.
 
 Bei aktivem Tracking gibt es keine manuelle Verbrauchsbuchung: Der Verbrauch entsteht durch das gespeicherte Resultat.
 
@@ -104,10 +104,10 @@ Wenn keine Nummer erscheint, prüfen Sie den Versand an den richtigen Verein und
 
 Dieses Formular funktioniert ohne Auswahl eines Schützen und ohne Resultaterfassung.
 
-1. Öffnen Sie die Seite **Resultate** und dort die Standblatt-Statusverwaltung.
+1. Öffnen Sie im Wettkampf die Seite **Standblätter**.
 2. Wählen Sie den Verein. Bei eingeschränkten Erfassenden steht nur der eigene Verein zur Verfügung.
-3. Geben Sie die betroffenen Nummern oder Bereiche ein.
-4. Wählen Sie **Verschrieben** oder **Fehlend** und speichern Sie den Status.
+3. Wählen Sie **Verschrieben erfassen** oder **Verloren erfassen**.
+4. Wählen Sie im Dialog eine Nummer und speichern Sie den Status.
 
 | Status | Bedeutung |
 | --- | --- |
@@ -122,13 +122,12 @@ Im Korrekturmodus können nur nicht zurückgesandte Nummern mit Status **Verschr
 
 **Zuständig:** Wettkampfverwaltung nach Eingang und Kontrolle der Papierblätter. Resultaterfassende melden Verschrieben/Fehlend, buchen aber nicht selbst den Rückversand.
 
-1. Öffnen Sie **Verein → Wettkämpfe → Konfiguration → Abrechnung**.
-2. Legen Sie eine Standblatt-Buchung mit der Art **Rückversand** an.
-3. Wählen Sie den Verein, von dem die Blätter zurückgekommen sind.
-4. Geben Sie die tatsächlich eingegangenen Nummern oder Bereiche an.
-5. Prüfen Sie die automatisch berechnete Menge sowie Datum und Notiz und speichern Sie.
+1. Öffnen Sie im Wettkampf die Seite **Standblätter**.
+2. Wählen Sie den Verein, von dem die Blätter zurückgekommen sind.
+3. Wählen Sie **Standblätter zurücksenden**.
+4. Haken Sie die tatsächlich eingegangenen Nummern einzeln oder alle gemeinsam an und speichern Sie.
 
-**Ergebnis:** Der Rücklauf ist für genau diese Nummern erfasst. Zurückgesandt werden können auch bereits verbrauchte oder verschriebene Blätter. Eine doppelte Rückgabe oder die Rückgabe einer Nummer eines anderen Vereins wird abgelehnt.
+**Ergebnis:** Der Rücklauf ist für genau diese Nummern als eine Buchung erfasst. Verfügbare, verbrauchte und verschriebene Blätter können zurückgesandt werden, verlorene nicht. Pro Buchung sind höchstens 10.000 Nummern zulässig. Eine doppelte Rückgabe oder die Rückgabe einer Nummer eines anderen Vereins wird abgelehnt.
 
 Verbrauchte und verschriebene Blätter sind damit nicht automatisch zurückgegeben. Buchen Sie deren Nummern ebenfalls, wenn sie physisch eingegangen sind. Erfassen Sie den Rücklauf verwendeter Blätter vorzugsweise nach der Resultaterfassung, da bereits zurückgesandte Nummern nicht für ein neues Resultat gewählt werden können.
 
@@ -139,25 +138,24 @@ Versandbuchungen mit verbrauchten, verschriebenen, fehlenden oder zurückgesandt
 ## 6. Statistik und Abschlusskontrolle
 
 1. Öffnen Sie **Statistiken** im Wettkampf.
-2. Kontrollieren Sie die Standblatt-Zählwerte und klappen Sie die Nummernlisten auf.
-3. Wählen Sie bei Bedarf den **Vereinsfilter**. Er schränkt auch die Nummernlisten und die Standblatt-Zählwerte ein.
-4. Prüfen Sie insbesondere **Fehlende Nummern** und **Noch nicht zurückgesandte Nummern**.
-5. Vergleichen Sie offene Nummern mit dem Papierbestand und lassen Sie ausstehende Rückgaben klären.
+2. Kontrollieren Sie die Standblatt-Zählwerte.
+3. Wählen Sie bei Bedarf den **Vereinsfilter**. Er schränkt die Standblatt-Zählwerte ein.
+4. Prüfen Sie insbesondere die Anzahl **Fehlend** und **Leer / Retour**.
+5. Kontrollieren Sie einzelne Nummern auf der Seite **Standblätter** und klären Sie ausstehende Rückgaben.
 
 | Auswertung | Was gezählt bzw. aufgelistet wird |
 | --- | --- |
 | Erhalten | Alle an die ausgewählten Vereine vergebenen Nummern |
 | Verbraucht | Nummern mit gespeichertem Resultat |
 | Verschrieben | Als verschrieben erfasste Nummern |
-| Leer / unbenutzt | Verfügbare, noch nicht zurückgesandte Nummern beim Verein |
+| Leer / Retour | Zurückgesandte Nummern mit Status verfügbar (unbenutzt) |
 | Fehlend | Ausdrücklich als fehlend erfasste Nummern |
-| Noch nicht zurückgesandt | Alle Nummern ohne Rücklauf, unabhängig von ihrem Verbrauchsstatus |
 
-Die offene Rücklaufliste ist **keine zusätzliche Verbrauchskategorie**. Eine verbrauchte Nummer kann gleichzeitig noch nicht zurückgesandt sein. Eine unbenutzte, bereits zurückgegebene Nummer zählt weder als leerer Vereinsbestand noch als offene Rückgabe. Addieren Sie die offene Rücklaufzahl deshalb nicht zu den Statuszahlen.
+Auch verbrauchte oder verschriebene Blätter können zurückgesandt werden; sie werden aber nicht unter **Leer / Retour** gezählt.
 
 Die Nummernstatistik erscheint auch dann, wenn noch keine Resultate vorhanden sind. Der Vereinsfilter bietet auch Vereine an, die Blätter erhalten, aber noch keine Resultate erfasst haben. Andere Resultatfilter wie Runde oder Schiesstag ordnen unbenutzte Blätter nicht nachträglich einer Runde oder einem Datum zu.
 
-Wenn **Abrechnung als PDF** für den Wettkampf freigeschaltet ist, übernimmt der Ausdruck die Standblatt-Mengen aus dem vereinsgefilterten Nummernbestand. Er enthält **nur Anzahlen, keine Nummernlisten**. Die Listen für die Nachkontrolle lesen Sie weiterhin in der Anwendung. Die PDF-Aktion wird in der Konfiguration **Abrechnung** separat freigeschaltet.
+Wenn **Abrechnung als PDF** für den Wettkampf freigeschaltet ist, übernimmt der Ausdruck die Standblatt-Mengen aus dem vereinsgefilterten Nummernbestand. Er enthält **nur Anzahlen, keine Nummernlisten**. Die einzelnen Nummern sehen Sie auf der Seite **Standblätter**. Die PDF-Aktion wird in der Konfiguration **Abrechnung** separat freigeschaltet.
 
 ## Häufige Rückfragen
 

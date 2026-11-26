@@ -18,11 +18,13 @@ Leere Bereiche bedeuten nicht zwingend, dass der Wettkampf keine Resultate enth�
 
 ## Standblatt-Bestand und Rücklauf
 
-Bei aktiviertem [Standblatt-Tracking](../competitions/data-sheet-tracking.md) zeigt die Statistik die erhaltenen, verbrauchten, verschriebenen, leeren und ausdrücklich fehlenden Blätter. Aufklappbare Listen nennen die unverbrauchten, verschriebenen, fehlenden und noch nicht zurückgesandten Nummern. Der Vereinsfilter schränkt diese Mengen und Listen ebenfalls ein; eingeschränkte Resultaterfassende sehen nur ihren Verein.
+Bei aktiviertem [Standblatt-Tracking](../competitions/data-sheet-tracking.md) zeigt die Statistik die Anzahl erhaltener, verbrauchter, verschriebener, leer zurückgesandter und ausdrücklich fehlender Blätter. Der Vereinsfilter schränkt diese Mengen ein; eingeschränkte Resultaterfassende sehen nur ihren Verein. Die einzelnen Nummern stehen auf der Wettkampfseite **Standblätter**.
 
-Verbrauch und Rücklauf sind unabhängig: Ein Blatt mit Resultat kann noch nicht zurückgesandt sein. Ein leer zurückgesandtes Blatt zählt weiterhin als leer, aber nicht mehr als offene Rückgabe. Den tatsächlichen Rücklauf bucht die Wettkampfverwaltung unter **Konfiguration → Abrechnung** mit konkreten Nummern.
+**Leer / Retour** zählt nur unbenutzte, zurückgesandte Blätter. Zurückgesandte verbrauchte oder verschriebene Blätter zählen nicht dazu. Den Rücklauf bucht die Wettkampf- oder Systemadministration auf der Seite **Standblätter**.
 
-Wenn **Abrechnung als PDF** freigeschaltet ist, übernimmt der Ausdruck die vereinsgefilterten Standblatt-Anzahlen, einschliesslich Verschrieben, Leer und offenem Rücklauf. Nummernlisten werden nicht gedruckt.
+Wenn **Abrechnung als PDF** freigeschaltet ist, übernimmt der Ausdruck die vereinsgefilterten Standblatt-Anzahlen, einschliesslich **Standblätter leer/Retour**. Nummernlisten werden nicht gedruckt.
+
+Ohne Nummerntracking enthalten Mengenbuchungen keinen Blattstatus. Das PDF weist deshalb die gebuchte Rücksendemenge als **Standblätter Retour (ohne Status)** aus.
 
 ## PDF-Ausgabe
 
