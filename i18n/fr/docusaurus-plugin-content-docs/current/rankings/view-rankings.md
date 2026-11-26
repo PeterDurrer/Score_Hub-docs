@@ -17,6 +17,8 @@ Les classements d’un concours se trouvent dans la section **Classements**. Les
 
 Un classement peut être vide si aucun résultat correspondant n’a encore été saisi ou si les filtres ne renvoient aucune entrée. Effacez les filtres et vérifiez que l’administration du concours a configuré le classement.
 
+Les critères de tri sont appliqués dans l'ordre configuré. Pour l'affichage et le tri, les champs numériques supplémentaires utilisent le même calcul global : somme, moyenne ou valeur de la manche avec le meilleur résultat. Si plusieurs résultats sont égaux, la première manche correspondante est retenue. Une valeur numérique supplémentaire manquante dans cette manche est affichée et triée comme 0.
+
 ## Enregistrer un classement au format PDF
 
 Si votre rôle le permet, utilisez l’action PDF du classement. Avant l’exportation, vérifiez la catégorie sélectionnée et les filtres. Ce guide ne considère pas les autres formats d’export, tels qu’Excel ou CSV, comme disponibles.
