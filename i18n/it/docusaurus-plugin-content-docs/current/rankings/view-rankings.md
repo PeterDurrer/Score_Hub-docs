@@ -20,6 +20,8 @@ Una classifica potrebbe essere vuota se non sono ancora stati inseriti risultati
 
 I criteri di ordinamento vengono applicati nell'ordine configurato. Per la visualizzazione e l'ordinamento, i campi numerici aggiuntivi usano lo stesso calcolo complessivo: somma, media o valore della manche con il risultato migliore. Se più risultati sono uguali, viene considerata la prima manche corrispondente. Un valore numerico aggiuntivo mancante in quella manche viene visualizzato e ordinato come 0.
 
+Nella configurazione della classifica puoi scegliere la colonna normale delle distinzioni oppure la variante compatta **Dist.**. Entrambe mostrano gli stessi valori.
+
 ## Salvare una classifica in PDF
 
 Se disponibile per il tuo ruolo, usa l'azione PDF della classifica. Prima di esportare, controlla la categoria e i filtri selezionati. Questa guida non presuppone che siano disponibili altri formati di esportazione, come Excel o CSV.

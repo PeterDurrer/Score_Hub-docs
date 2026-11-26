@@ -19,6 +19,8 @@ Eine Rangliste kann leer sein, wenn noch keine passenden Resultate erfasst wurde
 
 Die Sortierfelder werden in der konfigurierten Reihenfolge angewendet. Numerische Zusatzfelder verwenden dieselbe Gesamtberechnung für Anzeige und Sortierung: Summe, Durchschnitt oder den Wert der Runde mit dem besten Resultat. Bei mehreren gleich guten Resultaten zählt die erste passende Runde. Fehlt dort ein numerischer Zusatzwert, wird er als 0 angezeigt und sortiert.
 
+In der Ranglistenkonfiguration können Sie für Auszeichnungen die normale Spalte oder die platzsparende Variante **Ausz.** auswählen. Beide zeigen dieselben Werte.
+
 ## Rangliste als PDF speichern
 
 Wenn für Ihre Rolle verfügbar, verwenden Sie die PDF-Aktion der Rangliste. Prüfen Sie vor dem Export die ausgewählte Kategorie und Filter. Weitere Exportformate wie Excel oder CSV werden in dieser Anleitung nicht vorausgesetzt.

@@ -19,6 +19,8 @@ Un classement peut être vide si aucun résultat correspondant n’a encore ét�
 
 Les critères de tri sont appliqués dans l'ordre configuré. Pour l'affichage et le tri, les champs numériques supplémentaires utilisent le même calcul global : somme, moyenne ou valeur de la manche avec le meilleur résultat. Si plusieurs résultats sont égaux, la première manche correspondante est retenue. Une valeur numérique supplémentaire manquante dans cette manche est affichée et triée comme 0.
 
+Dans la configuration du classement, vous pouvez choisir la colonne normale des distinctions ou la variante compacte **Dist.**. Les deux affichent les mêmes valeurs.
+
 ## Enregistrer un classement au format PDF
 
 Si votre rôle le permet, utilisez l’action PDF du classement. Avant l’exportation, vérifiez la catégorie sélectionnée et les filtres. Ce guide ne considère pas les autres formats d’export, tels qu’Excel ou CSV, comme disponibles.
