@@ -6,6 +6,17 @@ title: Notifications et e-mails administrateur
 
 Score_Hub envoie des e-mails automatiques lors de certains événements liés aux comptes et aux concours. L’administration système peut configurer les événements, les rôles destinataires et les textes. Une boîte de dialogue distincte permet également d’envoyer des communications manuelles.
 
+## Sections de la nouvelle interface
+
+Si votre installation affiche les sections **Vue d’ensemble**, **Configuration**, **Tâches** et **Modèles et envoi**, elles fonctionnent ainsi :
+
+- **Vue d’ensemble** présente le traitement des événements, les dernières et prochaines exécutions quotidiennes, le worker, la synchronisation et les erreurs. Elle ne vérifie pas intégralement le contenu de la file ni l’état réel du worker.
+- Dans **Configuration**, réglez les canaux, la conservation, l’heure et le fuseau. **Activer le traitement des événements** commande la vérification quotidienne indépendamment de l’envoi d’e-mails. Enregistrez puis vérifiez la synchronisation.
+- **Tâches** affiche les tâches enregistrées avec filtres et détails. Ce n’est pas un explorateur complet de la file ; les anciennes tâches sans entrée outbox sont absentes. Les filtres de dates utilisent UTC.
+- Dans **Modèles et envoi**, modifiez les modèles d’événement et préparez les communications manuelles.
+
+Si la synchronisation échoue ou si des envois sont suspendus, contactez l’équipe technique. Une nouvelle tentative peut envoyer en double des e-mails déjà acceptés. Les images montrent l’ancienne disposition ; l’affichage dépend de la version installée.
+
 ![Modèle d’événement avec repères sur l’activation, les destinataires, le texte et l’enregistrement](../../../../screenshots/fr/notifications-settings.png)
 
 *1 active ou désactive l’événement, 2 définit les rôles destinataires, 3 repère l’objet et le contenu HTML, et 4 enregistre le modèle.*
@@ -41,7 +52,7 @@ Un événement désactivé ne met aucun nouveau message en file. Les modificatio
 
 ### Heure d’envoi des événements liés à une date
 
-Le réglage **Heure d’envoi des événements liés à une date** définit une heure et un fuseau d’envoi communs au système. La valeur par défaut est **09:00 / Europe/Zurich**. Le Timer vérifie toutes les cinq minutes et met en file les avis d’ouverture et de fin à partir de l’heure choisie, le jour de l’événement. Le jour de l’événement dépend du fuseau du concours ; l’heure dépend du fuseau d’envoi sélectionné ici. Modifier l’heure ou le fuseau ne renvoie pas les événements déjà mis en file.
+Le réglage **Heure d’envoi des événements liés à une date** définit une heure et un fuseau d’envoi communs au système. La valeur par défaut est **09:00 / Europe/Zurich**. Les avis d’ouverture et de fin sont traités à partir de l’heure choisie, le jour de l’événement. Le jour de l’événement dépend du fuseau du concours ; l’heure dépend du fuseau d’envoi sélectionné ici. Modifier l’heure ou le fuseau ne renvoie pas les événements déjà mis en file.
 
 ![Heure d’envoi et activation globale des e-mails avec repères numérotés](../../../../screenshots/fr/notifications-schedule.png)
 
@@ -49,13 +60,13 @@ Le réglage **Heure d’envoi des événements liés à une date** définit une 
 
 Les messages de bienvenue et d’attribution ainsi que les e-mails administrateur manuels ne dépendent pas de cette heure quotidienne. La file d’attente ou le fournisseur peut retarder la livraison effective.
 
-**Condition d’exploitation :** le Timer doit fonctionner dans une Azure Function App séparée. L’API gérée d’Azure Static Web Apps ne prend pas en charge les timers. Le réglage de l’heure ne déploie pas le worker.
+**Condition d’exploitation :** le traitement automatique nécessite un worker opérationnel. Le réglage de l’heure ne déploie pas le worker.
 
 ### Vue des envois et vérification du worker
 
 La **Vue d’ensemble des envois** indique les envois acceptés, en attente, en traitement, en nouvelle tentative, en échec et suspendus pour vérification. Cliquez sur un compteur pour afficher les 100 derniers envois correspondants. **Envoyé** signifie accepté par le fournisseur, pas reçu dans la boîte mail.
 
-La vue vérifie chaque minute le signal de vie du worker. Un signal expiré, une exécution échouée ou une mauvaise configuration détectée apparaît comme erreur. Si le signal ou les droits de lecture manquent, elle indique explicitement que le worker ne peut pas être vérifié. **Synchronisé** ne prouve pas que le worker fonctionne actuellement.
+La vue affiche le signal de vie disponible du worker. Un signal expiré, une exécution échouée ou une mauvaise configuration détectée apparaît comme erreur. Si le signal ou les droits de lecture manquent, elle indique explicitement que le worker ne peut pas être vérifié. **Synchronisé** ne prouve pas que le worker fonctionne actuellement.
 
 ### État de synchronisation après une modification
 
@@ -77,7 +88,7 @@ Le tableau de bord affiche chaque message sous forme d’une ligne d’objet com
 
 **Conserver les notifications lues (jours)** définit une durée de **1 à 365 jours** ; la valeur par défaut est de 30 jours. Les notifications lues du tableau de bord sont supprimées après cette durée ; les notifications non lues sont conservées. Une réduction de la durée peut supprimer définitivement des notifications déjà lues lors du prochain nettoyage.
 
-Le **Mode e-mail** détermine comment le contenu est marqué : **DEV** et **TEST** ajoutent une indication à l’objet et au contenu ; **PROD** envoie le modèle sans modification. Vérifiez le mode avant d’activer l’envoi en production.
+Le **Mode e-mail** détermine comment le contenu est marqué : **DEV** et **TEST** ajoutent une indication à l’objet et au contenu ; **PROD** envoie le modèle sans modification. Ces modes ne filtrent pas les destinataires. Vérifiez le mode et les destinataires avant d’activer l’envoi.
 
 ## Variables des modèles
 

@@ -6,6 +6,17 @@ title: Benachrichtigungen und Admin-Mails
 
 Score_Hub verschickt automatische E-Mails bei bestimmten Konto- und Wettkampfereignissen. Systemadministratoren können Ereignisse, Empfängerrollen und Texte konfigurieren. Für manuelle Mitteilungen gibt es zusätzlich den separaten Admin-Maildialog.
 
+## Bereiche der Oberfläche
+
+Wenn Ihre Installation die Bereiche **Übersicht**, **Einrichtung**, **Aufträge** und **Vorlagen & Versand** anzeigt, gilt diese Einteilung:
+
+- **Übersicht** zeigt Eventverarbeitung, nächsten und letzten Tageslauf, Worker- und Synchronisationsstatus sowie Fehlerhinweise. Diese Angaben prüfen weder den vollständigen Queueinhalt noch den Workerzustand lückenlos.
+- Unter **Einrichtung** steuern Sie die Benachrichtigungskanäle, Aufbewahrung, Uhrzeit und Zeitzone. Mit **Eventverarbeitung aktivieren** schalten Sie die tägliche Eventprüfung unabhängig vom E-Mail-Versand ein oder aus. Speichern Sie Änderungen und prüfen Sie die Synchronisation.
+- **Aufträge** zeigt gespeicherte Aufträge mit Filtern und Details. Die Liste ist kein vollständiger Queue-Explorer; ältere Aufträge ohne Outbox-Eintrag fehlen. Datumsfilter beziehen sich auf UTC.
+- Unter **Vorlagen & Versand** bearbeiten Sie Ereignisvorlagen und erstellen manuelle Mitteilungen.
+
+Bei fehlender Synchronisation oder angehaltenen Zustellungen wenden Sie sich an den technischen Betrieb. Eine erneute Verarbeitung kann bereits angenommene E-Mails doppelt versenden. Die Abbildungen zeigen die ältere Anordnung; die Darstellung hängt vom installierten Stand ab.
+
 ![Ereignisvorlage mit markierten Einstellungen für Aktivierung, Empfänger, Text und Speichern](../../../../screenshots/notifications-settings.png)
 
 *1 schaltet das Ereignis ein oder aus, 2 legt Empfängerrollen fest, 3 markiert Betreff und HTML-Inhalt und 4 speichert die Vorlage.*
@@ -41,7 +52,7 @@ Ein ausgeschaltetes Ereignis reiht keine neuen Meldungen ein. Änderungen an Vor
 
 ### Versandzeit für datumsabhängige Ereignisse
 
-Im Feld **Versandzeit für datumsabhängige Ereignisse** stellen Sie eine systemweite Uhrzeit und Versand-Zeitzone ein. Standard ist **09:00 / Europe/Zurich**. Der Timer prüft alle fünf Minuten und reiht Start- und Fristerinnerungen ab der gewählten Uhrzeit am jeweiligen Ereignistag ein. Der Ereignistag richtet sich nach der Zeitzone des Wettkampfs; die Uhrzeit nach der hier ausgewählten Versand-Zeitzone. Eine Änderung der Uhrzeit oder Zeitzone versendet bereits eingereihte Ereignisse nicht erneut.
+Im Feld **Versandzeit für datumsabhängige Ereignisse** stellen Sie eine systemweite Uhrzeit und Versand-Zeitzone ein. Standard ist **09:00 / Europe/Zurich**. Start- und Fristerinnerungen werden ab der gewählten Uhrzeit am jeweiligen Ereignistag verarbeitet. Der Ereignistag richtet sich nach der Zeitzone des Wettkampfs; die Uhrzeit nach der hier ausgewählten Versand-Zeitzone. Eine Änderung der Uhrzeit oder Zeitzone versendet bereits eingereihte Ereignisse nicht erneut.
 
 ![Versandzeit und globaler E-Mail-Schalter mit nummerierten Markierungen](../../../../screenshots/notifications-schedule.png)
 
@@ -49,13 +60,13 @@ Im Feld **Versandzeit für datumsabhängige Ereignisse** stellen Sie eine system
 
 Willkommens- und Zuweisungsmeldungen sowie manuelle Admin-Mails warten nicht auf diese tägliche Versandzeit. Die tatsächliche Zustellung kann durch die Warteschlange oder den Mailanbieter verzögert werden.
 
-**Betriebsvoraussetzung:** Der Timer muss in einer separaten Azure Function App betrieben werden. Die verwaltete API einer Azure Static Web App unterstützt keine Timer. Die Einstellung der Versandzeit richtet den Worker nicht selbst ein.
+**Betriebsvoraussetzung:** Die automatische Verarbeitung benötigt einen betriebsbereiten Worker. Die Einstellung der Versandzeit richtet diesen nicht selbst ein.
 
 ### Versandübersicht und Workerprüfung
 
 Die **Versandübersicht** zeigt versendete, wartende, in Verarbeitung befindliche, erneut versuchte, fehlgeschlagene und zur Prüfung angehaltene Mailzustellungen. Klicken Sie auf einen Statuszähler, um die letzten 100 passenden Zustellungen anzuzeigen. **Versendet** bedeutet vom Mailprovider angenommen, nicht bestätigter Eingang im Postfach.
 
-Die Übersicht prüft jede Minute den aktuellen Worker-Lebensnachweis. Ein abgelaufener Nachweis, ein fehlgeschlagener Lauf oder eine erkannte Fehlkonfiguration wird als Fehler angezeigt. Fehlt der Nachweis oder die Leseberechtigung, wird ausdrücklich **Worker kann nicht geprüft werden** gemeldet. **Synchronisiert** allein beweist nicht, dass der Worker aktuell läuft.
+Die Übersicht zeigt den verfügbaren Worker-Lebensnachweis. Ein abgelaufener Nachweis, ein fehlgeschlagener Lauf oder eine erkannte Fehlkonfiguration wird als Fehler angezeigt. Fehlt der Nachweis oder die Leseberechtigung, wird ausdrücklich **Worker kann nicht geprüft werden** gemeldet. **Synchronisiert** allein beweist nicht, dass der Worker aktuell läuft.
 
 ### Synchronisationsstatus nach Änderungen
 
@@ -77,7 +88,7 @@ Im Dashboard steht jede Nachricht als kompakte Betreffzeile in einer Liste. **Ö
 
 Unter **Gelesene Benachrichtigungen aufbewahren (Tage)** legen Sie eine Frist von **1 bis 365 Tagen** fest; standardmässig sind es 30 Tage. Gelesene Dashboard-Mitteilungen werden nach Ablauf der Frist gelöscht, ungelesene bleiben erhalten. Eine verkürzte Frist kann bei der nächsten Bereinigung bereits vorhandene gelesene Mitteilungen unwiderruflich löschen.
 
-Der **E-Mail-Modus** steuert die Kennzeichnung des E-Mail-Inhalts: **DEV** und **TEST** fügen einen Hinweis zu Betreff und Inhalt hinzu; **PROD** versendet die Vorlage unverändert. Prüfen Sie den Modus vor dem Aktivieren des produktiven Versands.
+Der **E-Mail-Modus** steuert die Kennzeichnung des E-Mail-Inhalts: **DEV** und **TEST** fügen einen Hinweis zu Betreff und Inhalt hinzu; **PROD** versendet die Vorlage unverändert. Die Modi filtern keine Empfänger. Prüfen Sie Modus und Zielgruppe vor dem Aktivieren des Versands.
 
 ## Platzhalter in Vorlagen
 

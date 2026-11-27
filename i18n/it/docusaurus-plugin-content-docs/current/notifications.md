@@ -6,6 +6,17 @@ title: Notifiche ed e-mail amministrative
 
 Score_Hub invia e-mail automatiche in occasione di alcuni eventi relativi agli account e alle competizioni. Gli amministratori di sistema possono configurare eventi, ruoli dei destinatari e testi. È inoltre disponibile una finestra separata per l'invio manuale di comunicazioni amministrative.
 
+## Sezioni della nuova interfaccia
+
+Se l'installazione mostra le sezioni **Panoramica**, **Configurazione**, **Attività** e **Modelli e invio**, si applica questa suddivisione:
+
+- **Panoramica** mostra l'elaborazione degli eventi, le ultime e prossime esecuzioni giornaliere, il worker, la sincronizzazione e gli errori. Non verifica completamente il contenuto della coda né lo stato effettivo del worker.
+- In **Configurazione** imposta canali, conservazione, orario e fuso. **Attiva l’elaborazione degli eventi** controlla la verifica giornaliera indipendentemente dall'invio delle e-mail. Salva e verifica la sincronizzazione.
+- **Attività** mostra le attività registrate con filtri e dettagli. Non è un elenco completo della coda: mancano le vecchie attività senza voce outbox. I filtri delle date usano UTC.
+- In **Modelli e invio** modifica i modelli degli eventi e prepara le comunicazioni manuali.
+
+Se la sincronizzazione non riesce o gli invii sono sospesi, contatta il supporto tecnico. Una nuova elaborazione può duplicare e-mail già accettate. Le immagini mostrano la disposizione precedente; l'aspetto dipende dalla versione installata.
+
 ![Modello di evento con indicatori per attivazione, destinatari, testo e salvataggio](../../../../screenshots/it/notifications-settings.png)
 
 *1 attiva o disattiva l'evento, 2 definisce i ruoli dei destinatari, 3 indica oggetto e contenuto HTML e 4 salva il modello.*
@@ -41,7 +52,7 @@ Un evento disattivato non accoda nuovi messaggi. Le modifiche ai modelli riguard
 
 ### Orario di invio degli eventi legati a una data
 
-L'impostazione **Orario di invio degli eventi legati a una data** definisce un orario e un fuso di invio a livello di sistema. Il valore predefinito è **09:00 / Europe/Zurich**. Il Timer controlla ogni cinque minuti e accoda gli avvisi di apertura e scadenza a partire dall'orario scelto nel giorno dell'evento. Il giorno dell'evento dipende dal fuso orario della competizione; l'orario dipende dal fuso selezionato qui. La modifica dell'orario o del fuso non reinvia gli eventi già accodati.
+L'impostazione **Orario di invio degli eventi legati a una data** definisce un orario e un fuso di invio a livello di sistema. Il valore predefinito è **09:00 / Europe/Zurich**. Gli avvisi di apertura e scadenza vengono elaborati a partire dall'orario scelto nel giorno dell'evento. Il giorno dell'evento dipende dal fuso orario della competizione; l'orario dipende dal fuso selezionato qui. La modifica dell'orario o del fuso non reinvia gli eventi già accodati.
 
 ![Orario di invio e attivazione globale delle e-mail con indicatori numerati](../../../../screenshots/it/notifications-schedule.png)
 
@@ -49,13 +60,13 @@ L'impostazione **Orario di invio degli eventi legati a una data** definisce un o
 
 Gli avvisi di benvenuto e assegnazione e le e-mail amministrative manuali non dipendono da questo orario giornaliero. La coda o il fornitore possono ritardare la consegna effettiva.
 
-**Prerequisito operativo:** il Timer deve essere eseguito in una Azure Function App separata. L'API gestita di Azure Static Web Apps non supporta i timer. L'impostazione dell'orario non configura il worker.
+**Prerequisito operativo:** l'elaborazione automatica richiede un worker operativo. L'impostazione dell'orario non configura il worker.
 
 ### Panoramica degli invii e verifica del worker
 
 La **Panoramica degli invii** mostra invii accettati, in coda, in elaborazione, in nuovo tentativo, non riusciti e sospesi per verifica. Fai clic su un contatore per visualizzare gli ultimi 100 invii corrispondenti. **Inviato** significa accettato dal provider, non ricevuto nella casella.
 
-La panoramica verifica ogni minuto il segnale di attività del worker. Un segnale scaduto, un'esecuzione non riuscita o una configurazione errata rilevata viene mostrato come errore. Se mancano il segnale o i permessi di lettura, viene indicato esplicitamente che il worker non può essere verificato. **Sincronizzato** non dimostra che il worker sia attualmente attivo.
+La panoramica mostra il segnale di attività disponibile del worker. Un segnale scaduto, un'esecuzione non riuscita o una configurazione errata rilevata viene mostrato come errore. Se mancano il segnale o i permessi di lettura, viene indicato esplicitamente che il worker non può essere verificato. **Sincronizzato** non dimostra che il worker sia attualmente attivo.
 
 ### Stato di sincronizzazione dopo le modifiche
 
@@ -77,7 +88,7 @@ La dashboard mostra ogni messaggio come una riga compatta con l'oggetto. **Apri*
 
 **Conserva notifiche lette (giorni)** imposta una durata da **1 a 365 giorni**; il valore predefinito è 30 giorni. Le notifiche lette della dashboard vengono eliminate al termine del periodo, mentre quelle non lette vengono conservate. Riducendo il periodo, notifiche già lette potrebbero essere eliminate definitivamente durante la pulizia successiva.
 
-La **Modalità e-mail** determina come viene contrassegnato il contenuto: **DEV** e **TEST** aggiungono un'indicazione all'oggetto e al contenuto; **PROD** invia il modello senza modifiche. Verifica la modalità prima di attivare l'invio in produzione.
+La **Modalità e-mail** determina come viene contrassegnato il contenuto: **DEV** e **TEST** aggiungono un'indicazione all'oggetto e al contenuto; **PROD** invia il modello senza modifiche. Le modalità non filtrano i destinatari. Verifica modalità e destinatari prima di attivare l'invio.
 
 ## Segnaposto nei modelli
 
